@@ -15,99 +15,99 @@ begin
 	if (SpriteID1==4'h0 && DrawX-PosX1<32 && DrawY-PosY1<32 && DrawX-PosX1>=0 && DrawY-PosY1>=0)
 	begin
 		spriteIDOut=SpriteID1;
-		sPosXOut=PosX1-DrawX;
-		sPosYOut=PosY1-DrawY;
+		sPosXOut=PosX1[4:0]-DrawX[4:0];
+		sPosYOut=PosY1[4:0]-DrawY[4:0];
 	end
 	
 	else if (SpriteID2==4'h0 && DrawX-PosX2<32 && DrawY-PosY2<32 && DrawX-PosX2>=0 && DrawY-PosY2>=0)
 	begin
 			spriteIDOut=SpriteID2;
-			sPosXOut=PosX2-DrawX;
-			sPosYOut=PosY2-DrawY;
+			sPosXOut=PosX2[4:0]-DrawX[4:0];
+			sPosYOut=PosY2[4:0]-DrawY[4:0];
 	end
 	else if (SpriteID3==4'h0 && DrawX-PosX3<32 && DrawY-PosY3<32 && DrawX-PosX3>=0 && DrawY-PosY3>=0)
 	begin
 			spriteIDOut=SpriteID3;
-			sPosXOut=PosX3-DrawX;
-			sPosYOut=PosY3-DrawY;
+			sPosXOut=PosX3[4:0]-DrawX[4:0];
+			sPosYOut=PosY3[4:0]-DrawY[4:0];
 	end
 	else if (SpriteID4==4'h0 && DrawX-PosX4<32 && DrawY-PosY4<32 && DrawX-PosX4>=0 && DrawY-PosY4>=0)
 	begin
 			spriteIDOut=SpriteID4;
-			sPosXOut=PosX4-DrawX;
-			sPosYOut=PosY4-DrawY;
+			sPosXOut=PosX4[4:0]-DrawX[4:0];
+			sPosYOut=PosY4[4:0]-DrawY[4:0];
 	end
 	else if (SpriteID5==4'h0 && DrawX-PosX5<32 && DrawY-PosY5<32 && DrawX-PosX5>=0 && DrawY-PosY5>=0)
 	begin
 			spriteIDOut=SpriteID5;
-			sPosXOut=PosX5-DrawX;
-			sPosYOut=PosY5-DrawY;
+			sPosXOut=PosX5[4:0]-DrawX[4:0];
+			sPosYOut=PosY5[4:0]-DrawY[4:0];
 	end
 	else if (SpriteID6==4'h0 && DrawX-PosX6<32 && DrawY-PosY6<32 && DrawX-PosX6>=0 && DrawY-PosY6>=0)
 	begin
 			spriteIDOut=SpriteID6;
-			sPosXOut=PosX6-DrawX;
-			sPosYOut=PosY6-DrawY;
+			sPosXOut=PosX6[4:0]-DrawX[4:0];
+			sPosYOut=PosY6[4:0]-DrawY[4:0];
 	end
 	else if (SpriteID7==4'h0 && DrawX-PosX7<32 && DrawY-PosY7<32 && DrawX-PosX7>=0 && DrawY-PosY7>=0)
 	begin
 			spriteIDOut=SpriteID7;
-			sPosXOut=PosX7-DrawX;
-			sPosYOut=PosY7-DrawY;
+			sPosXOut=PosX7[4:0]-DrawX[4:0];
+			sPosYOut=PosY7[4:0]-DrawY[4:0];
 	end
 	else if (SpriteID8==4'h0 && DrawX-PosX8<32 && DrawY-PosY8<32 && DrawX-PosX8>=0 && DrawY-PosY8>=0)
 	begin
 			spriteIDOut=SpriteID8;
-			sPosXOut=PosX8-DrawX;
-			sPosYOut=PosY8-DrawY;
+			sPosXOut=PosX8[4:0]-DrawX[4:0];
+			sPosYOut=PosY8[4:0]-DrawY[4:0];
 	end
 	else if (SpriteID9==4'h0 && DrawX-PosX9<32 && DrawY-PosY9<32 && DrawX-PosX9>=0 && DrawY-PosY9>=0)
 	begin
 			spriteIDOut=SpriteID9;
-			sPosXOut=PosX9-DrawX;
-			sPosYOut=PosY9-DrawY;
+			sPosXOut=PosX9[4:0]-DrawX[4:0];
+			sPosYOut=PosY9[4:0]-DrawY[4:0];
 	end
 	else if (SpriteID10==4'h0 && DrawX-PosX10<32 && DrawY-PosY10<32 && DrawX-PosX10>=0 && DrawY-PosY10>=0)
 	begin
 			spriteIDOut=SpriteID10;
-			sPosXOut=PosX10-DrawX;
-			sPosYOut=PosY10-DrawY;
+			sPosXOut=PosX10[4:0]-DrawX[4:0];
+			sPosYOut=PosY10[4:0]-DrawY[4:0];
 	end
 	else if (SpriteID11==4'h0 && DrawX-PosX11<32 && DrawY-PosY11<32 && DrawX-PosX11>=0 && DrawY-PosY11>=0)
 	begin
 			spriteIDOut=SpriteID11;
-			sPosXOut=PosX11-DrawX;
-			sPosYOut=PosY11-DrawY;
+			sPosXOut=PosX11[4:0]-DrawX[4:0];
+			sPosYOut=PosY11[4:0]-DrawY[4:0];
 	end
 	else if (SpriteID12==4'h0 && DrawX-PosX12<32 && DrawY-PosY12<32 && DrawX-PosX12>=0 && DrawY-PosY12>=0)
 	begin
 			spriteIDOut=SpriteID12;
-			sPosXOut=PosX12-DrawX;
-			sPosYOut=PosY12-DrawY;
+			sPosXOut=PosX12[4:0]-DrawX[4:0];
+			sPosYOut=PosY12[4:0]-DrawY[4:0];
 	end
 	else if (SpriteID13==4'h0 && DrawX-PosX13<32 && DrawY-PosY13<32 && DrawX-PosX13>=0 && DrawY-PosY13>=0)
 	begin
 			spriteIDOut=SpriteID13;
-			sPosXOut=PosX13-DrawX;
-			sPosYOut=PosY13-DrawY;
+			sPosXOut=PosX13[4:0]-DrawX[4:0];
+			sPosYOut=PosY13[4:0]-DrawY[4:0];
 	end
 	else if (SpriteID14==4'h0 && DrawX-PosX14<32 && DrawY-PosY14<32 && DrawX-PosX14>=0 && DrawY-PosY14>=0)
 	begin
 			spriteIDOut=SpriteID14;
-			sPosXOut=PosX14-DrawX;
-			sPosYOut=PosY14-DrawY;
+			sPosXOut=PosX14[4:0]-DrawX[4:0];
+			sPosYOut=PosY14[4:0]-DrawY[4:0];
 	end
 	else if (SpriteID15==4'h0 && DrawX-PosX15<32 && DrawY-PosY15<32 && DrawX-PosX15>=0 && DrawY-PosY15>=0)
 	begin
 			spriteIDOut=SpriteID15;
-			sPosXOut=PosX15-DrawX;
-			sPosYOut=PosY15-DrawY;
+			sPosXOut=PosX15[4:0]-DrawX[4:0];
+			sPosYOut=PosY15[4:0]-DrawY[4:0];
 	end
-	else if (SpriteID32==4'h0 && DrawX-PosX16<32 && DrawY-PosY16<32 && DrawX-PosX16>=0 && DrawY-PosY16>=0)
+	else if (SpriteID16==4'h0 && DrawX-PosX16<32 && DrawY-PosY16<32 && DrawX-PosX16>=0 && DrawY-PosY16>=0)
 	begin
 			spriteIDOut=SpriteID16;
-			sPosXOut=PosX16-DrawX;
-			sPosYOut=PosY16-DrawY;
+			sPosXOut=PosX16[4:0]-DrawX[4:0];
+			sPosYOut=PosY16[4:0]-DrawY[4:0];
 	end
     else
     begin

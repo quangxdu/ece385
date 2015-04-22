@@ -15,29 +15,38 @@ input [3:0] SpriteID13,input [3:0] SpriteID14,input [3:0] SpriteID15,input [3:0]
     
     output logic hs,        // Horizontal sync pulse.  Active low
 					vs,        // Vertical sync pulse.  Active low
-					pixel_clk, // 25 MHz pixel clock output
+					VGA_clk, // 25 MHz pixel clock output
 					blank,     // Blanking interval indicator.  Active low.
 					sync,
 	output [7:0] red,green,blue
 );
 
 logic [9:0] DrawX, DrawY;
-logic [3:0] spriteID, sPosX,sPosY;
+logic [3:0] spriteID;
+logic [4:0] sPosX,sPosY;
+logic [7:0] color;
 
 
 
 Mapper Mapper
 (//lol .*
-	.*
+	.*,
+	.spriteIDOut(spriteID),
+	.sPosXOut(sPosX),
+	.sPosYOut(sPosY)
 );
-
-Palette Palette//to be made should be pretty simple
+sprite_table sprite_table
 (
+	.spriteID(spriteID), .posX(sPosX), .posY(sPosY),.color(color)
+);
+palette palette//to be made should be pretty simple
+(
+	.addr(color), 
 	.*
 );
 
 	vga_controller vga_controller ( .Clk(Clk),       // 50 MHz clock
-                                      .Reset(Reset_h),     // reset signal
+                                      .Reset(Reset),     // reset signal
 												  .hs(hs),        // Horizontal sync pulse.  Active low
 								              .vs(vs),        // Vertical sync pulse.  Active low
 												  .pixel_clk(VGA_clk), // 25 MHz pixel clock output

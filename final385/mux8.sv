@@ -3,7 +3,7 @@ module mux8
 	input [2:0] sel,
 	input [7:0] i1,i2,i3,i4,i5,i6,i7,i8,
 	output [7:0] f
-)
+);
 
 always_comb
 begin
@@ -15,12 +15,14 @@ begin
 		f = i3;
 	else if(sel == 3'b011)
 		f = i4;
-	else if(sel = 3'b100)
+	else if(sel == 3'b100)
 		f = i5;
-	else if(sel = 3'b101)
+	else if(sel == 3'b101)
 		f = i6;
 	else if(sel == 3'b110)
 		f = i7;
 	else
-		f i i8;
+		f = i8;
 end
+
+endmodule
