@@ -45,7 +45,7 @@ module  lab8_usb 		( input         Clk,
 							  output			 sdram_clk						// SDRAM Clock
 											);
     
-    logic Reset_h;
+     logic Reset_h;
 	 logic [7:0] keycode;
 	 logic [7:0] buffer;
 	 logic loadGameTable
@@ -87,14 +87,30 @@ module  lab8_usb 		( input         Clk,
 	
 	 HexDriver hex_inst_0 (.In0(keycode[3:0]), .Out0(HEX0));
 	 HexDriver hex_inst_1 (.In0(keycode[7:4]), .Out0(HEX1));
-    
-	GraphicModule GraphicModule
-(.*
-);
-	GameModule GameModule
-(.*
-);
+logic [9:0] nowhere;
+logic [3:0] empty;
+assign empty = 4'hf;
+assign nowhere = 10'b0000000000;
 
+GraphicModule GraphicModule
+( .Clk(Clk),
+   .Reset(Reset),
+.PosX1(nowhere), .PosY1(nowhere), .PosX2(nowhere), .PosY2(nowhere), PosX3(nowhere), .PosY3(nowhere), .PosX4(nowhere), .PosY4(nowhere),
+.PosX5(nowhere), .PosY5(nowhere), .PosX6(nowhere), .PosY6(nowhere), .PosX7(nowhere), .PosY7(nowhere), .PosX8(nowhere), .PosY8(nowhere),
+.PosX9(nowhere), .PosY9(nowhere), .PosX10(nowhere), .PosY10(nowhere), .PosX11(nowhere), .PosY11(nowhere), .PosX12(nowhere), .PosY12(nowhere),
+.PosX13(nowhere), .PosY13(nowhere), .PosX14(nowhere), .PosY14(nowhere), .PosX15(nowhere), .PosY15(nowhere), .PosX16(nowhere), .PosY16(nowhere), 
+.SpriteID1(4'b0101),.SpriteID2(empty),.SpriteID(empty),.SpriteID4(empty),
+.SpriteID5(empty),.SpriteID6(empty),.SpriteID7(empty),.SpriteID8(empty),
+.SpriteID9(empty),.SpriteID10(empty),.SpriteID11(empty),.SpriteID12(empty),
+.SpriteID13(empty),.SpriteID14(empty),.SpriteID15(empty),.SpriteID16(empty),
+.*
+ 
+);
+/*
+GameModule GameModule
+(.*
+);
+*/
 	 /**************************************************************************************
 	    ATTENTION! Please answer the following quesiton in your lab report! Points will be allocated for the answers!
 		 Hidden Question #1/2:
