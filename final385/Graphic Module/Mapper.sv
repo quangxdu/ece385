@@ -111,7 +111,7 @@ begin
 	end
     else
     begin
-        spriteIDOut = 4'b0;
+        spriteIDOut = 4'bf;
         sPosXOut = 0;
         sPosYOut = 0;
     end

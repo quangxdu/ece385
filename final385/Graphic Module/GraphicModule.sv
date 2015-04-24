@@ -2,7 +2,6 @@ module GraphicModule
 (
     input Clk,
     input Reset,
-	input logic loadGameTable,
 input [9:0] PosX1, PosY1, input [9:0] PosX2, PosY2, input [9:0] PosX3, PosY3, input [9:0] PosX4, PosY4,
 input [9:0] PosX5, PosY5, input [9:0] PosX6, PosY6, input [9:0] PosX7, PosY7, input [9:0] PosX8, PosY8,
 input [9:0] PosX9, PosY9, input [9:0] PosX10, PosY10, input [9:0] PosX11, PosY11, input [9:0] PosX12, PosY12,
