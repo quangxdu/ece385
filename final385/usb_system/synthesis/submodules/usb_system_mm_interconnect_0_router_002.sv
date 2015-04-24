@@ -24,9 +24,9 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/14.0/ip/merlin/altera_merlin_router/altera_merlin_router.sv.terp#1 $
+// $Id: //acds/rel/14.1/ip/merlin/altera_merlin_router/altera_merlin_router.sv.terp#1 $
 // $Revision: #1 $
-// $Date: 2014/02/16 $
+// $Date: 2014/10/06 $
 // $Author: swbranch $
 
 // -------------------------------------------------------
@@ -47,7 +47,7 @@ module usb_system_mm_interconnect_0_router_002_default_decode
      parameter DEFAULT_CHANNEL = 0,
                DEFAULT_WR_CHANNEL = -1,
                DEFAULT_RD_CHANNEL = -1,
-               DEFAULT_DESTID = 1 
+               DEFAULT_DESTID = 0 
    )
   (output [91 - 89 : 0] default_destination_id,
    output [6-1 : 0] default_wr_channel,
@@ -58,26 +58,24 @@ module usb_system_mm_interconnect_0_router_002_default_decode
   assign default_destination_id = 
     DEFAULT_DESTID[91 - 89 : 0];
 
-  generate begin : default_decode
-    if (DEFAULT_CHANNEL == -1) begin
+  generate
+    if (DEFAULT_CHANNEL == -1) begin : no_default_channel_assignment
       assign default_src_channel = '0;
     end
-    else begin
+    else begin : default_channel_assignment
       assign default_src_channel = 6'b1 << DEFAULT_CHANNEL;
     end
-  end
   endgenerate
 
-  generate begin : default_decode_rw
-    if (DEFAULT_RD_CHANNEL == -1) begin
+  generate
+    if (DEFAULT_RD_CHANNEL == -1) begin : no_default_rw_channel_assignment
       assign default_wr_channel = '0;
       assign default_rd_channel = '0;
     end
-    else begin
+    else begin : default_rw_channel_assignment
       assign default_wr_channel = 6'b1 << DEFAULT_WR_CHANNEL;
       assign default_rd_channel = 6'b1 << DEFAULT_RD_CHANNEL;
     end
-  end
   endgenerate
 
 endmodule
@@ -165,11 +163,6 @@ module usb_system_mm_interconnect_0_router_002
 
 
 
-    // -------------------------------------------------------
-    // Write and read transaction signals
-    // -------------------------------------------------------
-    wire read_transaction;
-    assign read_transaction  = sink_data[PKT_TRANS_READ];
 
 
     usb_system_mm_interconnect_0_router_002_default_decode the_default_decode(
@@ -191,12 +184,8 @@ module usb_system_mm_interconnect_0_router_002
 
 
 
-        if (destid == 1  && read_transaction) begin
-            src_channel = 6'b01;
-        end
-
         if (destid == 0 ) begin
-            src_channel = 6'b10;
+            src_channel = 6'b1;
         end
 
 

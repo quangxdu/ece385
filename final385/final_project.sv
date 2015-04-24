@@ -10,7 +10,7 @@
 //-------------------------------------------------------------------------
 
 
-module  lab8_usb 		( input         Clk,
+module  final_project 		( input         Clk,
                                      Reset,
 							  output [6:0]  HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7,
 							  output [8:0]  LEDG,
@@ -48,19 +48,11 @@ module  lab8_usb 		( input         Clk,
      logic Reset_h;
 	 logic [7:0] keycode;
 	 logic [7:0] buffer;
-	 logic loadGameTable
     
     assign {Reset_h}=~ (Reset);  // The push buttons are active low
 	 assign OTG_FSPEED = 1'bz;
 	 assign OTG_LSPEED = 1'bz;
-	 register keycode_reg
-	(
-		 .Clk(Clk),
-		 .load(1),
-		 .Reset(0),
-		 .in(keycode),
-		 .out(buffer)
-	);
+	 
 	    
 	 usb_system usbsys_instance(
 										 .clk_clk(Clk),         
@@ -93,18 +85,25 @@ assign empty = 4'hf;
 assign nowhere = 10'b0000000000;
 
 GraphicModule GraphicModule
-( .Clk(Clk),
-   .Reset(Reset),
-.PosX1(nowhere), .PosY1(nowhere), .PosX2(nowhere), .PosY2(nowhere), PosX3(nowhere), .PosY3(nowhere), .PosX4(nowhere), .PosY4(nowhere),
+( 
+.Clk(Clk),
+.Reset(Reset_h),
+.PosX1(nowhere), .PosY1(nowhere), .PosX2(nowhere), .PosY2(nowhere), .PosX3(nowhere), .PosY3(nowhere), .PosX4(nowhere), .PosY4(nowhere),
 .PosX5(nowhere), .PosY5(nowhere), .PosX6(nowhere), .PosY6(nowhere), .PosX7(nowhere), .PosY7(nowhere), .PosX8(nowhere), .PosY8(nowhere),
 .PosX9(nowhere), .PosY9(nowhere), .PosX10(nowhere), .PosY10(nowhere), .PosX11(nowhere), .PosY11(nowhere), .PosX12(nowhere), .PosY12(nowhere),
 .PosX13(nowhere), .PosY13(nowhere), .PosX14(nowhere), .PosY14(nowhere), .PosX15(nowhere), .PosY15(nowhere), .PosX16(nowhere), .PosY16(nowhere), 
-.SpriteID1(4'b0101),.SpriteID2(empty),.SpriteID(empty),.SpriteID4(empty),
+.SpriteID1(4'b0101),.SpriteID2(empty),.SpriteID3(empty),.SpriteID4(empty),
 .SpriteID5(empty),.SpriteID6(empty),.SpriteID7(empty),.SpriteID8(empty),
 .SpriteID9(empty),.SpriteID10(empty),.SpriteID11(empty),.SpriteID12(empty),
 .SpriteID13(empty),.SpriteID14(empty),.SpriteID15(empty),.SpriteID16(empty),
-.*
- 
+    
+    
+		.hs(hs),        // Horizontal sync pulse.  Active low
+					.vs(vs),        // Vertical sync pulse.  Active low
+					.VGA_clk(VGA_clk), // 25 MHz pixel clock output
+					.blank(blank),     // Blanking interval indicator.  Active low.
+					.sync(sync),
+	.red(Red),.green(Green),.blue(Blue)
 );
 /*
 GameModule GameModule

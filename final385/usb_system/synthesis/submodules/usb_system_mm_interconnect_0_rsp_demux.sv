@@ -11,9 +11,9 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/14.0/ip/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer.sv.terp#1 $
+// $Id: //acds/rel/14.1/ip/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer.sv.terp#1 $
 // $Revision: #1 $
-// $Date: 2014/02/16 $
+// $Date: 2014/10/06 $
 // $Author: swbranch $
 
 // -------------------------------------
@@ -30,7 +30,7 @@
 //   output_name:         usb_system_mm_interconnect_0_rsp_demux
 //   ST_DATA_W:           105
 //   ST_CHANNEL_W:        6
-//   NUM_OUTPUTS:         2
+//   NUM_OUTPUTS:         1
 //   VALID_WIDTH:         1
 // ------------------------------------------
 
@@ -62,13 +62,6 @@ module usb_system_mm_interconnect_0_rsp_demux
     output reg                      src0_endofpacket,
     input                           src0_ready,
 
-    output reg                      src1_valid,
-    output reg [105-1    : 0] src1_data, // ST_DATA_W=105
-    output reg [6-1 : 0] src1_channel, // ST_CHANNEL_W=6
-    output reg                      src1_startofpacket,
-    output reg                      src1_endofpacket,
-    input                           src1_ready,
-
 
     // -------------------
     // Clock & Reset
@@ -80,7 +73,7 @@ module usb_system_mm_interconnect_0_rsp_demux
 
 );
 
-    localparam NUM_OUTPUTS = 2;
+    localparam NUM_OUTPUTS = 1;
     wire [NUM_OUTPUTS - 1 : 0] ready_vector;
 
     // -------------------
@@ -94,22 +87,14 @@ module usb_system_mm_interconnect_0_rsp_demux
 
         src0_valid         = sink_channel[0] && sink_valid;
 
-        src1_data          = sink_data;
-        src1_startofpacket = sink_startofpacket;
-        src1_endofpacket   = sink_endofpacket;
-        src1_channel       = sink_channel >> NUM_OUTPUTS;
-
-        src1_valid         = sink_channel[1] && sink_valid;
-
     end
 
     // -------------------
     // Backpressure
     // -------------------
     assign ready_vector[0] = src0_ready;
-    assign ready_vector[1] = src1_ready;
 
-    assign sink_ready = |(sink_channel & {{4{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
+    assign sink_ready = |(sink_channel & {{5{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
 
 endmodule
 

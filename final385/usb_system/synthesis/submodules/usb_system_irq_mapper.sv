@@ -11,9 +11,9 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/14.0/ip/merlin/altera_irq_mapper/altera_irq_mapper.sv.terp#1 $
+// $Id: //acds/rel/14.1/ip/merlin/altera_irq_mapper/altera_irq_mapper.sv.terp#1 $
 // $Revision: #1 $
-// $Date: 2014/02/16 $
+// $Date: 2014/10/06 $
 // $Author: swbranch $
 
 // -------------------------------------------------------
@@ -22,7 +22,7 @@
 // Parameters
 //   NUM_RCVRS        : 2
 //   SENDER_IRW_WIDTH : 32
-//   IRQ_MAP          : 0:5,1:6
+//   IRQ_MAP          : 0:6,1:5
 //
 // -------------------------------------------------------
 
@@ -52,8 +52,8 @@ module usb_system_irq_mapper
     always @* begin
 	sender_irq = 0;
 
-        sender_irq[5] = receiver0_irq;
-        sender_irq[6] = receiver1_irq;
+        sender_irq[6] = receiver0_irq;
+        sender_irq[5] = receiver1_irq;
     end
 
 endmodule

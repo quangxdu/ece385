@@ -11,9 +11,9 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/14.0/ip/merlin/altera_avalon_mm_clock_crossing_bridge/altera_avalon_mm_clock_crossing_bridge.v#1 $
+// $Id: //acds/rel/14.1/ip/merlin/altera_avalon_mm_clock_crossing_bridge/altera_avalon_mm_clock_crossing_bridge.v#1 $
 // $Revision: #1 $
-// $Date: 2014/02/16 $
+// $Date: 2014/10/06 $
 // $Author: swbranch $
 // --------------------------------------
 // Avalon-MM clock crossing bridge
@@ -135,16 +135,16 @@ module altera_avalon_mm_clock_crossing_bridge
 
         .in_startofpacket   (1'b0),
         .in_endofpacket     (1'b0),
-        .in_empty           ('b0),
-        .in_error           ('b0),
-        .in_channel         ('b0),
-        .in_csr_address     ('b0),
-        .in_csr_read        ('b0),
-        .in_csr_write       ('b0),
+        .in_empty           (1'b0),
+        .in_error           (1'b0),
+        .in_channel         (1'b0),
+        .in_csr_address     (1'b0),
+        .in_csr_read        (1'b0),
+        .in_csr_write       (1'b0),
         .in_csr_writedata   (32'b0),
-        .out_csr_address    ('b0),
-        .out_csr_read       ('b0),
-        .out_csr_write      ('b0),
+        .out_csr_address    (1'b0),
+        .out_csr_read       (1'b0),
+        .out_csr_write      (1'b0),
         .out_csr_writedata  (32'b0)
     );
 
@@ -268,16 +268,16 @@ module altera_avalon_mm_clock_crossing_bridge
 
         .in_startofpacket   (1'b0),
         .in_endofpacket     (1'b0),
-        .in_empty           ('b0),
-        .in_error           ('b0),
-        .in_channel         ('b0),
-        .in_csr_address     ('b0),
-        .in_csr_read        ('b0),
-        .in_csr_write       ('b0),
+        .in_empty           (1'b0),
+        .in_error           (1'b0),
+        .in_channel         (1'b0),
+        .in_csr_address     (1'b0),
+        .in_csr_read        (1'b0),
+        .in_csr_write       (1'b0),
         .in_csr_writedata   (32'b0),
-        .out_csr_address    ('b0),
-        .out_csr_read       ('b0),
-        .out_csr_write      ('b0),
+        .out_csr_address    (1'b0),
+        .out_csr_read       (1'b0),
+        .out_csr_write      (1'b0),
         .out_csr_writedata  (32'b0)  
     );
 

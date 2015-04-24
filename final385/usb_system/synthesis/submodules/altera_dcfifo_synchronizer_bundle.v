@@ -1,16 +1,16 @@
-// $File: //acds/rel/14.0/ip/sopc/components/altera_avalon_dc_fifo/altera_dcfifo_synchronizer_bundle.v $
+// $File: //acds/rel/14.1/ip/sopc/components/altera_avalon_dc_fifo/altera_dcfifo_synchronizer_bundle.v $
 // $Revision: #1 $
-// $Date: 2014/02/16 $
+// $Date: 2014/10/06 $
 // $Author: swbranch $
 //-------------------------------------------------------------------------------
 
 `timescale 1 ns / 1 ns
 module altera_dcfifo_synchronizer_bundle(
-				     clk,
-				     reset_n,
-				     din,
-				     dout
-				     );
+                                     clk,
+                                     reset_n,
+                                     din,
+                                     dout
+                                     );
    parameter WIDTH = 1;
    parameter DEPTH = 3;   
    
@@ -23,15 +23,15 @@ module altera_dcfifo_synchronizer_bundle(
    
    generate
       for (i=0; i<WIDTH; i=i+1)
-	begin : sync
-	   altera_std_synchronizer #(.depth(DEPTH))
+        begin : sync
+           altera_std_synchronizer_nocut #(.depth(DEPTH))
                                    u (
-				      .clk(clk), 
-				      .reset_n(reset_n), 
-				      .din(din[i]), 
-				      .dout(dout[i])
-				      );
-	end
+                                      .clk(clk), 
+                                      .reset_n(reset_n), 
+                                      .din(din[i]), 
+                                      .dout(dout[i])
+                                      );
+        end
    endgenerate
    
 endmodule 
