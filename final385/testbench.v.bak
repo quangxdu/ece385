@@ -1,0 +1,27 @@
+module testbenchreg();
+
+timeunit 10ns;	// Half clock cycle at 50 MHz
+			// This is the amount of time represented by #1 
+timeprecision 1ns;
+
+// These signals are internal because the processor will be 
+// instantiated as a submodule in testbench.
+logic [3:0] spriteID; 
+logic [4:0] posX, posY;
+logic [7:0] color;
+sprite_table sprite_table(.*);
+				
+
+// Toggle the clock
+// #1 means wait for a delay of 1 timeunit
+
+// Testing begins here
+// The initial block is not synthesizable
+// Everything happens sequentially inside an initial block
+// as in a software program
+initial begin: TEST_VECTORS
+spriteID = 4'b0101;
+posX = 5'b00100;
+posY = 5'b01100;
+end
+endmodule

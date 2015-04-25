@@ -88,7 +88,7 @@ GraphicModule GraphicModule
 ( 
 .Clk(Clk),
 .Reset(Reset_h),
-.PosX1(nowhere), .PosY1(nowhere), .PosX2(nowhere), .PosY2(nowhere), .PosX3(nowhere), .PosY3(nowhere), .PosX4(nowhere), .PosY4(nowhere),
+.PosX1(10'b1000000000), .PosY1(10'b1000000000), .PosX2(nowhere), .PosY2(nowhere), .PosX3(nowhere), .PosY3(nowhere), .PosX4(nowhere), .PosY4(nowhere),
 .PosX5(nowhere), .PosY5(nowhere), .PosX6(nowhere), .PosY6(nowhere), .PosX7(nowhere), .PosY7(nowhere), .PosX8(nowhere), .PosY8(nowhere),
 .PosX9(nowhere), .PosY9(nowhere), .PosX10(nowhere), .PosY10(nowhere), .PosX11(nowhere), .PosY11(nowhere), .PosX12(nowhere), .PosY12(nowhere),
 .PosX13(nowhere), .PosY13(nowhere), .PosX14(nowhere), .PosY14(nowhere), .PosX15(nowhere), .PosY15(nowhere), .PosX16(nowhere), .PosY16(nowhere), 
