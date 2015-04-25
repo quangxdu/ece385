@@ -15,7 +15,7 @@ logic [4:0] sPosXOut, sPosYOut;
 assign empty = 4'hf;
 assign nowhere = 10'b0000000000;
 
-mapper mapper(
+Mapper mapper(
 .*,
 .PosX1(10'b1000000000), .PosY1(10'b1000000000), .PosX2(nowhere), .PosY2(nowhere), .PosX3(nowhere), .PosY3(nowhere), .PosX4(nowhere), .PosY4(nowhere),
 .PosX5(nowhere), .PosY5(nowhere), .PosX6(nowhere), .PosY6(nowhere), .PosX7(nowhere), .PosY7(nowhere), .PosX8(nowhere), .PosY8(nowhere),
