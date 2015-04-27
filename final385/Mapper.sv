@@ -15,7 +15,7 @@ begin
 if ((SpriteID1!=4'hf )&& ((DrawX-PosX1)<32) && ((DrawY-PosY1)<32) && ((DrawX-PosX1)>=0) && ((DrawY-PosY1)>=0))
 	begin
 		spriteIDOut=SpriteID1;
-		sPosXOut=DrawX[4:0]-PosX1[4:0];
+		sPosXOut=(DrawX[4:0]-PosX1[4:0]);
 		sPosYOut=DrawY[4:0]-PosY1[4:0];
 	end
 	

@@ -16,6 +16,36 @@
 # 
 # Top level modules:
 # 	Mapper
+# vlog -sv -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic\ Module {C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic Module/VGA_controller.sv}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module vga_controller
+# 
+# Top level modules:
+# 	vga_controller
+# vlog -sv -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385 {C:/Users/Quangxdu/Documents/GitHub/ece385/final385/pallete.sv}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module palette
+# 
+# Top level modules:
+# 	palette
+# vlog -sv -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385 {C:/Users/Quangxdu/Documents/GitHub/ece385/final385/mux8.sv}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module mux16
+# 
+# Top level modules:
+# 	mux16
+# vlog -sv -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385 {C:/Users/Quangxdu/Documents/GitHub/ece385/final385/sprite_table.sv}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module sprite_table
+# 
+# Top level modules:
+# 	sprite_table
+# vlog -sv -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic\ Module {C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic Module/GraphicModule.sv}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module GraphicModule
+# 
+# Top level modules:
+# 	GraphicModule
 # vlib usb_system
 # ** Warning: (vlib-34) Library already exists at "usb_system".
 # 
@@ -33,142 +63,12 @@
 # vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L usb_system -voptargs=\"+acc\" -t 1ps testbench 
 # Loading sv_std.std
 # Loading work.testbench
+# Loading work.GraphicModule
 # Loading work.Mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosX2'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(2).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosY2'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(2).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosX3'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(2).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosY3'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(2).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosX4'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(2).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosY4'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(2).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosX5'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(3).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosY5'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(3).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosX6'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(3).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosY6'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(3).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosX7'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(3).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosY7'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(3).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosX8'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(3).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosY8'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(3).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosX9'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(4).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosY9'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(4).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosX10'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(4).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosY10'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(4).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosX11'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(4).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosY11'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(4).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosX12'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(4).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosY12'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(4).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosX13'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(5).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosY13'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(5).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosX14'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(5).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosY14'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(5).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosX15'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(5).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosY15'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(5).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosX16'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(5).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'PosY16'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(5).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'SpriteID2'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(6).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'SpriteID3'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(6).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'SpriteID4'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(6).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'SpriteID5'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(7).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'SpriteID6'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(7).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'SpriteID7'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(7).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'SpriteID8'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(7).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'SpriteID9'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(8).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'SpriteID10'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(8).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'SpriteID11'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(8).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'SpriteID12'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(8).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'SpriteID13'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(9).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'SpriteID14'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(9).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'SpriteID15'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(9).
-# 
-#         Region: /testbench/mapper
-# ** Warning: (vsim-3015) C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv(28): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'SpriteID16'. The port definition is at: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv(9).
-# 
-#         Region: /testbench/mapper
+# Loading work.sprite_table
+# Loading work.mux16
+# Loading work.palette
+# Loading work.vga_controller
 # 
 # add wave *
 # view structure
@@ -176,3 +76,15 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 500 ns
+restart -f
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.GraphicModule
+# Loading work.Mapper
+# Loading work.sprite_table
+# Loading work.mux16
+# Loading work.palette
+# Loading work.vga_controller
+do wave.do
+run 500ns
+run 50000ns

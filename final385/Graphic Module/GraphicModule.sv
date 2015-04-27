@@ -6,10 +6,10 @@ input logic [9:0] PosX1, PosY1, input logic [9:0] PosX2, PosY2, input logic [9:0
 input logic [9:0] PosX5, PosY5, input logic [9:0] PosX6, PosY6, input logic [9:0] PosX7, PosY7, input logic [9:0] PosX8, PosY8,
 input logic [9:0] PosX9, PosY9, input logic [9:0] PosX10, PosY10, input logic [9:0] PosX11, PosY11, input logic [9:0] PosX12, PosY12,
 input logic [9:0] PosX13, PosY13, input logic [9:0] PosX14, PosY14, input logic [9:0] PosX15, PosY15, input logic [9:0] PosX16, PosY16, 
-input [3:0] SpriteID1,input [3:0] SpriteID2,input [3:0] SpriteID3,input [3:0] SpriteID4,
-input [3:0] SpriteID5,input [3:0] SpriteID6,input [3:0] SpriteID7,input [3:0] SpriteID8,
-input [3:0] SpriteID9,input [3:0] SpriteID10,input [3:0] SpriteID11,input [3:0] SpriteID12,
-input [3:0] SpriteID13,input [3:0] SpriteID14,input [3:0] SpriteID15,input [3:0] SpriteID16, 
+input logic [3:0] SpriteID1,input logic [3:0] SpriteID2,input logic [3:0] SpriteID3,input logic [3:0] SpriteID4,
+input logic [3:0] SpriteID5,input logic [3:0] SpriteID6,input logic [3:0] SpriteID7,input logic [3:0] SpriteID8,
+input logic [3:0] SpriteID9,input logic [3:0] SpriteID10,input logic [3:0] SpriteID11,input logic [3:0] SpriteID12,
+input logic [3:0] SpriteID13,input logic [3:0] SpriteID14,input logic [3:0] SpriteID15,input logic [3:0] SpriteID16, 
     
     
     output logic hs,        // Horizontal sync pulse.  Active low
@@ -17,7 +17,7 @@ input [3:0] SpriteID13,input [3:0] SpriteID14,input [3:0] SpriteID15,input [3:0]
 					VGA_clk, // 25 MHz pixel clock output
 					blank,     // Blanking interval indicator.  Active low.
 					sync,
-	output [7:0] red,green,blue
+	output logic [7:0] red,green,blue
 );
 
 logic [9:0] DrawX, DrawY;
