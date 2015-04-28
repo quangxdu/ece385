@@ -1,0 +1,149 @@
+module GameManager(input arrowClk, input shiftUp, input [3:0] stripArrows,
+input logic [9:0] posX1in, input logic [9:0] posx1in, input logic [3:0] spriteID1in,
+input logic [9:0] posX2in, input logic [9:0] posx2in, input logic [3:0] spriteID2in,
+input logic [9:0] posX3in, input logic [9:0] posx3in, input logic [3:0] spriteID3in,
+input logic [9:0] posX4in, input logic [9:0] posx4in, input logic [3:0] spriteID4in,
+input logic [9:0] posX5in, input logic [9:0] posx5in, input logic [3:0] spriteID5in,
+input logic [9:0] posX6in, input logic [9:0] posx6in, input logic [3:0] spriteID6in,
+input logic [9:0] posX7in, input logic [9:0] posx7in, input logic [3:0] spriteID7in,
+input logic [9:0] posX8in, input logic [9:0] posx8in, input logic [3:0] spriteID8in,
+input logic [9:0] posX9in, input logic [9:0] posx9in, input logic [3:0] spriteID9in,
+input logic [9:0] posX10in, input logic [9:0] posx10in, input logic [3:0] spriteID10in,
+input logic [9:0] posX11in, input logic [9:0] posx11in, input logic [3:0] spriteID11in,
+
+output logic [9:0] posX1, output logic [9:0] poxY1, output logic [3:0] SpriteID1,
+output logic [9:0] posX2, output logic [9:0] poxY2, output logic [3:0] SpriteID2, 
+output logic [9:0] posX3, output logic [9:0] poxY3, output logic [3:0] SpriteID3,
+output logic [9:0] posX4, output logic [9:0] poxY4, output logic [3:0] SpriteID4,
+output logic [9:0] posX5, output logic [9:0] poxY5, output logic [3:0] SpriteID5,
+output logic [9:0] posX6, output logic [9:0] poxY6, output logic [3:0] SpriteID6,
+output logic [9:0] posX7, output logic [9:0] poxY7, output logic [3:0] SpriteID7,
+output logic [9:0] posX8, output logic [9:0] poxY8, output logic [3:0] SpriteID8,
+output logic [9:0] posX9, output logic [9:0] poxY9, output logic [3:0] SpriteID9,
+output logic [9:0] posX10, output logic[9:0] posY10, output logic [3:0] SpriteID10,
+output logic [9:0] posX11, output logic [9:0] poxY11, output logic [3:0] SpriteID11
+);
+
+//sprite 1 is the judgement(good/bad)
+//sprite 2-11 are the arrows that move up.
+//sprite 2 and 3 are pixels 0 through 90.
+//sprite 4 and 5 are pixels 80 through 170.
+//sprite 6 and 7 are pixels 160 through 250.
+//sprite 7 and 8 are pixels 240 through 330.
+//sprite 8 and 9 are pixels 320 through 410.
+//sprite 10 and 11 are pixels 400 through 480. 
+
+//only sprite 10 and 11 are requesting new data from the strip. 
+
+always_comb(@posedge shiftUp)//set sprite 10 and 11 to the new arrows from strip
+begin
+	if(stripArrows==4b'0000)
+	begin
+		spriteID10=0h'f;
+		spriteID11=0h'f;
+		posY10=9h'1E0; //hexidecimal 480
+		posY11=9h'1E0; //hexidecimal 480
+		posX10=0;
+		posX11=0;
+	end
+	else if(stripArrows==4b'0001)
+	begin
+		spriteID11=4h'7;//right
+		spriteID10=4h'f;
+		posY10=9h'1E0; //hexidecimal 480
+		posY11=9h'1E0; //hexidecimal 480
+		posX10=0;
+		posX11=9h'1E0;//480
+	end
+	else if (stripArrows==4b'0010)
+	begin
+		spriteID11=4h'5;//down
+		spriteID10=4h'f;
+		posY10=10h'1E0; //hexidecimal 480
+		posY11=10h'1E0; //hexidecimal 480
+		posX10=10h'0;
+		posX11=10h'140;//320
+	end
+	else if(stripArrows=4b'0100)
+	begin
+		spriteID10=4h'4;//up
+		spriteID11=4h'f;
+		posY10=9h'1E0; //hexidecimal 480
+		posY11=9h'1E0; //hexidecimal 480
+		posX10=10h'A0;//160
+		posX11=10h'0;
+	end
+	else if(stripArrows=4b'1000)
+	begin
+		spriteID10=4h'6;//left
+		spriteID11=4h'f;
+		posY10=9h'1E0; //hexidecimal 480
+		posY11=9h'1E0; //hexidecimal 480
+		posX10=10h'0;
+		posX11=10h'0;
+	end
+	else if(stripArrows==4b'1100)
+	begin
+		spriteID10=4h'6;
+		spriteID11=4h'4;
+		posY10=9h'1E0;
+		posY11=9h'1E0;
+		posX10=10h'0;
+		posY10=10h'A0;
+	end
+	else if(stripArrows==4b'1010)
+	begin
+		spriteID10=4h'6;
+		spriteID11=4h'4;
+		posY10=10h'1E0;
+		posY11=10h'1E0;
+		posX10=10h'0;
+		posX11=10h'140;
+	end
+	else if(stripArrows==4b'1001)
+	begin
+		spriteID10=4h'6;
+		spriteID11=4h'7;
+		posY10=10h'1E0;
+		posY11=10h'1E0;
+		posX10=10h'0;
+		posX11=10h'1E0;
+	end
+	else if(stripArrows==4b'0110)
+	begin
+		spriteID10=4h'4;
+		spriteID11=4h'5;
+		posY10=10h'1E0;
+		posY11=10h'1E0;
+		posX10=10h'A0;
+		posX11=10h'140;
+	end
+	else if(stripArrows==4b'0101)
+	begin
+		spriteID10=4h'4;
+		spriteID11=4h'7;
+		posY10=10h'1E0;
+		posY11=10h'1E0;
+		posX10=10h'A0;
+		posX11=10h'1E0;
+	end
+	else if(stripArrows==4b'0011)
+	begin
+		spriteID10=4h'5;
+		spriteID11=4h'7;
+		posY10=10h'1E0;
+		posY11=10h'1E0;
+		posX10=10h'140;
+		posX11=10h'1E0;
+	end
+end
+
+always_comb(@posedge shiftUp)//shift 10 and 11 into 8 and 9 etc
+begin
+
+end
+
+always_comb(@posedge arrowClk)//move all sprites up 1 pixel
+begin
+
+end
