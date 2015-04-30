@@ -37,113 +37,169 @@ output logic [9:0] posX11, output logic [9:0] poxY11, output logic [3:0] SpriteI
 
 always_comb(@posedge shiftUp)//set sprite 10 and 11 to the new arrows from strip
 begin
-	if(stripArrows==4b'0000)
+	if(stripArrows==4'b0000)
 	begin
-		spriteID10=0h'f;
-		spriteID11=0h'f;
-		posY10=9h'1E0; //hexidecimal 480
-		posY11=9h'1E0; //hexidecimal 480
+		spriteID10=0'hf;
+		spriteID11=0'hf;
+		posY10=9'h1E0; //hexidecimal 480
+		posY11=9'h1E0; //hexidecimal 480
 		posX10=0;
 		posX11=0;
 	end
-	else if(stripArrows==4b'0001)
+	else if(stripArrows==4'b0001)
 	begin
-		spriteID11=4h'7;//right
-		spriteID10=4h'f;
-		posY10=9h'1E0; //hexidecimal 480
-		posY11=9h'1E0; //hexidecimal 480
+		spriteID11=4'h7;//right
+		spriteID10=4'hf;
+		posY10=10'h1E0; //hexidecimal 480
+		posY11=10'h1E0; //hexidecimal 480
 		posX10=0;
-		posX11=9h'1E0;//480
+		posX11=10'h1E0;//480
 	end
-	else if (stripArrows==4b'0010)
+	else if (stripArrows==4'b0010)
 	begin
-		spriteID11=4h'5;//down
-		spriteID10=4h'f;
-		posY10=10h'1E0; //hexidecimal 480
-		posY11=10h'1E0; //hexidecimal 480
-		posX10=10h'0;
-		posX11=10h'140;//320
+		spriteID11=4'h5;//down
+		spriteID10=4'hf;
+		posY10=10'h1E0; //hexidecimal 480
+		posY11=10'h1E0; //hexidecimal 480
+		posX10=10'h0;
+		posX11=10'h140;//320
 	end
-	else if(stripArrows=4b'0100)
+	else if(stripArrows=4'b0100)
 	begin
-		spriteID10=4h'4;//up
-		spriteID11=4h'f;
-		posY10=9h'1E0; //hexidecimal 480
-		posY11=9h'1E0; //hexidecimal 480
-		posX10=10h'A0;//160
-		posX11=10h'0;
+		spriteID10=4'h4;//up
+		spriteID11=4'hf;
+		posY10=9'h1E0; //hexidecimal 480
+		posY11=9'h1E0; //hexidecimal 480
+		posX10=10'hA0;//160
+		posX11=10'h0;
 	end
-	else if(stripArrows=4b'1000)
+	else if(stripArrows=4'b1000)
 	begin
-		spriteID10=4h'6;//left
-		spriteID11=4h'f;
-		posY10=9h'1E0; //hexidecimal 480
-		posY11=9h'1E0; //hexidecimal 480
-		posX10=10h'0;
-		posX11=10h'0;
+		spriteID10=4'h6;//left
+		spriteID11=4'hf;
+		posY10=9'h1E0; //hexidecimal 480
+		posY11=9'h1E0; //hexidecimal 480
+		posX10=10'h0;
+		posX11=10'h0;
 	end
-	else if(stripArrows==4b'1100)
+	else if(stripArrows==4'b1100)
 	begin
-		spriteID10=4h'6;
-		spriteID11=4h'4;
-		posY10=9h'1E0;
-		posY11=9h'1E0;
-		posX10=10h'0;
-		posY10=10h'A0;
+		spriteID10=4'h6;
+		spriteID11=4'h4;
+		posY10=9'h1E0;
+		posY11=9'h1E0;
+		posX10=10'h0;
+		posY10=10'hA0;
 	end
-	else if(stripArrows==4b'1010)
+	else if(stripArrows==4'b1010)
 	begin
-		spriteID10=4h'6;
-		spriteID11=4h'4;
-		posY10=10h'1E0;
-		posY11=10h'1E0;
-		posX10=10h'0;
-		posX11=10h'140;
+		spriteID10=4'h6;
+		spriteID11=4'h4;
+		posY10=10'h1E0;
+		posY11=10'h1E0;
+		posX10=10'h0;
+		posX11=10'h140;
 	end
-	else if(stripArrows==4b'1001)
+	else if(stripArrows==4'b1001)
 	begin
-		spriteID10=4h'6;
-		spriteID11=4h'7;
-		posY10=10h'1E0;
-		posY11=10h'1E0;
-		posX10=10h'0;
-		posX11=10h'1E0;
+		spriteID10=4'h6;
+		spriteID11=4'h7;
+		posY10=10'h1E0;
+		posY11=10'h1E0;
+		posX10=10'h0;
+		posX11=10'h1E0;
 	end
-	else if(stripArrows==4b'0110)
+	else if(stripArrows==4'b0110)
 	begin
-		spriteID10=4h'4;
-		spriteID11=4h'5;
-		posY10=10h'1E0;
-		posY11=10h'1E0;
-		posX10=10h'A0;
-		posX11=10h'140;
+		spriteID10=4'h4;
+		spriteID11=4'h5;
+		posY10=10'h1E0;
+		posY11=10'h1E0;
+		posX10=10'hA0;
+		posX11=10'h140;
 	end
-	else if(stripArrows==4b'0101)
+	else if(stripArrows==4'b0101)
 	begin
-		spriteID10=4h'4;
-		spriteID11=4h'7;
-		posY10=10h'1E0;
-		posY11=10h'1E0;
-		posX10=10h'A0;
-		posX11=10h'1E0;
+		spriteID10=4'h4;
+		spriteID11=4'h7;
+		posY10=10'h1E0;
+		posY11=10'h1E0;
+		posX10=10'hA0;
+		posX11=10'h1E0;
 	end
-	else if(stripArrows==4b'0011)
+	else if(stripArrows==4'b0011)
 	begin
-		spriteID10=4h'5;
-		spriteID11=4h'7;
-		posY10=10h'1E0;
-		posY11=10h'1E0;
-		posX10=10h'140;
-		posX11=10h'1E0;
+		spriteID10=4'h5;
+		spriteID11=4'h7;
+		posY10=10'h1E0;
+		posY11=10'h1E0;
+		posX10=10'h140;
+		posX11=10'h1E0;
 	end
 end
 
 always_comb(@posedge shiftUp)//shift 10 and 11 into 8 and 9 etc
 begin
-
+	spriteID2=spriteID4;
+	spriteID3=spriteID5;
+	spriteID4=spriteID6;
+	spriteID5=spriteID7;
+	spriteID6=spriteID8;
+	spriteID7=spriteID9;
+	spriteID8=spriteID10;
+	spriteID9=spriteID11;
+	
+	posX2=posX4;
+	posX3=posX5;
+	posX4=posX6;
+	posX5=posX7;
+	posX6=posX8;
+	posX7=posX9;
+	posX8=posX10;
+	posX9=poxX11;
+	
+	posY2=posY4;
+	posY3=posY5;
+	posY4=posY6;
+	posY5=posY7;
+	posY6=posY8;
+	posY7=posY9;
+	posY8=posY10;
+	posY9=posY11;
 end
 
 always_comb(@posedge arrowClk)//move all sprites up 1 pixel
 begin
-
+	posX2=posX2in;
+	posX3=posX3in;
+	posX4=posX4in;
+	posX5=posX5in;
+	posX6=posX6in;
+	posX7=posX7in;
+	posX8=posX8in;
+	posX9=posX9in;
+	posX10=posX10in;
+	posX11=posX11in;
+	
+	posY2=posY2in+1;
+	posY3=posY3in+1;
+	posY4=posY4in+1;
+	posY5=posY5in+1;
+	posY6=posY6in+1;
+	posY7=posY7in+1;
+	posY8=posY8in+1;
+	posY9=posY9in+1;
+	posY10=posY10in+1;
+	posY11=posY11in+1;
+	
+	spriteID2=spriteID2in;
+	spriteID3=spriteID3in;
+	spriteID4=spriteID4in;
+	spriteID5=spriteID5in;
+	spriteID6=spriteID6in;
+	spriteID7=spriteID7in;
+	spriteID8=spriteID8in;
+	spriteID9=spriteID9in;
+	spriteID10=spriteID10in;
+	spriteID11=spriteID11in;
 end
