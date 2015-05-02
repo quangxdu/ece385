@@ -1,0 +1,11 @@
+module shiftUpClock(input arrowClk,output shiftUp)
+
+logic [10:0]counter;
+always_comb(@posEdge arrowClk)
+	if (int'counter==90)
+	begin
+		shiftUp=1;
+		counter=0;
+	end
+	counter++;
+end

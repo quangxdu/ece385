@@ -1,0 +1,61 @@
+module judgement(input vs,input [3:0] spriteID2, input logic [9:0] posY2, input logic [3:0] spriteID3, input logic [9:0] posY3, input logic [7:0] key, output logic [3:0] spriteID1, output logic [9:0] posX1, output logic [9:0]posY1);
+
+always_ff @(posedge frame_clk)
+begin:Judge_Score
+
+	//template arrows y coords is 20 through 52(center 36). Good range 16 through 56 
+	if (posY2[6:0]>16 && posY3[6:0]>16 && posY2[6:0]<56 &&posY3[6:0]<56)  
+	begin
+		if ((key==8'b0011010 && spriteID2==4'h4)//w 26 up //sprite2 covers left and up
+		begin
+			spriteID1=0'h // haven't set up sprite table yet but a hit will pop up
+			spriteID1X=10'h140;
+			spriteID1Y=10'hF0;
+		end	
+		else if ((key==8'b0000100 && spriteID2==4'h6))//a left
+		begin
+			spriteID1=0'h // haven't set up sprite table yet but a good will pop up
+			spriteID1X=10'h140;
+			spriteID1Y=10'hF0;
+		end
+		else if ((key==8'b00010110 && spriteID3=4'h5))//s down //sprite3 covers down and right
+		begin
+			spriteID1=0'h // haven't set up sprite table yet but a good will pop up
+			spriteID1X=10'h140;
+			spriteID1Y=10'hF0;
+		end
+		else if ((key==8'b00000111 && spriteID3=4'h7))//d right
+		begin
+			spriteID1=0'h // haven't set up sprite table yet but a good will pop up
+			spriteID1X=10'h140;
+			spriteID1Y=10'hF0;
+		end
+	end
+	else if (posY3[7:0]<16 || posY3[7:0]>56 && posY3[7:0]<90)
+		if ((key==8'b0011010 && spriteID2==4'h4)//w 26 up //sprite2 covers left and up
+		begin
+			spriteID1=0'h //havent set up sprite table yet but miss will pop up
+			spriteID1X=10'h140;
+			spriteID1Y=10'hF0;
+		end
+		else if ((key==8'b0000100 && spriteID2==4'h6))//a left
+		begin
+			spriteID1=0'h //havent set up sprite table yet but miss will pop up
+			spriteID1X=10'h140;
+			spriteID1Y=10'hF0;
+		end
+		else if ((key==8'b00010110 && spriteID3=4'h5))//s down //sprite3 covers down and right
+		begin
+			spriteID1=0'h //havent set up sprite table yet but miss will pop up
+			spriteID1X=10'h140;
+			spriteID1Y=10'hF0;
+		end
+		else if ((key==8'b00000111 && spriteID3=4'h7))//d right
+		begin
+			spriteID1=0'h //havent set up sprite table yet but miss will pop up
+			spriteID1X=10'h140;
+			spriteID1Y=10'hF0;
+		end
+	end
+	
+end

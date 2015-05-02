@@ -1,5 +1,5 @@
 Analysis & Synthesis report for final_project
-Sun Apr 26 19:25:50 2015
+Fri May 01 21:24:09 2015
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -325,13 +325,13 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Apr 26 19:25:50 2015      ;
+; Analysis & Synthesis Status        ; Successful - Fri May 01 21:24:08 2015      ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                      ; final_project                              ;
 ; Top-level Entity Name              ; final_project                              ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 4,905                                      ;
-;     Total combinational functions  ; 3,788                                      ;
+; Total logic elements               ; 4,931                                      ;
+;     Total combinational functions  ; 3,814                                      ;
 ;     Dedicated logic registers      ; 2,561                                      ;
 ; Total registers                    ; 2561                                       ;
 ; Total pins                         ; 194                                        ;
@@ -545,16 +545,16 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 4,905     ;
+; Estimated Total logic elements              ; 4,931     ;
 ;                                             ;           ;
-; Total combinational functions               ; 3788      ;
+; Total combinational functions               ; 3814      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2347      ;
-;     -- 3 input functions                    ; 959       ;
-;     -- <=2 input functions                  ; 482       ;
+;     -- 4 input functions                    ; 2391      ;
+;     -- 3 input functions                    ; 947       ;
+;     -- <=2 input functions                  ; 476       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 3531      ;
+;     -- normal mode                          ; 3557      ;
 ;     -- arithmetic mode                      ; 257       ;
 ;                                             ;           ;
 ; Total registers                             ; 2561      ;
@@ -569,8 +569,8 @@ agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; Clk~input ;
 ; Maximum fan-out                             ; 1434      ;
-; Total fan-out                               ; 24304     ;
-; Average fan-out                             ; 3.50      ;
+; Total fan-out                               ; 24432     ;
+; Average fan-out                             ; 3.51      ;
 +---------------------------------------------+-----------+
 
 
@@ -579,12 +579,12 @@ agreement for further details.
 +------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                           ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                               ; Library Name ;
 +------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |final_project                                                                                       ; 3788 (1)          ; 2561 (0)     ; 16000       ; 0            ; 0       ; 0         ; 194  ; 0            ; |final_project                                                                                                                                                                                                                                                                                                                                    ; work         ;
-;    |GraphicModule:GraphicModule|                                                                     ; 1067 (0)          ; 23 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule                                                                                                                                                                                                                                                                                                        ; work         ;
-;       |Mapper:Mapper|                                                                                ; 39 (39)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|Mapper:Mapper                                                                                                                                                                                                                                                                                          ; work         ;
-;       |palette:palette|                                                                              ; 89 (89)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|palette:palette                                                                                                                                                                                                                                                                                        ; work         ;
-;       |sprite_table:sprite_table|                                                                    ; 894 (869)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|sprite_table:sprite_table                                                                                                                                                                                                                                                                              ; work         ;
-;          |mux16:mux16|                                                                               ; 25 (25)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16                                                                                                                                                                                                                                                                  ; work         ;
+; |final_project                                                                                       ; 3814 (1)          ; 2561 (0)     ; 16000       ; 0            ; 0       ; 0         ; 194  ; 0            ; |final_project                                                                                                                                                                                                                                                                                                                                    ; work         ;
+;    |GraphicModule:GraphicModule|                                                                     ; 1097 (0)          ; 23 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule                                                                                                                                                                                                                                                                                                        ; work         ;
+;       |Mapper:Mapper|                                                                                ; 41 (41)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|Mapper:Mapper                                                                                                                                                                                                                                                                                          ; work         ;
+;       |palette:palette|                                                                              ; 115 (115)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|palette:palette                                                                                                                                                                                                                                                                                        ; work         ;
+;       |sprite_table:sprite_table|                                                                    ; 896 (868)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|sprite_table:sprite_table                                                                                                                                                                                                                                                                              ; work         ;
+;          |mux16:mux16|                                                                               ; 28 (28)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16                                                                                                                                                                                                                                                                  ; work         ;
 ;       |vga_controller:vga_controller|                                                                ; 45 (45)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|vga_controller:vga_controller                                                                                                                                                                                                                                                                          ; work         ;
 ;    |HexDriver:hex_inst_0|                                                                            ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|HexDriver:hex_inst_0                                                                                                                                                                                                                                                                                                               ; work         ;
 ;    |HexDriver:hex_inst_1|                                                                            ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|HexDriver:hex_inst_1                                                                                                                                                                                                                                                                                                               ; work         ;
@@ -592,7 +592,7 @@ agreement for further details.
 ;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                 ; 157 (117)         ; 97 (69)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                      ; work         ;
 ;          |sld_rom_sr:hub_info_reg|                                                                   ; 23 (23)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                                              ; work         ;
 ;          |sld_shadow_jsm:shadow_jsm|                                                                 ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_shadow_jsm:shadow_jsm                                                                                                                                                                                                                                            ; work         ;
-;    |usb_system:usbsys_instance|                                                                      ; 2548 (0)          ; 2441 (0)     ; 16000       ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance                                                                                                                                                                                                                                                                                                         ; usb_system   ;
+;    |usb_system:usbsys_instance|                                                                      ; 2544 (0)          ; 2441 (0)     ; 16000       ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance                                                                                                                                                                                                                                                                                                         ; usb_system   ;
 ;       |CY7C67200_IF:cy7c67200_if_0|                                                                  ; 0 (0)             ; 38 (38)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|CY7C67200_IF:cy7c67200_if_0                                                                                                                                                                                                                                                                             ; usb_system   ;
 ;       |altera_avalon_mm_clock_crossing_bridge:clock_crossing_io|                                     ; 139 (30)          ; 213 (11)     ; 4736        ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|altera_avalon_mm_clock_crossing_bridge:clock_crossing_io                                                                                                                                                                                                                                                ; usb_system   ;
 ;          |altera_avalon_dc_fifo:cmd_fifo|                                                            ; 41 (41)           ; 84 (48)      ; 640         ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|altera_avalon_mm_clock_crossing_bridge:clock_crossing_io|altera_avalon_dc_fifo:cmd_fifo                                                                                                                                                                                                                 ; usb_system   ;
@@ -645,11 +645,11 @@ agreement for further details.
 ;          |altera_reset_synchronizer:alt_rst_sync_uq1|                                                ; 0 (0)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|altera_reset_controller:rst_controller_002|altera_reset_synchronizer:alt_rst_sync_uq1                                                                                                                                                                                                                   ; usb_system   ;
 ;       |altera_reset_controller:rst_controller|                                                       ; 0 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|altera_reset_controller:rst_controller                                                                                                                                                                                                                                                                  ; usb_system   ;
 ;          |altera_reset_synchronizer:alt_rst_sync_uq1|                                                ; 0 (0)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1                                                                                                                                                                                                                       ; usb_system   ;
-;       |usb_system_clocks:clocks|                                                                     ; 7 (6)             ; 6 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_clocks:clocks                                                                                                                                                                                                                                                                                ; usb_system   ;
+;       |usb_system_clocks:clocks|                                                                     ; 8 (7)             ; 6 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_clocks:clocks                                                                                                                                                                                                                                                                                ; usb_system   ;
 ;          |usb_system_clocks_altpll_pqa2:sd1|                                                         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_clocks:clocks|usb_system_clocks_altpll_pqa2:sd1                                                                                                                                                                                                                                              ; usb_system   ;
 ;          |usb_system_clocks_stdsync_sv6:stdsync2|                                                    ; 0 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_clocks:clocks|usb_system_clocks_stdsync_sv6:stdsync2                                                                                                                                                                                                                                         ; usb_system   ;
 ;             |usb_system_clocks_dffpipe_l2c:dffpipe3|                                                 ; 0 (0)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_clocks:clocks|usb_system_clocks_stdsync_sv6:stdsync2|usb_system_clocks_dffpipe_l2c:dffpipe3                                                                                                                                                                                                  ; usb_system   ;
-;       |usb_system_cpu:cpu|                                                                           ; 970 (681)         ; 590 (320)    ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu                                                                                                                                                                                                                                                                                      ; usb_system   ;
+;       |usb_system_cpu:cpu|                                                                           ; 967 (678)         ; 590 (320)    ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu                                                                                                                                                                                                                                                                                      ; usb_system   ;
 ;          |usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|                                     ; 289 (36)          ; 270 (80)     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci                                                                                                                                                                                                                                ; usb_system   ;
 ;             |usb_system_cpu_jtag_debug_module_wrapper:the_usb_system_cpu_jtag_debug_module_wrapper|  ; 91 (0)            ; 96 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_jtag_debug_module_wrapper:the_usb_system_cpu_jtag_debug_module_wrapper                                                                                                                                          ; usb_system   ;
 ;                |sld_virtual_jtag_basic:usb_system_cpu_jtag_debug_module_phy|                         ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_jtag_debug_module_wrapper:the_usb_system_cpu_jtag_debug_module_wrapper|sld_virtual_jtag_basic:usb_system_cpu_jtag_debug_module_phy                                                                              ; work         ;
@@ -695,10 +695,10 @@ agreement for further details.
 ;                      |cntr_1ob:wr_ptr|                                                               ; 6 (6)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_jtag_uart:jtag_uart|usb_system_jtag_uart_scfifo_w:the_usb_system_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr                                                                                                                             ; work         ;
 ;                      |dpram_nl21:FIFOram|                                                            ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_jtag_uart:jtag_uart|usb_system_jtag_uart_scfifo_w:the_usb_system_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram                                                                                                                          ; work         ;
 ;                         |altsyncram_r1m1:altsyncram1|                                                ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_jtag_uart:jtag_uart|usb_system_jtag_uart_scfifo_w:the_usb_system_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1                                                                                              ; work         ;
-;       |usb_system_keycode:keycode|                                                                   ; 12 (12)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_keycode:keycode                                                                                                                                                                                                                                                                              ; usb_system   ;
-;       |usb_system_mm_interconnect_0:mm_interconnect_0|                                               ; 938 (0)           ; 1091 (0)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0                                                                                                                                                                                                                                                          ; usb_system   ;
+;       |usb_system_keycode:keycode|                                                                   ; 11 (11)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_keycode:keycode                                                                                                                                                                                                                                                                              ; usb_system   ;
+;       |usb_system_mm_interconnect_0:mm_interconnect_0|                                               ; 936 (0)           ; 1091 (0)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0                                                                                                                                                                                                                                                          ; usb_system   ;
 ;          |altera_avalon_sc_fifo:clock_crossing_io_s0_agent_rsp_fifo|                                 ; 388 (388)         ; 258 (258)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:clock_crossing_io_s0_agent_rsp_fifo                                                                                                                                                                                                ; usb_system   ;
-;          |altera_avalon_sc_fifo:clocks_pll_slave_agent_rsp_fifo|                                     ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:clocks_pll_slave_agent_rsp_fifo                                                                                                                                                                                                    ; usb_system   ;
+;          |altera_avalon_sc_fifo:clocks_pll_slave_agent_rsp_fifo|                                     ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:clocks_pll_slave_agent_rsp_fifo                                                                                                                                                                                                    ; usb_system   ;
 ;          |altera_avalon_sc_fifo:cpu_jtag_debug_module_agent_rsp_fifo|                                ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:cpu_jtag_debug_module_agent_rsp_fifo                                                                                                                                                                                               ; usb_system   ;
 ;          |altera_avalon_sc_fifo:jtag_uart_avalon_jtag_slave_agent_rsp_fifo|                          ; 6 (6)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:jtag_uart_avalon_jtag_slave_agent_rsp_fifo                                                                                                                                                                                         ; usb_system   ;
 ;          |altera_avalon_sc_fifo:keycode_s1_agent_rsp_fifo|                                           ; 6 (6)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:keycode_s1_agent_rsp_fifo                                                                                                                                                                                                          ; usb_system   ;
@@ -734,7 +734,7 @@ agreement for further details.
 ;          |usb_system_mm_interconnect_0_cmd_demux_001:cmd_demux_001|                                  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|usb_system_mm_interconnect_0_cmd_demux_001:cmd_demux_001                                                                                                                                                                                                 ; usb_system   ;
 ;          |usb_system_mm_interconnect_0_cmd_mux_001:cmd_mux_001|                                      ; 56 (52)           ; 5 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|usb_system_mm_interconnect_0_cmd_mux_001:cmd_mux_001                                                                                                                                                                                                     ; usb_system   ;
 ;             |altera_merlin_arbitrator:arb|                                                           ; 4 (4)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|usb_system_mm_interconnect_0_cmd_mux_001:cmd_mux_001|altera_merlin_arbitrator:arb                                                                                                                                                                        ; usb_system   ;
-;          |usb_system_mm_interconnect_0_cmd_mux_001:cmd_mux_002|                                      ; 13 (9)            ; 5 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|usb_system_mm_interconnect_0_cmd_mux_001:cmd_mux_002                                                                                                                                                                                                     ; usb_system   ;
+;          |usb_system_mm_interconnect_0_cmd_mux_001:cmd_mux_002|                                      ; 12 (8)            ; 5 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|usb_system_mm_interconnect_0_cmd_mux_001:cmd_mux_002                                                                                                                                                                                                     ; usb_system   ;
 ;             |altera_merlin_arbitrator:arb|                                                           ; 4 (4)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|usb_system_mm_interconnect_0_cmd_mux_001:cmd_mux_002|altera_merlin_arbitrator:arb                                                                                                                                                                        ; usb_system   ;
 ;          |usb_system_mm_interconnect_0_cmd_mux_001:cmd_mux_005|                                      ; 68 (64)           ; 5 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|usb_system_mm_interconnect_0_cmd_mux_001:cmd_mux_005                                                                                                                                                                                                     ; usb_system   ;
 ;             |altera_merlin_arbitrator:arb|                                                           ; 4 (4)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|usb_system_mm_interconnect_0_cmd_mux_001:cmd_mux_005|altera_merlin_arbitrator:arb                                                                                                                                                                        ; usb_system   ;
@@ -748,7 +748,7 @@ agreement for further details.
 ;          |usb_system_mm_interconnect_0_rsp_mux_001:rsp_mux_001|                                      ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|usb_system_mm_interconnect_0_rsp_mux_001:rsp_mux_001                                                                                                                                                                                                     ; usb_system   ;
 ;       |usb_system_mm_interconnect_1:mm_interconnect_1|                                               ; 10 (0)            ; 21 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_1:mm_interconnect_1                                                                                                                                                                                                                                                          ; usb_system   ;
 ;          |altera_merlin_slave_translator:cy7c67200_if_0_hpi_translator|                              ; 10 (10)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_translator:cy7c67200_if_0_hpi_translator                                                                                                                                                                                             ; usb_system   ;
-;       |usb_system_sdram:sdram|                                                                       ; 323 (253)         ; 337 (209)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram                                                                                                                                                                                                                                                                                  ; usb_system   ;
+;       |usb_system_sdram:sdram|                                                                       ; 324 (254)         ; 337 (209)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram                                                                                                                                                                                                                                                                                  ; usb_system   ;
 ;          |usb_system_sdram_input_efifo_module:the_usb_system_sdram_input_efifo_module|               ; 70 (70)           ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|usb_system_sdram_input_efifo_module:the_usb_system_sdram_input_efifo_module                                                                                                                                                                                                      ; usb_system   ;
 +------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -3165,7 +3165,7 @@ Encoding Type:  One-Hot
 ; usb_system:usbsys_instance|usb_system_sdram:sdram|refresh_counter[8]                                                                                                                   ; 2       ;
 ; usb_system:usbsys_instance|usb_system_sdram:sdram|refresh_counter[4]                                                                                                                   ; 2       ;
 ; usb_system:usbsys_instance|usb_system_cpu:cpu|F_pc[25]                                                                                                                                 ; 2       ;
-; usb_system:usbsys_instance|usb_system_cpu:cpu|i_read                                                                                                                                   ; 8       ;
+; usb_system:usbsys_instance|usb_system_cpu:cpu|i_read                                                                                                                                   ; 7       ;
 ; usb_system:usbsys_instance|usb_system_jtag_uart:jtag_uart|alt_jtag_atlantic:usb_system_jtag_uart_alt_jtag_atlantic|count[9]                                                            ; 11      ;
 ; usb_system:usbsys_instance|altera_reset_controller:rst_controller_001|altera_reset_synchronizer_int_chain[3]                                                                           ; 1       ;
 ; usb_system:usbsys_instance|altera_reset_controller:rst_controller_001|altera_reset_synchronizer_int_chain[2]                                                                           ; 4       ;
@@ -3212,57 +3212,57 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:keycode_s1_translator|wait_latency_counter[0]                                                                                                                         ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_translator:cy7c67200_if_0_hpi_translator|wait_latency_counter[2]                                                                                                                 ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_jtag_uart:jtag_uart|alt_jtag_atlantic:usb_system_jtag_uart_alt_jtag_atlantic|count[4]                                                                                                                                                    ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rsp_fifo|mem_used[6]                                                                                                                                            ;
-; 3:1                ; 127 bits  ; 254 LEs       ; 127 LEs              ; 127 LEs                ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:clock_crossing_io_s0_agent_rsp_fifo|mem_used[91]                                                                                                                               ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|E_src2[1]                                                                                                                                                                                                                        ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|E_src1[31]                                                                                                                                                                                                                       ;
-; 3:1                ; 27 bits   ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|E_src1[6]                                                                                                                                                                                                                        ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|E_shift_rot_result[15]                                                                                                                                                                                                           ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 0 LEs                ; 18 LEs                 ; Yes        ; |final_project|usb_system:usbsys_instance|altera_avalon_mm_clock_crossing_bridge:clock_crossing_io|pending_read_count[8]                                                                                                                                                                      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|av_ld_byte0_data[4]                                                                                                                                                                                                              ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|av_ld_byte1_data[7]                                                                                                                                                                                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|D_iw[1]                                                                                                                                                                                                                          ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|readdata[0]                                                                                                                                                                ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|d_byteenable[0]                                                                                                                                                                                                                  ;
-; 4:1                ; 29 bits   ; 58 LEs        ; 58 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|W_alu_result[27]                                                                                                                                                                                                                 ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_jtag_uart:jtag_uart|alt_jtag_atlantic:usb_system_jtag_uart_alt_jtag_atlantic|count[3]                                                                                                                                                    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rsp_fifo|mem_used[1]                                                                                                                                            ;
+; 3:1                ; 127 bits  ; 254 LEs       ; 127 LEs              ; 127 LEs                ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:clock_crossing_io_s0_agent_rsp_fifo|mem_used[125]                                                                                                                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|E_src2[12]                                                                                                                                                                                                                       ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|E_src1[29]                                                                                                                                                                                                                       ;
+; 3:1                ; 27 bits   ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|E_src1[14]                                                                                                                                                                                                                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|E_shift_rot_result[12]                                                                                                                                                                                                           ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 0 LEs                ; 18 LEs                 ; Yes        ; |final_project|usb_system:usbsys_instance|altera_avalon_mm_clock_crossing_bridge:clock_crossing_io|pending_read_count[6]                                                                                                                                                                      ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|av_ld_byte0_data[3]                                                                                                                                                                                                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|av_ld_byte1_data[4]                                                                                                                                                                                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|D_iw[6]                                                                                                                                                                                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|readdata[2]                                                                                                                                                                ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|d_byteenable[1]                                                                                                                                                                                                                  ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 58 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|W_alu_result[9]                                                                                                                                                                                                                  ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_jtag_uart:jtag_uart|alt_jtag_atlantic:usb_system_jtag_uart_alt_jtag_atlantic|td_shift[9]                                                                                                                                                 ;
-; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|E_src2[26]                                                                                                                                                                                                                       ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|W_control_rd_data[5]                                                                                                                                                                                                             ;
-; 4:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_nios2_ocimem:the_usb_system_cpu_nios2_ocimem|MonDReg[31]                                                                                                    ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_nios2_ocimem:the_usb_system_cpu_nios2_ocimem|MonDReg[0]                                                                                                     ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|readdata[5]                                                                                                                                                                ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|d_writedata[25]                                                                                                                                                                                                                  ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|E_src2[23]                                                                                                                                                                                                                       ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|W_control_rd_data[6]                                                                                                                                                                                                             ;
+; 4:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_nios2_ocimem:the_usb_system_cpu_nios2_ocimem|MonDReg[25]                                                                                                    ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_nios2_ocimem:the_usb_system_cpu_nios2_ocimem|MonDReg[29]                                                                                                    ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|readdata[6]                                                                                                                                                                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|d_writedata[29]                                                                                                                                                                                                                  ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_jtag_debug_module_wrapper:the_usb_system_cpu_jtag_debug_module_wrapper|usb_system_cpu_jtag_debug_module_tck:the_usb_system_cpu_jtag_debug_module_tck|sr[37] ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_jtag_debug_module_wrapper:the_usb_system_cpu_jtag_debug_module_wrapper|usb_system_cpu_jtag_debug_module_tck:the_usb_system_cpu_jtag_debug_module_tck|sr[34] ;
-; 6:1                ; 13 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_jtag_debug_module_wrapper:the_usb_system_cpu_jtag_debug_module_wrapper|usb_system_cpu_jtag_debug_module_tck:the_usb_system_cpu_jtag_debug_module_tck|sr[11] ;
-; 6:1                ; 16 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_jtag_debug_module_wrapper:the_usb_system_cpu_jtag_debug_module_wrapper|usb_system_cpu_jtag_debug_module_tck:the_usb_system_cpu_jtag_debug_module_tck|sr[30] ;
+; 6:1                ; 13 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_jtag_debug_module_wrapper:the_usb_system_cpu_jtag_debug_module_wrapper|usb_system_cpu_jtag_debug_module_tck:the_usb_system_cpu_jtag_debug_module_tck|sr[9]  ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_jtag_debug_module_wrapper:the_usb_system_cpu_jtag_debug_module_wrapper|usb_system_cpu_jtag_debug_module_tck:the_usb_system_cpu_jtag_debug_module_tck|sr[16] ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|W_alu_result[31]                                                                                                                                                                                                                 ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|F_pc[2]                                                                                                                                                                                                                          ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_nios2_ocimem:the_usb_system_cpu_nios2_ocimem|MonAReg[4]                                                                                                     ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|F_pc[4]                                                                                                                                                                                                                          ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_nios2_ocimem:the_usb_system_cpu_nios2_ocimem|MonAReg[5]                                                                                                     ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|usb_system_sdram_input_efifo_module:the_usb_system_sdram_input_efifo_module|entries[0]                                                                                                                                       ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|m_bank[1]                                                                                                                                                                                                                    ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_nios2_oci_break:the_usb_system_cpu_nios2_oci_break|break_readreg[4]                                                                                         ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|d_byteenable[3]                                                                                                                                                                                                                  ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|m_dqm[2]                                                                                                                                                                                                                     ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_nios2_oci_break:the_usb_system_cpu_nios2_oci_break|break_readreg[0]                                                                                         ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|d_byteenable[2]                                                                                                                                                                                                                  ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|i_count[0]                                                                                                                                                                                                                   ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|m_addr[12]                                                                                                                                                                                                                   ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|m_addr[10]                                                                                                                                                                                                                   ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|m_addr[5]                                                                                                                                                                                                                    ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|m_addr[9]                                                                                                                                                                                                                    ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_jtag_uart:jtag_uart|alt_jtag_atlantic:usb_system_jtag_uart_alt_jtag_atlantic|td_shift[3]                                                                                                                                                 ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_jtag_uart:jtag_uart|alt_jtag_atlantic:usb_system_jtag_uart_alt_jtag_atlantic|td_shift[6]                                                                                                                                                 ;
-; 12:1               ; 62 bits   ; 496 LEs       ; 0 LEs                ; 496 LEs                ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|active_data[12]                                                                                                                                                                                                              ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|m_data[28]                                                                                                                                                                                                                   ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |final_project|GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16|f[4]                                                                                                                                                                                                         ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|E_logic_result[29]                                                                                                                                                                                                               ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; No         ; |final_project|GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16|f[2]                                                                                                                                                                                                         ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; No         ; |final_project|GraphicModule:GraphicModule|Mapper:Mapper|sPosXOut[4]                                                                                                                                                                                                                          ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|m_addr[0]                                                                                                                                                                                                                    ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_jtag_uart:jtag_uart|alt_jtag_atlantic:usb_system_jtag_uart_alt_jtag_atlantic|td_shift[7]                                                                                                                                                 ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_jtag_uart:jtag_uart|alt_jtag_atlantic:usb_system_jtag_uart_alt_jtag_atlantic|td_shift[1]                                                                                                                                                 ;
+; 12:1               ; 62 bits   ; 496 LEs       ; 0 LEs                ; 496 LEs                ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|active_addr[9]                                                                                                                                                                                                               ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|m_data[4]                                                                                                                                                                                                                    ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|E_logic_result[11]                                                                                                                                                                                                               ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; No         ; |final_project|GraphicModule:GraphicModule|Mapper:Mapper|sPosYOut[1]                                                                                                                                                                                                                          ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |final_project|GraphicModule:GraphicModule|Mapper:Mapper|sPosYOut[2]                                                                                                                                                                                                                          ;
-; 4:1                ; 29 bits   ; 58 LEs        ; 58 LEs               ; 0 LEs                  ; No         ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|W_rf_wr_data[24]                                                                                                                                                                                                                 ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 58 LEs               ; 0 LEs                  ; No         ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|W_rf_wr_data[10]                                                                                                                                                                                                                 ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|W_rf_wr_data[6]                                                                                                                                                                                                                  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|D_dst_regnum[4]                                                                                                                                                                                                                  ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; No         ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|usb_system_mm_interconnect_0_router:router|src_channel[3]                                                                                                                                            ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |final_project|GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16|f[4]                                                                                                                                                                                                         ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |final_project|usb_system:usbsys_instance|usb_system_cpu:cpu|D_dst_regnum[3]                                                                                                                                                                                                                  ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; No         ; |final_project|usb_system:usbsys_instance|usb_system_mm_interconnect_0:mm_interconnect_0|usb_system_mm_interconnect_0_router:router|src_channel[5]                                                                                                                                            ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; No         ; |final_project|GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16|f[2]                                                                                                                                                                                                         ;
 ; 11:1               ; 2 bits    ; 14 LEs        ; 4 LEs                ; 10 LEs                 ; No         ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|Selector35                                                                                                                                                                                                                   ;
-; 16:1               ; 2 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; No         ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|Selector28                                                                                                                                                                                                                   ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; No         ; |final_project|usb_system:usbsys_instance|usb_system_sdram:sdram|Selector27                                                                                                                                                                                                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -7832,6 +7832,238 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Sprite15       ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
 ; Sprite15       ; 000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;                ;
 ;                ; 0000000,00000000)                                                                ;                ;
+; Sprite8        ; (00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000 ; Array/Record   ;
+; Sprite8        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite8        ; 00,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000 ;                ;
+; Sprite8        ; 000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
+; Sprite8        ; 0000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;                ;
+; Sprite8        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
+; Sprite8        ; 000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;                ;
+; Sprite8        ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000, ;                ;
+; Sprite8        ; 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000 ;                ;
+; Sprite8        ; ,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000 ;                ;
+; Sprite8        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite8        ; 00,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000 ;                ;
+; Sprite8        ; 000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
+; Sprite8        ; 0000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;                ;
+; Sprite8        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
+; Sprite8        ; 000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;                ;
+; Sprite8        ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000, ;                ;
+; Sprite8        ; 00000000,00000000,00000000,00001011,00100010,00100010,00100011,00100010,00000000 ;                ;
+; Sprite8        ; ,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000 ;                ;
+; Sprite8        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite8        ; 00,00000000,00000000,00000000,00000000,00000000,00000000,00000001,00100010,00100 ;                ;
+; Sprite8        ; 010,00100010,00100100,00100010,00100010,00000000,00000000,00000000,00000000,0000 ;                ;
+; Sprite8        ; 0000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;                ;
+; Sprite8        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
+; Sprite8        ; 000000,00000000,00100100,00100010,00100100,00100100,00100100,00100010,00100010,0 ;                ;
+; Sprite8        ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000, ;                ;
+; Sprite8        ; 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000 ;                ;
+; Sprite8        ; ,00000000,00000000,00000000,00000000,00000000,00000000,00100010,00100010,0010010 ;                ;
+; Sprite8        ; 1,00100100,00100100,00100010,00100011,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite8        ; 00,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000 ;                ;
+; Sprite8        ; 000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
+; Sprite8        ; 0000,00000000,00100010,00100010,00100101,00100100,00100100,00100010,00100011,001 ;                ;
+; Sprite8        ; 00101,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
+; Sprite8        ; 000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;                ;
+; Sprite8        ; 0000000,00000000,00000000,00000000,00000000,00000000,00100010,00100010,00001011, ;                ;
+; Sprite8        ; 00100100,00100100,00100100,00100011,00001011,00000000,00000000,00000000,00000000 ;                ;
+; Sprite8        ; ,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000 ;                ;
+; Sprite8        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite8        ; 00,00000000,00100100,00100010,00001011,00100100,00100100,00100100,00100010,00100 ;                ;
+; Sprite8        ; 100,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
+; Sprite8        ; 0000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;                ;
+; Sprite8        ; 00000,00000000,00000000,00000000,00000000,00000000,00100100,00100011,00100100,00 ;                ;
+; Sprite8        ; 100100,00100010,00100100,00100010,00100010,00000000,00000000,00000000,00000000,0 ;                ;
+; Sprite8        ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000, ;                ;
+; Sprite8        ; 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000 ;                ;
+; Sprite8        ; ,00000000,00001011,00100011,00100100,00100100,00100010,00100100,00100010,0010001 ;                ;
+; Sprite8        ; 1,00000001,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite8        ; 00,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000 ;                ;
+; Sprite8        ; 000,00000000,00000000,00000000,00000000,00000000,00000000,00100011,00100100,0010 ;                ;
+; Sprite8        ; 0100,00100010,00100010,00100010,00100011,00100010,00000000,00000000,00000000,000 ;                ;
+; Sprite8        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
+; Sprite8        ; 000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;                ;
+; Sprite8        ; 0000000,00000000,00100010,00100010,00100100,00100010,00100010,00100010,00100010, ;                ;
+; Sprite8        ; 00100011,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000 ;                ;
+; Sprite8        ; ,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000 ;                ;
+; Sprite8        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00001011,00100011,001001 ;                ;
+; Sprite8        ; 00,00100010,00100010,00100010,00100010,00100011,00001011,00000000,00000000,00000 ;                ;
+; Sprite8        ; 000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
+; Sprite8        ; 0000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;                ;
+; Sprite8        ; 00000,00000000,00000000,00100011,00100100,00100010,00100110,00100110,00100010,00 ;                ;
+; Sprite8        ; 100010,00100011,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;                ;
+; Sprite8        ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00100101, ;                ;
+; Sprite8        ; 00100011,00100011,00100101,00000000,00000000,00000000,00000000,00100010,00100010 ;                ;
+; Sprite8        ; ,00100010,00100110,00100110,00100110,00100010,00100011,00001011,00000000,0000000 ;                ;
+; Sprite8        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite8        ; 00,00000000,00000000,00000000,00000000,00100011,00100010,00100010,00100011,00100 ;                ;
+; Sprite8        ; 100,00000000,00000000,00001011,00100011,00100100,00100110,00100110,00100110,0010 ;                ;
+; Sprite8        ; 0010,00100010,00100011,00000000,00000000,00000000,00000000,00000000,00000000,000 ;                ;
+; Sprite8        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
+; Sprite8        ; 100011,00100010,00100010,00100010,00100100,00100011,00100010,00000000,00100011,0 ;                ;
+; Sprite8        ; 0100010,00100010,00100111,00100111,00100011,00100010,00100011,00100100,00000000, ;                ;
+; Sprite8        ; 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000 ;                ;
+; Sprite8        ; ,00000000,00000000,00000000,00000000,00100011,00100010,00100010,00100111,0010011 ;                ;
+; Sprite8        ; 1,00100010,00100100,00100011,00101000,00100011,00100010,00100111,00100111,001001 ;                ;
+; Sprite8        ; 11,00100011,00100010,00100011,00000000,00000000,00000000,00000000,00000000,00000 ;                ;
+; Sprite8        ; 000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0010 ;                ;
+; Sprite8        ; 0011,00100010,00100010,00100111,00100111,00100111,00100111,00100011,00100010,001 ;                ;
+; Sprite8        ; 00010,00100010,00100011,00100111,00100111,00100111,00100011,00100011,00100010,00 ;                ;
+; Sprite8        ; 000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;                ;
+; Sprite8        ; 0000000,00000000,00000000,00000000,00000000,00101000,00100011,00100011,00101001, ;                ;
+; Sprite8        ; 00101001,00101001,00101001,00101001,00101001,00100010,00100011,00101001,00101001 ;                ;
+; Sprite8        ; ,00101001,00101001,00100011,00101000,00000000,00000000,00000000,00000000,0000000 ;                ;
+; Sprite8        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite8        ; 00,00000000,00001011,00101000,00100011,00100111,00101001,00101001,00101001,00101 ;                ;
+; Sprite8        ; 001,00101001,00101001,00101001,00101001,00101001,00101001,00101000,00100011,0010 ;                ;
+; Sprite8        ; 0011,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;                ;
+; Sprite8        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00001011,00 ;                ;
+; Sprite8        ; 101000,00101000,00101000,00101001,00101010,00101010,00101010,00101010,00101010,0 ;                ;
+; Sprite8        ; 0101010,00101010,00101010,00101000,00101000,00100100,00000000,00000000,00000000, ;                ;
+; Sprite8        ; 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000 ;                ;
+; Sprite8        ; ,00000000,00000000,00000000,00000000,00000000,00001011,00101011,00101000,0010100 ;                ;
+; Sprite8        ; 1,00101010,00101010,00101010,00101010,00101010,00101010,00101010,00101010,001010 ;                ;
+; Sprite8        ; 00,00101011,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000 ;                ;
+; Sprite8        ; 000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
+; Sprite8        ; 0000,00000000,00000000,00001011,00101011,00101000,00101000,00101010,00101010,001 ;                ;
+; Sprite8        ; 01010,00101010,00101010,00101010,00101010,00101000,00101000,00000000,00000000,00 ;                ;
+; Sprite8        ; 000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;                ;
+; Sprite8        ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000, ;                ;
+; Sprite8        ; 00001011,00101011,00101000,00101001,00101010,00101100,00101100,00101100,00101100 ;                ;
+; Sprite8        ; ,00101011,00101011,00100010,00000000,00000000,00000000,00000000,00000000,0000000 ;                ;
+; Sprite8        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite8        ; 00,00000000,00000000,00000000,00000000,00000000,00000000,00001011,00101011,00000 ;                ;
+; Sprite8        ; 110,00101011,00101011,00101011,00101011,00101011,00101011,00101101,00100100,0000 ;                ;
+; Sprite8        ; 0000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;                ;
+; Sprite8        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001,00 ;                ;
+; Sprite8        ; 000001,00000010,00000010,00000010,00000011,00011010,00011010,00011010,00011010,0 ;                ;
+; Sprite8        ; 0011010,00011010,00011010,00101101,00000010,00000010,00000010,00000010,00000010, ;                ;
+; Sprite8        ; 00000010,00000010,00000001,00000001,00000001,00000000,00000000,00000000,00000000 ;                ;
+; Sprite8        ; ,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000 ;                ;
+; Sprite8        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite8        ; 00,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000 ;                ;
+; Sprite8        ; 000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
+; Sprite8        ; 0000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;                ;
+; Sprite8        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
+; Sprite8        ; 000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;                ;
+;                ; 0000000,00000000)                                                                ;                ;
+; Sprite9        ; (00000000,00000000,00000000,00000000,00000000,00101110,00101111,00000000,0000000 ; Array/Record   ;
+; Sprite9        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite9        ; 00,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00101111,00101 ;                ;
+; Sprite9        ; 110,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
+; Sprite9        ; 0000,00110000,00110001,00110010,00101111,00000000,00000000,00000000,00000000,000 ;                ;
+; Sprite9        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
+; Sprite9        ; 000000,00000000,00000000,00101111,00110010,00110001,00110000,00000000,00000000,0 ;                ;
+; Sprite9        ; 0000000,00000000,00000000,00000000,00000000,00110000,00110001,00110001,00110001, ;                ;
+; Sprite9        ; 00110010,00101111,00000000,00000000,00000000,00000000,00000000,00000000,00000000 ;                ;
+; Sprite9        ; ,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00101111,0011001 ;                ;
+; Sprite9        ; 0,00110001,00110001,00110001,00110000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite9        ; 00,00110000,00110001,00110001,00110001,00110001,00110001,00110010,00101111,00000 ;                ;
+; Sprite9        ; 000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
+; Sprite9        ; 0000,00000000,00000000,00101111,00110010,00110001,00110001,00110001,00110001,001 ;                ;
+; Sprite9        ; 10001,00110000,00000000,00000000,00000000,00110000,00110001,00110001,00110001,00 ;                ;
+; Sprite9        ; 110001,00110001,00110001,00110001,00110010,00101111,00000000,00000000,00000000,0 ;                ;
+; Sprite9        ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00101111,00110010, ;                ;
+; Sprite9        ; 00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110000,00000000 ;                ;
+; Sprite9        ; ,00101110,00110001,00110001,00110001,00110001,00110001,00110001,00110001,0011000 ;                ;
+; Sprite9        ; 1,00110001,00110010,00101111,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite9        ; 00,00000000,00000000,00101111,00110010,00110001,00110001,00110001,00110001,00110 ;                ;
+; Sprite9        ; 001,00110001,00110001,00110001,00110001,00101110,00000001,00110010,00110001,0011 ;                ;
+; Sprite9        ; 0001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110010,000 ;                ;
+; Sprite9        ; 01011,00000000,00000000,00000000,00000000,00000000,00000000,00101111,00110010,00 ;                ;
+; Sprite9        ; 110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,0 ;                ;
+; Sprite9        ; 0110010,00000001,00000000,00000001,00110010,00110001,00110001,00110001,00110001, ;                ;
+; Sprite9        ; 00110001,00110001,00110001,00110001,00110001,00110010,00101111,00000000,00000000 ;                ;
+; Sprite9        ; ,00000000,00000000,00101111,00110010,00110001,00110001,00110001,00110001,0011000 ;                ;
+; Sprite9        ; 1,00110001,00110001,00110001,00110001,00110010,00000001,00000000,00000000,000000 ;                ;
+; Sprite9        ; 00,00000001,00110010,00110001,00110001,00110001,00110001,00110001,00110001,00110 ;                ;
+; Sprite9        ; 001,00110001,00110001,00110010,00101111,00000000,00000000,00101111,00110010,0011 ;                ;
+; Sprite9        ; 0001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,001 ;                ;
+; Sprite9        ; 10010,00000001,00000000,00000000,00000000,00000000,00000000,00000001,00110010,00 ;                ;
+; Sprite9        ; 110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,0 ;                ;
+; Sprite9        ; 0110010,00101111,00101111,00110010,00110001,00110001,00110001,00110001,00110001, ;                ;
+; Sprite9        ; 00110001,00110001,00110001,00110001,00110010,00000001,00000000,00000000,00000000 ;                ;
+; Sprite9        ; ,00000000,00000000,00000000,00000000,00000001,00110010,00110001,00110001,0011000 ;                ;
+; Sprite9        ; 1,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,001100 ;                ;
+; Sprite9        ; 01,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110 ;                ;
+; Sprite9        ; 010,00000001,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
+; Sprite9        ; 0000,00000000,00000001,00110010,00110001,00110001,00110001,00110001,00110001,001 ;                ;
+; Sprite9        ; 10001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00 ;                ;
+; Sprite9        ; 110001,00110001,00110001,00110001,00110010,00000001,00000000,00000000,00000000,0 ;                ;
+; Sprite9        ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001, ;                ;
+; Sprite9        ; 00110010,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001 ;                ;
+; Sprite9        ; ,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,0011001 ;                ;
+; Sprite9        ; 0,00000001,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite9        ; 00,00000000,00000000,00000000,00000000,00000000,00000001,00110010,00110001,00110 ;                ;
+; Sprite9        ; 001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,0011 ;                ;
+; Sprite9        ; 0001,00110001,00110001,00110001,00110010,00000001,00000000,00000000,00000000,000 ;                ;
+; Sprite9        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
+; Sprite9        ; 000000,00000000,00000000,00000001,00110010,00110001,00110001,00110001,00110001,0 ;                ;
+; Sprite9        ; 0110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110010, ;                ;
+; Sprite9        ; 00000001,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000 ;                ;
+; Sprite9        ; ,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000 ;                ;
+; Sprite9        ; 0,00000001,00110010,00110001,00110001,00110001,00110001,00110001,00110001,001100 ;                ;
+; Sprite9        ; 01,00110001,00110001,00110001,00110010,00000001,00000000,00000000,00000000,00000 ;                ;
+; Sprite9        ; 000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
+; Sprite9        ; 0000,00000000,00000000,00000000,00000000,00000000,00101111,00110010,00110001,001 ;                ;
+; Sprite9        ; 10001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00 ;                ;
+; Sprite9        ; 110010,00101111,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;                ;
+; Sprite9        ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000, ;                ;
+; Sprite9        ; 00000000,00101111,00110001,00110001,00110001,00110001,00110001,00110001,00110001 ;                ;
+; Sprite9        ; ,00110001,00110001,00110001,00110001,00110001,00110001,00110010,00101111,0000000 ;                ;
+; Sprite9        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite9        ; 00,00000000,00000000,00000000,00000000,00000000,00101111,00110010,00110001,00110 ;                ;
+; Sprite9        ; 001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,0011 ;                ;
+; Sprite9        ; 0001,00110001,00110001,00110001,00110010,00101111,00000000,00000000,00000000,000 ;                ;
+; Sprite9        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
+; Sprite9        ; 000000,00101111,00110010,00110001,00110001,00110001,00110001,00110001,00110001,0 ;                ;
+; Sprite9        ; 0110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001, ;                ;
+; Sprite9        ; 00110001,00110010,00101111,00000000,00000000,00000000,00000000,00000000,00000000 ;                ;
+; Sprite9        ; ,00000000,00000000,00000000,00000000,00000000,00101111,00110010,00110001,0011000 ;                ;
+; Sprite9        ; 1,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,001100 ;                ;
+; Sprite9        ; 01,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110010,00101 ;                ;
+; Sprite9        ; 111,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
+; Sprite9        ; 0000,00101111,00110010,00110001,00110001,00110001,00110001,00110001,00110001,001 ;                ;
+; Sprite9        ; 10001,00110001,00110001,00110010,00110010,00110001,00110001,00110001,00110001,00 ;                ;
+; Sprite9        ; 110001,00110001,00110001,00110001,00110001,00110010,00101111,00000000,00000000,0 ;                ;
+; Sprite9        ; 0000000,00000000,00000000,00000000,00000000,00101111,00110010,00110001,00110001, ;                ;
+; Sprite9        ; 00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110010,00101111 ;                ;
+; Sprite9        ; ,00101111,00110010,00110001,00110001,00110001,00110001,00110001,00110001,0011000 ;                ;
+; Sprite9        ; 1,00110001,00110001,00110010,00001011,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite9        ; 00,00101111,00110010,00110001,00110001,00110001,00110001,00110001,00110001,00110 ;                ;
+; Sprite9        ; 001,00110001,00110001,00110010,00101111,00000000,00000000,00101111,00110010,0011 ;                ;
+; Sprite9        ; 0001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,001 ;                ;
+; Sprite9        ; 10010,00101111,00000000,00000000,00000000,00101111,00110010,00110001,00110001,00 ;                ;
+; Sprite9        ; 110001,00110001,00110001,00110001,00110001,00110001,00110001,00110010,00000001,0 ;                ;
+; Sprite9        ; 0000000,00000000,00000000,00000000,00000001,00110010,00110001,00110001,00110001, ;                ;
+; Sprite9        ; 00110001,00110001,00110001,00110001,00110001,00110001,00110010,00101111,00000000 ;                ;
+; Sprite9        ; ,00101111,00110010,00110001,00110001,00110001,00110001,00110001,00110001,0011000 ;                ;
+; Sprite9        ; 1,00110001,00110001,00110010,00000001,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite9        ; 00,00000000,00000001,00110010,00110001,00110001,00110001,00110001,00110001,00110 ;                ;
+; Sprite9        ; 001,00110001,00110001,00110001,00110010,00101111,00101110,00110001,00110001,0011 ;                ;
+; Sprite9        ; 0001,00110001,00110001,00110001,00110001,00110001,00110001,00110010,00000001,000 ;                ;
+; Sprite9        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001,00 ;                ;
+; Sprite9        ; 110010,00110001,00110001,00110001,00110001,00110001,00110001,00110001,00110001,0 ;                ;
+; Sprite9        ; 0110001,00101110,00000000,00110000,00110001,00110001,00110001,00110001,00110001, ;                ;
+; Sprite9        ; 00110001,00110001,00110010,00000001,00000000,00000000,00000000,00000000,00000000 ;                ;
+; Sprite9        ; ,00000000,00000000,00000000,00000000,00000000,00000001,00110010,00110001,0011000 ;                ;
+; Sprite9        ; 1,00110001,00110001,00110001,00110001,00110001,00110000,00000000,00000000,000000 ;                ;
+; Sprite9        ; 00,00110000,00110001,00110001,00110001,00110001,00110001,00110010,00000001,00000 ;                ;
+; Sprite9        ; 000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
+; Sprite9        ; 0000,00000000,00000000,00000001,00110010,00110001,00110001,00110001,00110001,001 ;                ;
+; Sprite9        ; 10001,00110000,00000000,00000000,00000000,00000000,00000000,00110000,00110001,00 ;                ;
+; Sprite9        ; 110001,00110001,00110010,00000001,00000000,00000000,00000000,00000000,00000000,0 ;                ;
+; Sprite9        ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000, ;                ;
+; Sprite9        ; 00000001,00110010,00110001,00110001,00110001,00110000,00000000,00000000,00000000 ;                ;
+; Sprite9        ; ,00000000,00000000,00000000,00000000,00110000,00110001,00110010,00000001,0000000 ;                ;
+; Sprite9        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite9        ; 00,00000000,00000000,00000000,00000000,00000000,00000000,00000001,00110010,00110 ;                ;
+; Sprite9        ; 001,00110000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
+; Sprite9        ; 0000,00000000,00101110,00000001,00000000,00000000,00000000,00000000,00000000,000 ;                ;
+; Sprite9        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
+; Sprite9        ; 000000,00000000,00000000,00000000,00000001,00101110,00000000,00000000,00000000,0 ;                ;
+;                ; 0000000,00000000)                                                                ;                ;
 +----------------+----------------------------------------------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -7841,11 +8073,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+----------------------------------------------------------------------------------+--------------+
 ; Parameter Name ; Value                                                                            ; Type         ;
 +----------------+----------------------------------------------------------------------------------+--------------+
-; R              ; (11111111,11101011,11001110,00000111,10111010,00100010,10100010,10000011,0011100 ; Array/Record ;
-; R              ; 0,01011000,01110001,11100100,00101101,00000001,10010111,00000000,00100100,000001 ;              ;
-; R              ; 00,00100010,00101110,00000001,01000010,00111001,00010111,00100000,00100100,00010 ;              ;
-; R              ; 001,00000100,00001001,00000000,00010111,00001111,00001010,00000111,00000000,0000 ;              ;
-; R              ; 0000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;              ;
+; R              ; (00101101,00000001,00000000,00100100,00000100,00100010,10100000,00101110,0000000 ; Array/Record ;
+; R              ; 1,01000010,00010111,00100000,00100100,00010001,01100000,00000100,00001001,000000 ;              ;
+; R              ; 00,00010111,00001111,00001010,00000111,10101010,10010100,11000001,11010000,10100 ;              ;
+; R              ; 111,10010100,10000001,01111011,01100111,01110010,01010110,01100101,11101010,1111 ;              ;
+; R              ; 1001,11100111,11100000,11100011,00000000,00000000,00000000,00000000,00000000,000 ;              ;
 ; R              ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;              ;
 ; R              ; 000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;              ;
 ; R              ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000, ;              ;
@@ -7870,11 +8102,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; R              ; 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000 ;              ;
 ; R              ; ,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000 ;              ;
 ;                ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000)                ;              ;
-; B              ; (11111111,11101011,11001110,00000111,10111010,00100010,10100010,10000011,0011100 ; Array/Record ;
-; B              ; 0,01011000,01101110,11010001,01110110,11111011,10001100,11011001,01001010,110000 ;              ;
-; B              ; 11,01100001,01011100,10011101,01100011,01000010,10000001,00110100,01001011,01101 ;              ;
-; B              ; 100,10001001,00111100,01101011,01010100,01110100,10000111,00111101,00000000,0000 ;              ;
-; B              ; 0000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;              ;
+; B              ; (01110110,11111011,11011001,01001010,11000011,01100001,10001111,01011100,1001110 ; Array/Record ;
+; B              ; 1,01100011,10000001,00110100,01001011,01101100,01011011,10001001,00111100,011010 ;              ;
+; B              ; 11,01010100,01110100,10000111,00111101,10001011,01110101,10101000,11000000,01110 ;              ;
+; B              ; 110,01011111,01100101,01001000,00110100,01011010,00101011,01010101,01010111,1101 ;              ;
+; B              ; 0001,01000011,00000110,00011100,00000000,00000000,00000000,00000000,00000000,000 ;              ;
 ; B              ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;              ;
 ; B              ; 000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;              ;
 ; B              ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000, ;              ;
@@ -7899,11 +8131,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; B              ; 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000 ;              ;
 ; B              ; ,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000 ;              ;
 ;                ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000)                ;              ;
-; G              ; (11111111,11101011,11001110,00000111,10111010,00100010,10100010,10000011,0011100 ; Array/Record ;
-; G              ; 0,01011000,01101101,11010111,01101101,11011010,10001101,11011010,01001011,111010 ;              ;
-; G              ; 00,01101001,10000000,11101001,01101011,01010110,10010000,01000111,01101011,10001 ;              ;
-; G              ; 000,11010000,01011111,10101101,10000101,11000110,11110110,01110100,00000000,0000 ;              ;
-; G              ; 0000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;              ;
+; G              ; (01101101,11011010,11011010,01001011,11101000,01101001,10000110,10000000,1110100 ; Array/Record ;
+; G              ; 1,01101011,10010000,01000111,01101011,10001000,01011100,11010000,01011111,101011 ;              ;
+; G              ; 01,10000101,11000110,11110110,01110100,11000110,10110000,11010111,11011111,11001 ;              ;
+; G              ; 010,10111101,10011100,10100100,10010000,10001000,01111011,01110100,01111110,1101 ;              ;
+; G              ; 1011,01101110,01000000,01010000,00000000,00000000,00000000,00000000,00000000,000 ;              ;
 ; G              ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;              ;
 ; G              ; 000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;              ;
 ; G              ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000, ;              ;
@@ -8152,18 +8384,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +-----------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16" ;
-+----------+-------+----------+-----------------------------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                                         ;
-+----------+-------+----------+-----------------------------------------------------------------+
-; i1[7..4] ; Input ; Info     ; Stuck at GND                                                    ;
-; i2[7..4] ; Input ; Info     ; Stuck at GND                                                    ;
-; i3[7..4] ; Input ; Info     ; Stuck at GND                                                    ;
-; i4[7..4] ; Input ; Info     ; Stuck at GND                                                    ;
-; i5[7..4] ; Input ; Info     ; Stuck at GND                                                    ;
-; i6[7..6] ; Input ; Info     ; Stuck at GND                                                    ;
-; i7[7..6] ; Input ; Info     ; Stuck at GND                                                    ;
-; i8[7..6] ; Input ; Info     ; Stuck at GND                                                    ;
-+----------+-------+----------+-----------------------------------------------------------------+
++-----------+-------+----------+----------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                        ;
++-----------+-------+----------+----------------------------------------------------------------+
+; i1[7..4]  ; Input ; Info     ; Stuck at GND                                                   ;
+; i2[7..4]  ; Input ; Info     ; Stuck at GND                                                   ;
+; i3[7..4]  ; Input ; Info     ; Stuck at GND                                                   ;
+; i4[7..4]  ; Input ; Info     ; Stuck at GND                                                   ;
+; i5[7..4]  ; Input ; Info     ; Stuck at GND                                                   ;
+; i6[7..6]  ; Input ; Info     ; Stuck at GND                                                   ;
+; i7[7..6]  ; Input ; Info     ; Stuck at GND                                                   ;
+; i8[7..6]  ; Input ; Info     ; Stuck at GND                                                   ;
+; i9[7..6]  ; Input ; Info     ; Stuck at GND                                                   ;
+; i10[7..6] ; Input ; Info     ; Stuck at GND                                                   ;
++-----------+-------+----------+----------------------------------------------------------------+
 
 
 +---------------------------------------------------------+
@@ -9204,21 +9438,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SLD               ; 12                          ;
 ;     plain             ; 149                         ;
 ; cycloneiii_io_obuf    ; 48                          ;
-; cycloneiii_lcell_comb ; 3644                        ;
+; cycloneiii_lcell_comb ; 3667                        ;
 ;     arith             ; 249                         ;
 ;         2 data inputs ; 146                         ;
 ;         3 data inputs ; 103                         ;
-;     normal            ; 3395                        ;
+;     normal            ; 3418                        ;
 ;         0 data inputs ; 11                          ;
-;         1 data inputs ; 44                          ;
-;         2 data inputs ; 252                         ;
-;         3 data inputs ; 812                         ;
-;         4 data inputs ; 2276                        ;
+;         1 data inputs ; 41                          ;
+;         2 data inputs ; 246                         ;
+;         3 data inputs ; 800                         ;
+;         4 data inputs ; 2320                        ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 148                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 18.60                       ;
-; Average LUT depth     ; 4.92                        ;
+; Max LUT depth         ; 17.60                       ;
+; Average LUT depth     ; 4.94                        ;
 +-----------------------+-----------------------------+
 
 
@@ -9227,7 +9461,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:55     ;
+; Top            ; 00:00:57     ;
 +----------------+--------------+
 
 
@@ -9237,9 +9471,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Sun Apr 26 19:24:32 2015
+    Info: Processing started: Fri May 01 21:22:40 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off final385 -c final_project
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file shiftupclock.sv
+    Info (12023): Found entity 1: shiftUpClock
+Info (12021): Found 1 design units, including 1 entities, in source file judgement.sv
+    Info (12023): Found entity 1: judgement
+Info (12021): Found 1 design units, including 1 entities, in source file getstripmodule.sv
+    Info (12023): Found entity 1: getStripModule
+Info (12021): Found 1 design units, including 1 entities, in source file arrowmovement.sv
+    Info (12023): Found entity 1: GameManager
 Info (12021): Found 1 design units, including 1 entities, in source file mapper.sv
     Info (12023): Found entity 1: Mapper
 Info (12021): Found 1 design units, including 1 entities, in source file usb_system/synthesis/usb_system.v
@@ -9619,6 +9861,9 @@ Info (12128): Elaborating entity "Mapper" for hierarchy "GraphicModule:GraphicMo
 Info (12128): Elaborating entity "sprite_table" for hierarchy "GraphicModule:GraphicModule|sprite_table:sprite_table"
 Info (12128): Elaborating entity "mux16" for hierarchy "GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16"
 Info (12128): Elaborating entity "palette" for hierarchy "GraphicModule:GraphicModule|palette:palette"
+Warning (10230): Verilog HDL assignment warning at pallete.sv(34): truncated value with size 2144 to match size of target (2048)
+Warning (10230): Verilog HDL assignment warning at pallete.sv(67): truncated value with size 2144 to match size of target (2048)
+Warning (10230): Verilog HDL assignment warning at pallete.sv(100): truncated value with size 2144 to match size of target (2048)
 Info (12128): Elaborating entity "vga_controller" for hierarchy "GraphicModule:GraphicModule|vga_controller:vga_controller"
 Warning (10230): Verilog HDL assignment warning at VGA_controller.sv(76): truncated value with size 32 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at VGA_controller.sv(79): truncated value with size 32 to match size of target (10)
@@ -9796,18 +10041,18 @@ Warning (20013): Ignored assignments for entity "lab8_usb" -- entity does not ex
 Info (144001): Generated suppressed messages file C:/Users/Quangxdu/Documents/GitHub/ece385/final385/output_files/final_project.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5481 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5510 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 144 output pins
     Info (21060): Implemented 48 bidirectional pins
-    Info (21061): Implemented 5133 logic cells
+    Info (21061): Implemented 5162 logic cells
     Info (21064): Implemented 148 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 123 warnings
-    Info: Peak virtual memory: 751 megabytes
-    Info: Processing ended: Sun Apr 26 19:25:51 2015
-    Info: Elapsed time: 00:01:19
-    Info: Total CPU time (on all processors): 00:01:18
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 126 warnings
+    Info: Peak virtual memory: 758 megabytes
+    Info: Processing ended: Fri May 01 21:24:09 2015
+    Info: Elapsed time: 00:01:29
+    Info: Total CPU time (on all processors): 00:01:23
 
 
 +------------------------------------------+
