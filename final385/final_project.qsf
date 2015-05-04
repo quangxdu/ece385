@@ -266,7 +266,6 @@ set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_
 set_global_assignment -name SYSTEMVERILOG_FILE ShiftUpClock.sv
 set_global_assignment -name SYSTEMVERILOG_FILE judgement.sv
 set_global_assignment -name SYSTEMVERILOG_FILE getStripModule.sv
-set_global_assignment -name SYSTEMVERILOG_FILE arrowMovement.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Mapper.sv
 set_global_assignment -name VERILOG_FILE usb_system/synthesis/usb_system.v -library usb_system
 set_global_assignment -name QIP_FILE usb_system/synthesis/usb_system.qip
@@ -278,3 +277,4 @@ set_global_assignment -name SYSTEMVERILOG_FILE sprite_table.sv
 set_global_assignment -name SYSTEMVERILOG_FILE final_project.sv
 set_global_assignment -name SYSTEMVERILOG_FILE GameModule.sv
 set_global_assignment -name SYSTEMVERILOG_FILE "Game Module/GameTable.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE GameManager.sv

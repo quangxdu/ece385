@@ -110,10 +110,5 @@ GameModule GameModule
 (.*
 );
 */
-	 /**************************************************************************************
-	    ATTENTION! Please answer the following quesiton in your lab report! Points will be allocated for the answers!
-		 Hidden Question #1/2:
-          What are the advantages and/or disadvantages of using a USB interface over PS/2 interface to
-			 connect to the keyboard? List any two.  Give an answer in your Post-Lab.
-     **************************************************************************************/
+
 endmodule

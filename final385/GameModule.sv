@@ -1,6 +1,6 @@
 module GameModule
 (
-	input clk,
+	input clk, vs,
 	output logic [9:0] posX1, output logic [9:0] posY1, output logic [3:0] spriteID1,
 output logic [9:0] posX2, output logic [9:0] posY2, output logic [3:0] spriteID2, 
 output logic [9:0] posX3, output logic [9:0] posY3, output logic [3:0] spriteID3,
@@ -24,7 +24,9 @@ output logic [9:0] posX11, output logic [9:0] posY11, output logic [3:0] spriteI
  logic [9:0] posX9in;  logic [9:0] posY9in;  logic [3:0] spriteID9in;
  logic [9:0] posX10in;  logic [9:0] posY10in;  logic [3:0] spriteID10in;
  logic [9:0] posX11in;  logic [9:0] posY11in;  logic [3:0] spriteID11in;
-
+	
+ logic shiftUp;
+ logic [3:0] shiftArrows;
 GameManager GameManager
 (
 	//input arrowClk, input shiftUp, input [3:0] stripArrows,
@@ -37,11 +39,11 @@ GameTable GameTable
 );
 shiftUpClock shiftUpClock
 (
-	input arrowClk,output shiftUp
+	.arrowClk(vs), .shiftUp(shiftUp)
 ); 
 getStripModule getStripModule
 (
-input shiftUp, output [3:0] stripArrows
+ .shiftUp(shiftUp), .stripArrows(stripArrows)
 );
 judgement judgement(
 input logic sprite2hit_out, sprite3hit_out,
