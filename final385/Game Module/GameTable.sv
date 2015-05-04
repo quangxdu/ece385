@@ -177,6 +177,8 @@ always_ff @(posedge Clk)
 	tSpriteID16=SpriteID16in;
 	tPosX16=posX16in;
 	tPosY16=posY16in;
+	sprite3hit = sprite3hit_in;
+	sprite2hit = sprite3hit_in;
 end
 always_comb
 begin
@@ -245,8 +247,16 @@ begin
 	posX16= tPosX16;
 	posY16= tPosY16;
 	spriteID16=tSpriteID16;
-	sprite3hit_out = sprite3hit;
-   sprite2hit_out = sprite2hit;
+	if(shiftUp)
+		begin
+			sprite3hit_out = 0;
+			sprite2hit_out = 0;
+		end
+	else
+		begin
+			sprite3hit_out = sprite3hit;
+			sprite2hit_out = sprite2hit;
+		end
 end
 
 endmodule

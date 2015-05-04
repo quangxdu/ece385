@@ -10,7 +10,7 @@ input logic [9:0] posX8in, input logic [9:0] posY8in, input logic [3:0] spriteID
 input logic [9:0] posX9in, input logic [9:0] posY9in, input logic [3:0] spriteID9in,
 input logic [9:0] posX10in, input logic [9:0] posY10in, input logic [3:0] spriteID10in,
 input logic [9:0] posX11in, input logic [9:0] posY11in, input logic [3:0] spriteID11in,
-input logic sprite2hit,sprite3hit,
+
 
 output logic [9:0] posX1, output logic [9:0] posY1, output logic [3:0] spriteID1,
 output logic [9:0] posX2, output logic [9:0] posY2, output logic [3:0] spriteID2, 
@@ -23,7 +23,7 @@ output logic [9:0] posX8, output logic [9:0] posY8, output logic [3:0] spriteID8
 output logic [9:0] posX9, output logic [9:0] posY9, output logic [3:0] spriteID9,
 output logic [9:0] posX10, output logic[9:0] posY10, output logic [3:0] spriteID10,
 output logic [9:0] posX11, output logic [9:0] posY11, output logic [3:0] spriteID11
-output logic sprite2hit_out,sprite3hit_out
+
 );
 
 //sprite 1 is the judgement(good/bad)
@@ -138,11 +138,51 @@ begin
 		posX10=10'h140;
 		posX11=10'h1E0;
 	end
-	else;
+	else
+	begin
+		posX10=posX10in;
+		posX11=posX11in;
+		posY10=posY10in+1;
+		posY11=posY11in+1;
+		spriteID10=spriteID10in;
+		spriteID11=spriteID11in;
+	end
 end
 
 always_comb//move all sprites up 1 pixel
 begin
+	if(shiftUp)
+	begin
+		posX2=posX4in;
+		posX3=posX5in;
+		posX4=posX6in;
+		posX5=posX7in;
+		posX6=posX8in;
+		posX7=posX9in;
+		posX8=posX10in;
+		posX9=posX11in;
+
+		posY2=posY4in;
+		posY3=posY5in;
+		posY4=posY6in;
+		posY5=posY7in;
+		posY6=posY8in;
+		posY7=posY9in;
+		posY8=posY10in;
+		posY9=posY11in;
+
+		spriteID2=spriteID4in;
+		spriteID3=spriteID5in;
+		spriteID4=spriteID6in;
+		spriteID5=spriteID7in;
+		spriteID6=spriteID8in;
+		spriteID7=spriteID9in;
+		spriteID8=spriteID10in;
+		spriteID9=spriteID11in;
+	end
+	else
+	begin
+
 	posX2=posX2in;
 	posX3=posX3in;
 	posX4=posX4in;
@@ -151,9 +191,7 @@ begin
 	posX7=posX7in;
 	posX8=posX8in;
 	posX9=posX9in;
-	posX10=posX10in;
-	posX11=posX11in;
-	
+
 	posY2=posY2in+1;
 	posY3=posY3in+1;
 	posY4=posY4in+1;
@@ -162,9 +200,7 @@ begin
 	posY7=posY7in+1;
 	posY8=posY8in+1;
 	posY9=posY9in+1;
-	posY10=posY10in+1;
-	posY11=posY11in+1;
-	
+
 	spriteID2=spriteID2in;
 	spriteID3=spriteID3in;
 	spriteID4=spriteID4in;
@@ -173,7 +209,8 @@ begin
 	spriteID7=spriteID7in;
 	spriteID8=spriteID8in;
 	spriteID9=spriteID9in;
-	spriteID10=spriteID10in;
-	spriteID11=spriteID11in;
+	end
+
+
 end
 endmodule
