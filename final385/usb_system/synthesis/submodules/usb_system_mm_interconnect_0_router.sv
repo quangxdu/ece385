@@ -24,9 +24,9 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/14.1/ip/merlin/altera_merlin_router/altera_merlin_router.sv.terp#1 $
+// $Id: //acds/rel/14.0/ip/merlin/altera_merlin_router/altera_merlin_router.sv.terp#1 $
 // $Revision: #1 $
-// $Date: 2014/10/06 $
+// $Date: 2014/02/16 $
 // $Author: swbranch $
 
 // -------------------------------------------------------
@@ -47,35 +47,37 @@ module usb_system_mm_interconnect_0_router_default_decode
      parameter DEFAULT_CHANNEL = 5,
                DEFAULT_WR_CHANNEL = -1,
                DEFAULT_RD_CHANNEL = -1,
-               DEFAULT_DESTID = 5 
+               DEFAULT_DESTID = 6 
    )
   (output [91 - 89 : 0] default_destination_id,
-   output [6-1 : 0] default_wr_channel,
-   output [6-1 : 0] default_rd_channel,
-   output [6-1 : 0] default_src_channel
+   output [7-1 : 0] default_wr_channel,
+   output [7-1 : 0] default_rd_channel,
+   output [7-1 : 0] default_src_channel
   );
 
   assign default_destination_id = 
     DEFAULT_DESTID[91 - 89 : 0];
 
-  generate
-    if (DEFAULT_CHANNEL == -1) begin : no_default_channel_assignment
+  generate begin : default_decode
+    if (DEFAULT_CHANNEL == -1) begin
       assign default_src_channel = '0;
     end
-    else begin : default_channel_assignment
-      assign default_src_channel = 6'b1 << DEFAULT_CHANNEL;
+    else begin
+      assign default_src_channel = 7'b1 << DEFAULT_CHANNEL;
     end
+  end
   endgenerate
 
-  generate
-    if (DEFAULT_RD_CHANNEL == -1) begin : no_default_rw_channel_assignment
+  generate begin : default_decode_rw
+    if (DEFAULT_RD_CHANNEL == -1) begin
       assign default_wr_channel = '0;
       assign default_rd_channel = '0;
     end
-    else begin : default_rw_channel_assignment
-      assign default_wr_channel = 6'b1 << DEFAULT_WR_CHANNEL;
-      assign default_rd_channel = 6'b1 << DEFAULT_RD_CHANNEL;
+    else begin
+      assign default_wr_channel = 7'b1 << DEFAULT_WR_CHANNEL;
+      assign default_rd_channel = 7'b1 << DEFAULT_RD_CHANNEL;
     end
+  end
   endgenerate
 
 endmodule
@@ -103,7 +105,7 @@ module usb_system_mm_interconnect_0_router
     // -------------------
     output                          src_valid,
     output reg [105-1    : 0] src_data,
-    output reg [6-1 : 0] src_channel,
+    output reg [7-1 : 0] src_channel,
     output                          src_startofpacket,
     output                          src_endofpacket,
     input                           src_ready
@@ -119,7 +121,7 @@ module usb_system_mm_interconnect_0_router
     localparam PKT_PROTECTION_H = 95;
     localparam PKT_PROTECTION_L = 93;
     localparam ST_DATA_W = 105;
-    localparam ST_CHANNEL_W = 6;
+    localparam ST_CHANNEL_W = 7;
     localparam DECODER_TYPE = 0;
 
     localparam PKT_TRANS_WRITE = 67;
@@ -139,13 +141,14 @@ module usb_system_mm_interconnect_0_router
     localparam PAD2 = log2ceil(64'h11001000 - 64'h11000800); 
     localparam PAD3 = log2ceil(64'h11001020 - 64'h11001010); 
     localparam PAD4 = log2ceil(64'h11001030 - 64'h11001020); 
-    localparam PAD5 = log2ceil(64'h11001038 - 64'h11001030); 
+    localparam PAD5 = log2ceil(64'h11001040 - 64'h11001030); 
+    localparam PAD6 = log2ceil(64'h11001048 - 64'h11001040); 
     // -------------------------------------------------------
     // Work out which address bits are significant based on the
     // address range of the slaves. If the required width is too
     // large or too small, we use the address field width instead.
     // -------------------------------------------------------
-    localparam ADDR_RANGE = 64'h11001038;
+    localparam ADDR_RANGE = 64'h11001048;
     localparam RANGE_ADDR_WIDTH = log2ceil(ADDR_RANGE);
     localparam OPTIMIZED_ADDR_H = (RANGE_ADDR_WIDTH > PKT_ADDR_W) ||
                                   (RANGE_ADDR_WIDTH == 0) ?
@@ -169,7 +172,7 @@ module usb_system_mm_interconnect_0_router
     assign src_startofpacket = sink_startofpacket;
     assign src_endofpacket   = sink_endofpacket;
     wire [PKT_DEST_ID_W-1:0] default_destid;
-    wire [6-1 : 0] default_src_channel;
+    wire [7-1 : 0] default_src_channel;
 
 
 
@@ -195,37 +198,43 @@ module usb_system_mm_interconnect_0_router
 
     // ( 0x8000000 .. 0x10000000 )
     if ( {address[RG:PAD0],{PAD0{1'b0}}} == 29'h8000000   ) begin
-            src_channel = 6'b100000;
-            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 5;
+            src_channel = 7'b0100000;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 6;
     end
 
     // ( 0x10000000 .. 0x10400000 )
     if ( {address[RG:PAD1],{PAD1{1'b0}}} == 29'h10000000   ) begin
-            src_channel = 6'b001000;
+            src_channel = 7'b0001000;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 0;
     end
 
     // ( 0x11000800 .. 0x11001000 )
     if ( {address[RG:PAD2],{PAD2{1'b0}}} == 29'h11000800   ) begin
-            src_channel = 6'b000010;
+            src_channel = 7'b0000010;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 2;
     end
 
     // ( 0x11001010 .. 0x11001020 )
     if ( {address[RG:PAD3],{PAD3{1'b0}}} == 29'h11001010   ) begin
-            src_channel = 6'b000100;
-            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 1;
+            src_channel = 7'b1000000;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 4;
     end
 
     // ( 0x11001020 .. 0x11001030 )
     if ( {address[RG:PAD4],{PAD4{1'b0}}} == 29'h11001020   ) begin
-            src_channel = 6'b010000;
-            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 4;
+            src_channel = 7'b0010000;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 5;
     end
 
-    // ( 0x11001030 .. 0x11001038 )
+    // ( 0x11001030 .. 0x11001040 )
     if ( {address[RG:PAD5],{PAD5{1'b0}}} == 29'h11001030   ) begin
-            src_channel = 6'b000001;
+            src_channel = 7'b0000100;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 1;
+    end
+
+    // ( 0x11001040 .. 0x11001048 )
+    if ( {address[RG:PAD6],{PAD6{1'b0}}} == 29'h11001040   ) begin
+            src_channel = 7'b0000001;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 3;
     end
 

@@ -20,7 +20,8 @@
 			usb_CS_N          : out   std_logic;                                        -- CS_N
 			usb_RST_N         : out   std_logic;                                        -- RST_N
 			usb_INT           : in    std_logic                     := 'X';             -- INT
-			usb_out_clk_clk   : out   std_logic                                         -- clk
+			usb_out_clk_clk   : out   std_logic;                                        -- clk
+			keycode_2_export  : out   std_logic_vector(7 downto 0)                      -- export
 		);
 	end component usb_system;
 

@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'usb_system'
  * SOPC Builder design path: ../../usb_system.sopcinfo
  *
- * Generated: Wed Oct 01 13:03:33 CDT 2014
+ * Generated: Mon May 04 01:39:53 CDT 2015
  */
 
 /*
@@ -161,19 +161,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart"
-#define ALT_STDERR_BASE 0x11001030
+#define ALT_STDERR_BASE 0x11001040
 #define ALT_STDERR_DEV jtag_uart
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart"
-#define ALT_STDIN_BASE 0x11001030
+#define ALT_STDIN_BASE 0x11001040
 #define ALT_STDIN_DEV jtag_uart
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart"
-#define ALT_STDOUT_BASE 0x11001030
+#define ALT_STDOUT_BASE 0x11001040
 #define ALT_STDOUT_DEV jtag_uart
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -187,7 +187,7 @@
  */
 
 #define ALT_MODULE_CLASS_clocks altpll
-#define CLOCKS_BASE 0x11001010
+#define CLOCKS_BASE 0x11001030
 #define CLOCKS_IRQ -1
 #define CLOCKS_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define CLOCKS_NAME "/dev/clocks"
@@ -211,7 +211,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart altera_avalon_jtag_uart
-#define JTAG_UART_BASE 0x11001030
+#define JTAG_UART_BASE 0x11001040
 #define JTAG_UART_IRQ 5
 #define JTAG_UART_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_NAME "/dev/jtag_uart"
@@ -248,6 +248,33 @@
 #define KEYCODE_RESET_VALUE 0
 #define KEYCODE_SPAN 16
 #define KEYCODE_TYPE "altera_avalon_pio"
+
+
+/*
+ * keycode_2 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_keycode_2 altera_avalon_pio
+#define KEYCODE_2_BASE 0x11001010
+#define KEYCODE_2_BIT_CLEARING_EDGE_REGISTER 0
+#define KEYCODE_2_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define KEYCODE_2_CAPTURE 0
+#define KEYCODE_2_DATA_WIDTH 8
+#define KEYCODE_2_DO_TEST_BENCH_WIRING 0
+#define KEYCODE_2_DRIVEN_SIM_VALUE 0
+#define KEYCODE_2_EDGE_TYPE "NONE"
+#define KEYCODE_2_FREQ 50000000
+#define KEYCODE_2_HAS_IN 0
+#define KEYCODE_2_HAS_OUT 1
+#define KEYCODE_2_HAS_TRI 0
+#define KEYCODE_2_IRQ -1
+#define KEYCODE_2_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define KEYCODE_2_IRQ_TYPE "NONE"
+#define KEYCODE_2_NAME "/dev/keycode_2"
+#define KEYCODE_2_RESET_VALUE 0
+#define KEYCODE_2_SPAN 16
+#define KEYCODE_2_TYPE "altera_avalon_pio"
 
 
 /*
