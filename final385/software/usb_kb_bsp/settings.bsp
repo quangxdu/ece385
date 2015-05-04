@@ -2,11 +2,11 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Mar 18, 2015 8:54:57 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1426686897383</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>C:\Users\Quangxdu\Desktop\lab8\lab8_usb\lab8_usb\software\usb_kb_bsp</BspGeneratedLocation>
+        <BspGeneratedTimeStamp>May 4, 2015 1:39:52 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1430721592427</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>/home/jimmy/ece385/finalproject/final385/software/usb_kb_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
-        <SopcDesignFile>..\..\usb_system.sopcinfo</SopcDesignFile>
+        <SopcDesignFile>../../usb_system.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>cpu</Cpu>
         <SchemaVersion>1.9</SchemaVersion>
@@ -875,7 +875,7 @@
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>clocks</slaveDescriptor>
+                <slaveDescriptor>keycode_2</slaveDescriptor>
                 <addressRange>0x11001010 - 0x1100101F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
@@ -887,8 +887,14 @@
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>clocks</slaveDescriptor>
+                <addressRange>0x11001030 - 0x1100103F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x11001030 - 0x11001037</addressRange>
+                <addressRange>0x11001040 - 0x11001047</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
