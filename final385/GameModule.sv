@@ -1,7 +1,7 @@
 module GameModule
 (
-	input clk, vs,
-	output logic [9:0] posX1, output logic [9:0] posY1, output logic [3:0] spriteID1,
+	input clk, vs, input logic [7:0] keycode, keycode2,
+output logic [9:0] posX1, output logic [9:0] posY1, output logic [3:0] spriteID1,
 output logic [9:0] posX2, output logic [9:0] posY2, output logic [3:0] spriteID2, 
 output logic [9:0] posX3, output logic [9:0] posY3, output logic [3:0] spriteID3,
 output logic [9:0] posX4, output logic [9:0] posY4, output logic [3:0] spriteID4,
@@ -76,9 +76,9 @@ GameManager GameManager
 
 GameTable GameTable
 (
-	.spriteID1in(4'hf),
-	.posX1in(10'h0),
-	.posY1in(10'h0),
+	.spriteID1in(spriteID1in),
+	.posX1in(posX1in),
+	.posY1in(posY1in),
 	.spriteID12in(4'hf),
 	.spriteID13in(4'h3),
 	.spriteID14in(4'h1),
@@ -107,12 +107,29 @@ getStripModule getStripModule
 (
  .shiftUp(shiftUp), .stripArrows(stripArrows)
 );
-/*
+
 judgement judgement(
-input logic sprite2hit_out, sprite3hit_out,
-input vs,input [3:0] spriteID2, input logic [9:0] posY2, 
-input logic [3:0] spriteID3, input logic [9:0] posY3, input logic [7:0] key, 
-output logic [3:0] spriteID1, output logic [9:0] posX1, output logic [9:0]posY1
+.sprite2hit_out(sprite2hit_out),
+.sprite3hit_out(sprite3hit_out),
+.vs(vs),
+.spriteID2(spriteID2in),
+.posY2(posY2in), 
+.spriteID3(spriteID3in),
+.posY3(posY3in),
+.key1(keycode), 
+.key2(keycode2),
+.spriteID1(spriteID1in),
+.posX1(posX1in),
+.posY1(posY1in)
 );
-*/
+
+clearFlag clearFlag(
+	.spritehit_in1(sprite2hit_in),
+	.spritehit_in2(sprite3hit_in), 
+	.spriteID0(spriteID1in),
+	.arrowClk(shiftUp),
+	.spriteID0_out(sprite2hit_out),
+	.spritehit_out2(sprite3hit_out)
+);
+
 endmodule

@@ -9,13 +9,17 @@ output logic spritehit_out1, spritehit_out2
 always_comb
 begin
     if(arrowClk)
+	 begin
         spritehit_out1 = 0;
         spritehit_out2 = 0;
         spriteID0_out = 4'hf;
+	end
     else
+	begin
         spritehit_out1 = spritehit_in1;
         spritehit_out2 = spritehit_in2;
         spriteID0_out = spriteID0;
+	end
 end
 
 endmodule

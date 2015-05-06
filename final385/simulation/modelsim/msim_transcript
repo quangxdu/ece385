@@ -10,81 +10,25 @@
 # ** Warning: Copied C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -sv -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385 {C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv}
+# vlog -vlog01compat -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385/usb_system {C:/Users/Quangxdu/Documents/GitHub/ece385/final385/usb_system/usb_system_bb.v}
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module Mapper
+# -- Compiling module usb_system
 # 
 # Top level modules:
-# 	Mapper
-# vlog -sv -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic\ Module {C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic Module/VGA_controller.sv}
+# 	usb_system
+# vlog -sv -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385 {C:/Users/Quangxdu/Documents/GitHub/ece385/final385/ShiftUpClock.sv}
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module vga_controller
+# -- Compiling module shiftUpClock
+# ** Error: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/ShiftUpClock.sv(15): (vlog-2110) Illegal reference to net "shiftUp".
 # 
-# Top level modules:
-# 	vga_controller
-# vlog -sv -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385 {C:/Users/Quangxdu/Documents/GitHub/ece385/final385/pallete.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module palette
+# ** Error: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/ShiftUpClock.sv(17): (vlog-2110) Illegal reference to net "shiftUp".
 # 
-# Top level modules:
-# 	palette
-# vlog -sv -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385 {C:/Users/Quangxdu/Documents/GitHub/ece385/final385/mux8.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module mux16
+# ** Error: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/ShiftUpClock.sv(19): (vlog-2110) Illegal reference to net "shiftUp1".
 # 
-# Top level modules:
-# 	mux16
-# vlog -sv -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385 {C:/Users/Quangxdu/Documents/GitHub/ece385/final385/sprite_table.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module sprite_table
+# ** Error: C:/Users/Quangxdu/Documents/GitHub/ece385/final385/ShiftUpClock.sv(21): (vlog-2110) Illegal reference to net "shiftUp1".
 # 
-# Top level modules:
-# 	sprite_table
-# vlog -sv -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic\ Module {C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic Module/GraphicModule.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module GraphicModule
-# 
-# Top level modules:
-# 	GraphicModule
-# vlib usb_system
-# ** Warning: (vlib-34) Library already exists at "usb_system".
-# 
-# vmap usb_system usb_system
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385 {C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv}
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module testbench
-# 
-# Top level modules:
-# 	testbench
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L usb_system -voptargs="+acc"  testbench
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L usb_system -voptargs=\"+acc\" -t 1ps testbench 
-# Loading sv_std.std
-# Loading work.testbench
-# Loading work.GraphicModule
-# Loading work.Mapper
-# Loading work.sprite_table
-# Loading work.mux16
-# Loading work.palette
-# Loading work.vga_controller
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run 500 ns
-restart -f
-# Loading sv_std.std
-# Loading work.testbench
-# Loading work.GraphicModule
-# Loading work.Mapper
-# Loading work.sprite_table
-# Loading work.mux16
-# Loading work.palette
-# Loading work.vga_controller
-do wave.do
-run 500ns
-run 50000ns
+# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./final_project_run_msim_rtl_systemverilog.do line 9
+# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385 {C:/Users/Quangxdu/Documents/GitHub/ece385/final385/ShiftUpClock.sv}"

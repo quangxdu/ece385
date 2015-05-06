@@ -11,7 +11,7 @@ begin
 end
 always_comb
 begin
-	if(counter == 11'h5F)
+	if(counter == 11'h5E)
 		shiftUp = 1;	
 	else
 		shiftUp = 0;

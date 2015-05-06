@@ -3,166 +3,23 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\Quangxdu\Documents\GitHub\ece385\final385\simulation\modelsim
-vGraphicModule
-Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
-Z2 IOCcnA[5Q`O8d`nLl1[dVI1
-Z3 Vi<O;TR]LWb9:=lD?9ea[K2
-S1
-Z4 dC:\Users\Quangxdu\Documents\GitHub\ece385\final385\simulation\modelsim
-Z5 w1430090649
-Z6 8C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic Module/GraphicModule.sv
-Z7 FC:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic Module/GraphicModule.sv
-L0 1
-Z8 OV;L;10.1e;51
-r1
-31
-Z9 o-sv -work work -O0
-Z10 !s92 -sv -work work {+incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic Module} -O0
-Z11 n@graphic@module
+vusb_system
 !i10b 1
-Z12 !s100 XEM_SzZ`9Mz98E?^ZShc^2
-Z13 !s105 GraphicModule_sv_unit
-!s85 0
-Z14 !s108 1430092881.642000
-Z15 !s107 C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic Module/GraphicModule.sv|
-Z16 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic Module|C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic Module/GraphicModule.sv|
-!s101 -O0
-vMapper
-R1
-Z17 IkN@VHfaZ_QL9dF33Re_222
-Z18 V:;Jhf7aI_HgE7fDOj^z?e3
-S1
-R4
-Z19 w1430090801
-Z20 8C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv
-Z21 FC:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv
-L0 1
-R8
-r1
-31
-R9
-Z22 n@mapper
-Z23 !s100 BV@XV7bFQIKgIenSo2d<J0
-Z24 !s105 Mapper_sv_unit
-Z25 !s108 1430092880.053000
-Z26 !s107 C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv|
-Z27 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385|C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Mapper.sv|
-Z28 !s92 -sv -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385 -O0
-!i10b 1
-!s85 0
-!s101 -O0
-vmux16
-R1
-Z29 ImLd7GaCO;o<]VF@0mgMT42
-Z30 V;X8iA5>ieHZznzgFlJQ=A1
-S1
-R4
-Z31 w1429923021
-Z32 8C:/Users/Quangxdu/Documents/GitHub/ece385/final385/mux8.sv
-Z33 FC:/Users/Quangxdu/Documents/GitHub/ece385/final385/mux8.sv
-L0 1
-R8
-r1
-31
-R9
-R28
-Z34 !s100 <7KIIkCNjU7CJ3XB:J0KX0
-Z35 !s105 mux8_sv_unit
-Z36 !s108 1430092880.633000
-Z37 !s107 C:/Users/Quangxdu/Documents/GitHub/ece385/final385/mux8.sv|
-Z38 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385|C:/Users/Quangxdu/Documents/GitHub/ece385/final385/mux8.sv|
-!i10b 1
-!s85 0
-!s101 -O0
-vpalette
-R1
-Z39 IRS`X9i7f;1jFA@>00aE]e3
-Z40 VAzmU@?HM?:Xj5lgogi1[90
-S1
-R4
-Z41 w1429920886
-Z42 8C:/Users/Quangxdu/Documents/GitHub/ece385/final385/pallete.sv
-Z43 FC:/Users/Quangxdu/Documents/GitHub/ece385/final385/pallete.sv
-L0 1
-R8
-r1
-31
-R9
-R28
-Z44 !s100 ?1b`_dZX;VdQeLkZ^4a_K3
-Z45 !s105 pallete_sv_unit
-Z46 !s108 1430092880.432000
-Z47 !s107 C:/Users/Quangxdu/Documents/GitHub/ece385/final385/pallete.sv|
-Z48 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385|C:/Users/Quangxdu/Documents/GitHub/ece385/final385/pallete.sv|
-!i10b 1
-!s85 0
-!s101 -O0
-vsprite_table
-R1
-Z49 ISZ?`g3@bdhIb9aM6f0YlY0
-Z50 Vl=RIU`0kI0BeLNQNKVahK1
-S1
-R4
-Z51 w1429921406
-Z52 8C:/Users/Quangxdu/Documents/GitHub/ece385/final385/sprite_table.sv
-Z53 FC:/Users/Quangxdu/Documents/GitHub/ece385/final385/sprite_table.sv
-L0 1
-R8
-r1
-31
-R9
-R28
-Z54 !s100 eX?MLL09<;3BSYh?M@9mo1
-Z55 !s105 sprite_table_sv_unit
-Z56 !s108 1430092880.805000
-Z57 !s107 C:/Users/Quangxdu/Documents/GitHub/ece385/final385/sprite_table.sv|
-Z58 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385|C:/Users/Quangxdu/Documents/GitHub/ece385/final385/sprite_table.sv|
-!i10b 1
-!s85 0
-!s101 -O0
-vtestbench
-R1
-!i10b 1
-!s100 OCWofl:CZKm0POdeXCNCa2
-I1W^TkGYOil6ATk_6?zfO62
-VhGfW:390DM[oDMzegDH9`2
-!s105 testbench_sv_unit
-S1
-R4
-w1430092860
-8C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv
-FC:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv
-L0 1
-R8
+!s100 U:?DL<4nj;RIUI;Oci27E1
+I@67:OVfDF4fboFVPk_RIV3
+VJ0@>lk`ZlAYWYEnM?ok5X2
+Z1 dC:\Users\Quangxdu\Documents\GitHub\ece385\final385\simulation\modelsim
+w1430775961
+8C:/Users/Quangxdu/Documents/GitHub/ece385/final385/usb_system/usb_system_bb.v
+FC:/Users/Quangxdu/Documents/GitHub/ece385/final385/usb_system/usb_system_bb.v
+L0 2
+OV;L;10.1e;51
 r1
 !s85 0
 31
-!s108 1430092882.047000
-!s107 C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385|C:/Users/Quangxdu/Documents/GitHub/ece385/final385/testbench.sv|
+!s108 1430882733.923000
+!s107 C:/Users/Quangxdu/Documents/GitHub/ece385/final385/usb_system/usb_system_bb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385/usb_system|C:/Users/Quangxdu/Documents/GitHub/ece385/final385/usb_system/usb_system_bb.v|
 !s101 -O0
-R9
-R28
-vvga_controller
-R1
-Z59 IDBeIz@F14iIIk02glU43n1
-Z60 Vo?5SCSYP7_^4dAMC38TXY1
-S1
-R4
-Z61 w1426361724
-Z62 8C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic Module/VGA_controller.sv
-Z63 FC:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic Module/VGA_controller.sv
-L0 25
-R8
-r1
-31
-R9
-Z64 !s100 3E=45?NIW=LCh<?e0k=V30
-Z65 !s105 VGA_controller_sv_unit
-Z66 !s108 1430092880.251000
-Z67 !s107 C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic Module/VGA_controller.sv|
-Z68 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic Module|C:/Users/Quangxdu/Documents/GitHub/ece385/final385/Graphic Module/VGA_controller.sv|
-R10
-!i10b 1
-!s85 0
-!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/Quangxdu/Documents/GitHub/ece385/final385/usb_system -O0

@@ -1,0 +1,47 @@
+what,kind,bundleId,bundleVersion,description,time
+java.runtime.version,sysinfo,,,"1.6.0_23-b05",1430884018287
+java.specification.name,sysinfo,,,"Java Platform API Specification",1430884018287
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1430884018287
+java.specification.version,sysinfo,,,"1.6",1430884018287
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1430884018287
+java.version,sysinfo,,,"1.6.0_23",1430884018287
+java.vm.info,sysinfo,,,"mixed mode",1430884018287
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1430884018287
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1430884018287
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1430884018287
+java.vm.specification.version,sysinfo,,,"1.0",1430884018287
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1430884018287
+java.vm.version,sysinfo,,,"19.0-b09",1430884018287
+started,bundle,com.altera.sbtgui.launch,14.0.0.200,"com.altera.sbtgui.launch",1430884018538
+started,bundle,org.eclipse.cdt.codan.ui,2.0.1.201202111925,"org.eclipse.cdt.codan.ui",1430884019082
+started,bundle,org.eclipse.cdt.codan.checkers.ui,1.0.0.201202111925,"org.eclipse.cdt.codan.checkers.ui",1430884019324
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1430884027435
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1430884028695
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1430884031080
+started,bundle,org.eclipse.cdt.mylyn.ui,3.6.0.v20110608-1400,"org.eclipse.cdt.mylyn.ui",1430884031209
+closed,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1430884031277
+started,bundle,org.eclipse.compare,3.5.202.R37x_v20111109-0800,"org.eclipse.compare",1430884031512
+stopped,bundle,org.eclipse.cdt.build.crossgcc,1.0.2.201202111925,"org.eclipse.cdt.build.crossgcc",1430884031773
+stopped,bundle,org.eclipse.cdt.codan.checkers.ui,1.0.0.201202111925,"org.eclipse.cdt.codan.checkers.ui",1430884031773
+stopped,bundle,com.altera.debug.cdi.gdb.plugin,14.0.0.200,"com.altera.debug.cdi.gdb.plugin",1430884031775
+stopped,bundle,com.altera.sbtgui.launch,14.0.0.200,"com.altera.sbtgui.launch",1430884031792
+stopped,bundle,com.altera.sbt4e.launch,14.0.0.200,"com.altera.sbt4e.launch",1430884031794
+stopped,bundle,com.altera.sbtgui.ui,14.0.0.200,"com.altera.sbtgui.ui",1430884031795
+stopped,bundle,com.altera.sbtgui.project,14.0.0.200,"com.altera.sbtgui.project",1430884031795
+stopped,bundle,org.eclipse.cdt.codan.checkers,1.0.1.201202111925,"org.eclipse.cdt.codan.checkers",1430884031796
+stopped,bundle,org.eclipse.cdt.codan.ui.cxx,2.0.0.201202111925,"org.eclipse.cdt.codan.ui.cxx",1430884031796
+stopped,bundle,org.eclipse.cdt.codan.core.cxx,1.0.0.201202111925,"org.eclipse.cdt.codan.core.cxx",1430884031796
+stopped,bundle,org.eclipse.cdt.launch.remote,2.3.0.201202111925,"org.eclipse.cdt.launch.remote",1430884031798
+stopped,bundle,org.eclipse.cdt.debug.mi.ui,6.1.1.201202111925,"org.eclipse.cdt.debug.mi.ui",1430884031801
+stopped,bundle,org.eclipse.cdt.debug.mi.core,7.1.1.201202111925,"org.eclipse.cdt.debug.mi.core",1430884031804
+stopped,bundle,org.eclipse.cdt.debug.ui.memory.memorybrowser,1.2.100.201202111925,"org.eclipse.cdt.debug.ui.memory.memorybrowser",1430884031806
+stopped,bundle,org.eclipse.cdt.debug.ui.memory.search,1.2.1.201202111925,"org.eclipse.cdt.debug.ui.memory.search",1430884031808
+stopped,bundle,org.eclipse.cdt.dsf.gdb.ui,2.2.1.201202111925,"org.eclipse.cdt.dsf.gdb.ui",1430884031811
+stopped,bundle,org.eclipse.cdt.dsf.ui,2.2.1.201202111925,"org.eclipse.cdt.dsf.ui",1430884031815
+stopped,bundle,org.eclipse.cdt.gdb.ui,7.0.0.201202111925,"org.eclipse.cdt.gdb.ui",1430884031817
+stopped,bundle,org.eclipse.cdt.dsf.gdb,4.0.2.201202111925,"org.eclipse.cdt.dsf.gdb",1430884031820
+stopped,bundle,org.eclipse.cdt.launch,7.0.0.201202111925,"org.eclipse.cdt.launch",1430884031822
+stopped,bundle,org.eclipse.cdt.debug.ui,7.1.2.201202111925,"org.eclipse.cdt.debug.ui",1430884031822
+stopped,bundle,org.eclipse.cdt.debug.ui.memory.traditional,1.2.1.201202111925,"org.eclipse.cdt.debug.ui.memory.traditional",1430884031828
+stopped,bundle,org.eclipse.cdt.dsf,2.2.0.201202111925,"org.eclipse.cdt.dsf",1430884031830
+stopped,bundle,org.eclipse.cdt.debug.core,7.1.0.201202111925,"org.eclipse.cdt.debug.core",1430884031836

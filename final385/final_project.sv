@@ -47,6 +47,7 @@ module  final_project 		( input         Clk,
     
      logic Reset_h;
 	 logic [7:0] keycode;
+	 logic [7:0] keycode_2;
 	 logic [7:0] buffer;
 
     assign {Reset_h}=~ (Reset);  // The push buttons are active low
@@ -70,6 +71,7 @@ module  final_project 		( input         Clk,
 										 .sdram_wire_we_n(sdram_wire_we_n), 
 										 .sdram_out_clk_clk(sdram_clk),
 										 .keycode_export(keycode),  
+										 .keycode_2_export(keycode_2),
 										 .usb_DATA(OTG_DATA),    
 										 .usb_ADDR(OTG_ADDR),    
 										 .usb_RD_N(OTG_RD_N),    
@@ -106,7 +108,9 @@ GraphicModule GraphicModule
 );
 
 GameModule GameModule
-(
+(	
+	.keycode(8'h00),
+	.keycode2(keycode_2),
 	.clk(Clk),
 	.*
 );

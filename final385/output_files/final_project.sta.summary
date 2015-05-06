@@ -3,35 +3,35 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'GraphicModule:GraphicModule|vga_controller:vga_controller|vs'
-Slack : -3.292
-TNS   : -340.569
+Slack : -2.869
+TNS   : -266.377
 
 Type  : Slow 1200mV 85C Model Setup 'GraphicModule:GraphicModule|vga_controller:vga_controller|clkdiv'
-Slack : -2.609
-TNS   : -36.646
+Slack : -2.414
+TNS   : -39.696
 
 Type  : Slow 1200mV 85C Model Setup 'GameModule:GameModule|shiftUpClock:shiftUpClock|counter[0]'
-Slack : -1.515
-TNS   : -15.150
+Slack : -1.420
+TNS   : -14.200
 
 Type  : Slow 1200mV 85C Model Setup 'Clk'
-Slack : -0.194
-TNS   : -0.194
+Slack : -0.417
+TNS   : -0.417
 
 Type  : Slow 1200mV 85C Model Hold 'Clk'
-Slack : 0.124
+Slack : 0.200
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'GraphicModule:GraphicModule|vga_controller:vga_controller|vs'
-Slack : 0.143
+Slack : 0.276
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'GameModule:GameModule|shiftUpClock:shiftUpClock|counter[0]'
-Slack : 0.443
+Slack : 0.427
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'GraphicModule:GraphicModule|vga_controller:vga_controller|clkdiv'
-Slack : 0.658
+Slack : 0.657
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clk'
@@ -40,7 +40,7 @@ TNS   : -4.285
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GraphicModule:GraphicModule|vga_controller:vga_controller|vs'
 Slack : -1.285
-TNS   : -150.345
+TNS   : -137.495
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GraphicModule:GraphicModule|vga_controller:vga_controller|clkdiv'
 Slack : -1.285
@@ -51,35 +51,35 @@ Slack : -1.285
 TNS   : -12.850
 
 Type  : Slow 1200mV 0C Model Setup 'GraphicModule:GraphicModule|vga_controller:vga_controller|vs'
-Slack : -2.878
-TNS   : -298.491
+Slack : -2.546
+TNS   : -238.776
 
 Type  : Slow 1200mV 0C Model Setup 'GraphicModule:GraphicModule|vga_controller:vga_controller|clkdiv'
-Slack : -2.264
-TNS   : -30.941
+Slack : -2.086
+TNS   : -34.033
 
 Type  : Slow 1200mV 0C Model Setup 'GameModule:GameModule|shiftUpClock:shiftUpClock|counter[0]'
-Slack : -1.284
-TNS   : -12.840
+Slack : -1.191
+TNS   : -11.910
 
 Type  : Slow 1200mV 0C Model Setup 'Clk'
-Slack : -0.119
-TNS   : -0.119
+Slack : -0.309
+TNS   : -0.309
 
 Type  : Slow 1200mV 0C Model Hold 'Clk'
-Slack : 0.084
+Slack : 0.157
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'GraphicModule:GraphicModule|vga_controller:vga_controller|vs'
-Slack : 0.151
+Slack : 0.224
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'GameModule:GameModule|shiftUpClock:shiftUpClock|counter[0]'
-Slack : 0.401
+Slack : 0.387
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'GraphicModule:GraphicModule|vga_controller:vga_controller|clkdiv'
-Slack : 0.601
+Slack : 0.602
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clk'
@@ -88,7 +88,7 @@ TNS   : -4.285
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GraphicModule:GraphicModule|vga_controller:vga_controller|vs'
 Slack : -1.285
-TNS   : -150.345
+TNS   : -137.495
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GraphicModule:GraphicModule|vga_controller:vga_controller|clkdiv'
 Slack : -1.285
@@ -99,31 +99,31 @@ Slack : -1.285
 TNS   : -12.850
 
 Type  : Fast 1200mV 0C Model Setup 'GraphicModule:GraphicModule|vga_controller:vga_controller|vs'
-Slack : -1.269
-TNS   : -120.733
+Slack : -1.029
+TNS   : -84.763
 
 Type  : Fast 1200mV 0C Model Setup 'GraphicModule:GraphicModule|vga_controller:vga_controller|clkdiv'
-Slack : -0.736
-TNS   : -7.392
+Slack : -0.669
+TNS   : -8.583
 
 Type  : Fast 1200mV 0C Model Setup 'GameModule:GameModule|shiftUpClock:shiftUpClock|counter[0]'
-Slack : -0.193
-TNS   : -1.930
+Slack : -0.154
+TNS   : -1.540
 
 Type  : Fast 1200mV 0C Model Setup 'Clk'
-Slack : 0.257
+Slack : 0.132
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'Clk'
-Slack : -0.070
-TNS   : -0.070
+Slack : -0.012
+TNS   : -0.012
 
 Type  : Fast 1200mV 0C Model Hold 'GraphicModule:GraphicModule|vga_controller:vga_controller|vs'
-Slack : 0.049
+Slack : 0.128
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'GameModule:GameModule|shiftUpClock:shiftUpClock|counter[0]'
-Slack : 0.198
+Slack : 0.191
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'GraphicModule:GraphicModule|vga_controller:vga_controller|clkdiv'
@@ -136,7 +136,7 @@ TNS   : -4.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GraphicModule:GraphicModule|vga_controller:vga_controller|vs'
 Slack : -1.000
-TNS   : -117.000
+TNS   : -107.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GraphicModule:GraphicModule|vga_controller:vga_controller|clkdiv'
 Slack : -1.000
