@@ -1,5 +1,5 @@
 Analysis & Synthesis report for final_project
-Tue May 05 21:28:51 2015
+Tue May 05 22:01:32 2015
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -21,15 +21,13 @@ Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
  13. Parameter Settings for User Entity Instance: GraphicModule:GraphicModule|palette:palette
  14. Parameter Settings for User Entity Instance: GraphicModule:GraphicModule|vga_controller:vga_controller
  15. Parameter Settings for User Entity Instance: GameModule:GameModule|getStripModule:getStripModule
- 16. Port Connectivity Checks: "GameModule:GameModule|getStripModule:getStripModule"
- 17. Port Connectivity Checks: "GameModule:GameModule|GameTable:GameTable"
- 18. Port Connectivity Checks: "GameModule:GameModule|GameManager:GameManager"
- 19. Port Connectivity Checks: "GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16"
- 20. Port Connectivity Checks: "usb_system:usbsys_instance"
- 21. Post-Synthesis Netlist Statistics for Top Partition
- 22. Elapsed Time Per Partition
- 23. Analysis & Synthesis Messages
- 24. Analysis & Synthesis Suppressed Messages
+ 16. Port Connectivity Checks: "GameModule:GameModule|GameTable:GameTable"
+ 17. Port Connectivity Checks: "GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16"
+ 18. Port Connectivity Checks: "usb_system:usbsys_instance"
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
+ 22. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -56,15 +54,15 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue May 05 21:28:51 2015      ;
+; Analysis & Synthesis Status        ; Successful - Tue May 05 22:01:32 2015      ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                      ; final_project                              ;
 ; Top-level Entity Name              ; final_project                              ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 2,912                                      ;
-;     Total combinational functions  ; 2,906                                      ;
-;     Dedicated logic registers      ; 90                                         ;
-; Total registers                    ; 90                                         ;
+; Total logic elements               ; 3,364                                      ;
+;     Total combinational functions  ; 3,319                                      ;
+;     Dedicated logic registers      ; 150                                        ;
+; Total registers                    ; 150                                        ;
 ; Total pins                         ; 194                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -204,28 +202,28 @@ agreement for further details.
 +---------------------------------------------+---------------------------------------------------------+
 ; Resource                                    ; Usage                                                   ;
 +---------------------------------------------+---------------------------------------------------------+
-; Estimated Total logic elements              ; 2,912                                                   ;
+; Estimated Total logic elements              ; 3,364                                                   ;
 ;                                             ;                                                         ;
-; Total combinational functions               ; 2906                                                    ;
+; Total combinational functions               ; 3319                                                    ;
 ; Logic element usage by number of LUT inputs ;                                                         ;
-;     -- 4 input functions                    ; 2519                                                    ;
-;     -- 3 input functions                    ; 217                                                     ;
-;     -- <=2 input functions                  ; 170                                                     ;
+;     -- 4 input functions                    ; 2838                                                    ;
+;     -- 3 input functions                    ; 253                                                     ;
+;     -- <=2 input functions                  ; 228                                                     ;
 ;                                             ;                                                         ;
 ; Logic elements by mode                      ;                                                         ;
-;     -- normal mode                          ; 2715                                                    ;
-;     -- arithmetic mode                      ; 191                                                     ;
+;     -- normal mode                          ; 3094                                                    ;
+;     -- arithmetic mode                      ; 225                                                     ;
 ;                                             ;                                                         ;
-; Total registers                             ; 90                                                      ;
-;     -- Dedicated logic registers            ; 90                                                      ;
+; Total registers                             ; 150                                                     ;
+;     -- Dedicated logic registers            ; 150                                                     ;
 ;     -- I/O registers                        ; 0                                                       ;
 ;                                             ;                                                         ;
 ; I/O pins                                    ; 194                                                     ;
 ; Embedded Multiplier 9-bit elements          ; 0                                                       ;
-; Maximum fan-out node                        ; GraphicModule:GraphicModule|Mapper:Mapper|sPosXOut[0]~6 ;
-; Maximum fan-out                             ; 853                                                     ;
-; Total fan-out                               ; 11608                                                   ;
-; Average fan-out                             ; 3.38                                                    ;
+; Maximum fan-out node                        ; GraphicModule:GraphicModule|Mapper:Mapper|sPosXOut[0]~3 ;
+; Maximum fan-out                             ; 892                                                     ;
+; Total fan-out                               ; 13260                                                   ;
+; Average fan-out                             ; 3.40                                                    ;
 +---------------------------------------------+---------------------------------------------------------+
 
 
@@ -234,15 +232,17 @@ agreement for further details.
 +---------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node            ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                              ; Library Name ;
 +---------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+
-; |final_project                        ; 2906 (1)          ; 90 (0)       ; 0           ; 0            ; 0       ; 0         ; 194  ; 0            ; |final_project                                                                   ; work         ;
-;    |GameModule:GameModule|            ; 68 (0)            ; 67 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GameModule:GameModule                                             ; work         ;
-;       |GameTable:GameTable|           ; 50 (50)           ; 56 (56)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GameModule:GameModule|GameTable:GameTable                         ; work         ;
+; |final_project                        ; 3319 (0)          ; 150 (0)      ; 0           ; 0            ; 0       ; 0         ; 194  ; 0            ; |final_project                                                                   ; work         ;
+;    |GameModule:GameModule|            ; 111 (0)           ; 127 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GameModule:GameModule                                             ; work         ;
+;       |GameManager:GameManager|       ; 38 (38)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GameModule:GameModule|GameManager:GameManager                     ; work         ;
+;       |GameTable:GameTable|           ; 42 (42)           ; 106 (106)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GameModule:GameModule|GameTable:GameTable                         ; work         ;
+;       |getStripModule:getStripModule| ; 13 (13)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GameModule:GameModule|getStripModule:getStripModule               ; work         ;
 ;       |shiftUpClock:shiftUpClock|     ; 18 (18)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GameModule:GameModule|shiftUpClock:shiftUpClock                   ; work         ;
-;    |GraphicModule:GraphicModule|      ; 2837 (0)          ; 23 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule                                       ; work         ;
-;       |Mapper:Mapper|                 ; 249 (249)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|Mapper:Mapper                         ; work         ;
+;    |GraphicModule:GraphicModule|      ; 3208 (0)          ; 23 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule                                       ; work         ;
+;       |Mapper:Mapper|                 ; 298 (298)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|Mapper:Mapper                         ; work         ;
 ;       |palette:palette|               ; 128 (128)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|palette:palette                       ; work         ;
-;       |sprite_table:sprite_table|     ; 2415 (1352)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|sprite_table:sprite_table             ; work         ;
-;          |mux16:mux16|                ; 1063 (1063)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16 ; work         ;
+;       |sprite_table:sprite_table|     ; 2737 (1587)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|sprite_table:sprite_table             ; work         ;
+;          |mux16:mux16|                ; 1150 (1150)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16 ; work         ;
 ;       |vga_controller:vga_controller| ; 45 (45)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|GraphicModule:GraphicModule|vga_controller:vga_controller         ; work         ;
 +---------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -270,37 +270,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GameModule:GameModule|GameTable:GameTable|tPosX12[0..9]       ; Stuck at GND due to stuck port data_in                               ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY1[0..9]        ; Stuck at GND due to stuck port data_in                               ;
 ; GameModule:GameModule|GameTable:GameTable|tPosX1[0..9]        ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tPosX11[0..4,6..9]  ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID11[0,1,3]  ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tPosX10[0..9]       ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID10[0,3]    ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tPosX9[0..4,6..9]   ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID9[0,1,3]   ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tPosX8[0..9]        ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID8[0,3]     ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tPosX7[0..4,6..9]   ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID7[0,1,3]   ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tPosX6[0..9]        ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID6[0,3]     ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tPosX5[0..4,6..9]   ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID5[0,1,3]   ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tPosX4[0..9]        ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID4[0,3]     ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tPosX3[0..4,6..9]   ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID3[0,1,3]   ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tPosX2[0..9]        ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID2[0,3]     ; Stuck at GND due to stuck port data_in                               ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID10[2]      ; Merged with GameModule:GameModule|GameTable:GameTable|tSpriteID10[1] ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID10[1]      ; Merged with GameModule:GameModule|GameTable:GameTable|tSpriteID11[2] ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID11[2]      ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX11[5]     ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID9[2]       ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX9[5]      ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID8[1,2]     ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX9[5]      ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID7[2]       ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX7[5]      ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID6[1,2]     ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX7[5]      ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID5[2]       ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX5[5]      ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID4[1,2]     ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX5[5]      ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID3[2]       ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX3[5]      ;
-; GameModule:GameModule|GameTable:GameTable|tSpriteID2[1,2]     ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX3[5]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosX15[6]          ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX14[5]     ;
 ; GameModule:GameModule|GameTable:GameTable|tPosX16[5,6]        ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX14[5]     ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY13[2,4]        ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX14[5]     ;
@@ -311,6 +280,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GameModule:GameModule|GameTable:GameTable|tSpriteID13[0,1]    ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX14[5]     ;
 ; GameModule:GameModule|GameTable:GameTable|tSpriteID15[1]      ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX14[5]     ;
 ; GameModule:GameModule|GameTable:GameTable|tSpriteID1[0..3]    ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX14[5]     ;
+; GameModule:GameModule|GameTable:GameTable|tPosX10[1..4,7..9]  ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX10[0]     ;
+; GameModule:GameModule|GameTable:GameTable|tPosX11[0..4,7..9]  ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX10[0]     ;
+; GameModule:GameModule|GameTable:GameTable|tSpriteID11[2]      ; Merged with GameModule:GameModule|GameTable:GameTable|tSpriteID10[2] ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY11[9]          ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY10[9]     ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY11[8]          ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY10[8]     ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY11[7]          ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY10[7]     ;
@@ -321,6 +293,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GameModule:GameModule|GameTable:GameTable|tPosY11[2]          ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY10[2]     ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY11[1]          ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY10[1]     ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY11[0]          ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY10[0]     ;
+; GameModule:GameModule|GameTable:GameTable|tPosX8[1..4,7..9]   ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX8[0]      ;
+; GameModule:GameModule|GameTable:GameTable|tPosX9[0..4,7..9]   ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX8[0]      ;
+; GameModule:GameModule|GameTable:GameTable|tSpriteID9[2]       ; Merged with GameModule:GameModule|GameTable:GameTable|tSpriteID8[2]  ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY9[9]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY8[9]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY9[8]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY8[8]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY9[7]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY8[7]      ;
@@ -331,6 +306,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GameModule:GameModule|GameTable:GameTable|tPosY9[2]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY8[2]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY9[1]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY8[1]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY9[0]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY8[0]      ;
+; GameModule:GameModule|GameTable:GameTable|tPosX6[1..4,7..9]   ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX6[0]      ;
+; GameModule:GameModule|GameTable:GameTable|tPosX7[0..4,7..9]   ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX6[0]      ;
+; GameModule:GameModule|GameTable:GameTable|tSpriteID7[2]       ; Merged with GameModule:GameModule|GameTable:GameTable|tSpriteID6[2]  ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY7[9]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY6[9]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY7[8]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY6[8]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY7[7]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY6[7]      ;
@@ -341,6 +319,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GameModule:GameModule|GameTable:GameTable|tPosY7[2]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY6[2]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY7[1]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY6[1]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY7[0]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY6[0]      ;
+; GameModule:GameModule|GameTable:GameTable|tPosX4[1..4,7..9]   ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX4[0]      ;
+; GameModule:GameModule|GameTable:GameTable|tPosX5[0..4,7..9]   ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX4[0]      ;
+; GameModule:GameModule|GameTable:GameTable|tSpriteID5[2]       ; Merged with GameModule:GameModule|GameTable:GameTable|tSpriteID4[2]  ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY5[9]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY4[9]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY5[8]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY4[8]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY5[7]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY4[7]      ;
@@ -351,6 +332,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GameModule:GameModule|GameTable:GameTable|tPosY5[2]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY4[2]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY5[1]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY4[1]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY5[0]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY4[0]      ;
+; GameModule:GameModule|GameTable:GameTable|tPosX2[1..4,7..9]   ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX2[0]      ;
+; GameModule:GameModule|GameTable:GameTable|tPosX3[0..4,7..9]   ; Merged with GameModule:GameModule|GameTable:GameTable|tPosX2[0]      ;
+; GameModule:GameModule|GameTable:GameTable|tSpriteID3[2]       ; Merged with GameModule:GameModule|GameTable:GameTable|tSpriteID2[2]  ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY3[9]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY2[9]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY3[8]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY2[8]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY3[7]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY2[7]      ;
@@ -361,7 +345,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GameModule:GameModule|GameTable:GameTable|tPosY3[2]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY2[2]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY3[1]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY2[1]      ;
 ; GameModule:GameModule|GameTable:GameTable|tPosY3[0]           ; Merged with GameModule:GameModule|GameTable:GameTable|tPosY2[0]      ;
-; Total Number of Removed Registers = 328                       ;                                                                      ;
+; GameModule:GameModule|GameTable:GameTable|tPosX10[0]          ; Stuck at GND due to stuck port data_in                               ;
+; GameModule:GameModule|GameTable:GameTable|tPosX8[0]           ; Stuck at GND due to stuck port data_in                               ;
+; GameModule:GameModule|GameTable:GameTable|tPosX6[0]           ; Stuck at GND due to stuck port data_in                               ;
+; GameModule:GameModule|GameTable:GameTable|tPosX4[0]           ; Stuck at GND due to stuck port data_in                               ;
+; GameModule:GameModule|GameTable:GameTable|tPosX2[0]           ; Stuck at GND due to stuck port data_in                               ;
+; Total Number of Removed Registers = 278                       ;                                                                      ;
 +---------------------------------------------------------------+----------------------------------------------------------------------+
 
 
@@ -370,82 +359,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------+---------------------------+------------------------------------------------------+
 ; Register name                                        ; Reason for Removal        ; Registers Removed due to This Register               ;
 +------------------------------------------------------+---------------------------+------------------------------------------------------+
-; GameModule:GameModule|GameTable:GameTable|tPosX11[0] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX9[0], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX7[0], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX5[0], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX3[0]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX11[1] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX9[1], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX7[1], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX5[1], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX3[1]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX11[2] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX9[2], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX7[2], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX5[2], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX3[2]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX11[3] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX9[3], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX7[3], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX5[3], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX3[3]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX11[4] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX9[4], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX7[4], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX5[4], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX3[4]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX11[6] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX9[6], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX7[6], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX5[6], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX3[6]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX11[7] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX9[7], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX7[7], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX5[7], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX3[7]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX11[8] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX9[8], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX7[8], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX5[8], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX3[8]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX11[9] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX9[9], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX7[9], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX5[9], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX3[9]  ;
 ; GameModule:GameModule|GameTable:GameTable|tPosX10[0] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX8[0], ;
 ;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX6[0], ;
 ;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX4[0], ;
 ;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX2[0]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX10[1] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX8[1], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX6[1], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX4[1], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX2[1]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX10[2] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX8[2], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX6[2], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX4[2], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX2[2]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX10[3] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX8[3], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX6[3], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX4[3], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX2[3]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX10[4] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX8[4], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX6[4], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX4[4], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX2[4]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX10[5] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX8[5], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX6[5], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX4[5], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX2[5]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX10[6] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX8[6], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX6[6], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX4[6], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX2[6]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX10[7] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX8[7], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX6[7], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX4[7], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX2[7]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX10[8] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX8[8], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX6[8], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX4[8], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX2[8]  ;
-; GameModule:GameModule|GameTable:GameTable|tPosX10[9] ; Stuck at GND              ; GameModule:GameModule|GameTable:GameTable|tPosX8[9], ;
-;                                                      ; due to stuck port data_in ; GameModule:GameModule|GameTable:GameTable|tPosX6[9], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX4[9], ;
-;                                                      ;                           ; GameModule:GameModule|GameTable:GameTable|tPosX2[9]  ;
 +------------------------------------------------------+---------------------------+------------------------------------------------------+
 
 
@@ -454,12 +371,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 90    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 50    ;
+; Total registers                              ; 150   ;
+; Number of registers using Synchronous Clear  ; 10    ;
+; Number of registers using Synchronous Load   ; 40    ;
 ; Number of registers using Asynchronous Clear ; 23    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 15    ;
+; Number of registers using Clock Enable       ; 64    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -469,10 +386,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
-; 128:1              ; 2 bits    ; 170 LEs       ; 10 LEs               ; 160 LEs                ; No         ; |final_project|GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16|f[4] ;
-; 15:1               ; 4 bits    ; 40 LEs        ; 28 LEs               ; 12 LEs                 ; No         ; |final_project|GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16|f[0] ;
+; 256:1              ; 2 bits    ; 340 LEs       ; 12 LEs               ; 328 LEs                ; No         ; |final_project|GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16|f[5] ;
+; 256:1              ; 4 bits    ; 680 LEs       ; 24 LEs               ; 656 LEs                ; No         ; |final_project|GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16|f[3] ;
+; 13:1               ; 3 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |final_project|GraphicModule:GraphicModule|Mapper:Mapper|spriteIDOut                  ;
 ; 17:1               ; 5 bits    ; 55 LEs        ; 5 LEs                ; 50 LEs                 ; No         ; |final_project|GraphicModule:GraphicModule|Mapper:Mapper|sPosXOut[4]                  ;
-; 17:1               ; 2 bits    ; 22 LEs        ; 8 LEs                ; 14 LEs                 ; No         ; |final_project|GraphicModule:GraphicModule|Mapper:Mapper|sPosYOut[0]                  ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 8 LEs                ; 14 LEs                 ; No         ; |final_project|GraphicModule:GraphicModule|Mapper:Mapper|sPosYOut[1]                  ;
 ; 17:1               ; 3 bits    ; 33 LEs        ; 12 LEs               ; 21 LEs                 ; No         ; |final_project|GraphicModule:GraphicModule|Mapper:Mapper|sPosYOut[4]                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
 
@@ -485,119 +403,119 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ADDR_WIDTH     ; 10                                                                               ; Signed Integer ;
 ; DATA_WIDTH     ; 8                                                                                ; Signed Integer ;
 ; Sprite0        ; (00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000 ; Array/Record   ;
-; Sprite0        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite0        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000111,00000111,000000 ;                ;
 ; Sprite0        ; 00,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000 ;                ;
 ; Sprite0        ; 000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
 ; Sprite0        ; 0000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;                ;
-; Sprite0        ; 00000,00000000,00000001,00000010,00000010,00000001,00000000,00000000,00000000,00 ;                ;
+; Sprite0        ; 00000,00000000,00000110,00000010,00000010,00000110,00000000,00000000,00000000,00 ;                ;
 ; Sprite0        ; 000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;                ;
 ; Sprite0        ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000, ;                ;
-; Sprite0        ; 00000000,00000000,00000000,00000000,00000000,00000000,00000001,00000010,00000011 ;                ;
-; Sprite0        ; ,00000011,00000100,00000001,00000000,00000000,00000000,00000000,00000000,0000000 ;                ;
+; Sprite0        ; 00000000,00000000,00000000,00000000,00000000,00000000,00000110,00000001,00000001 ;                ;
+; Sprite0        ; ,00000001,00000001,00000110,00000000,00000000,00000000,00000000,00000000,0000000 ;                ;
 ; Sprite0        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
 ; Sprite0        ; 00,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000 ;                ;
-; Sprite0        ; 000,00000000,00000001,00000010,00000011,00000011,00000011,00000011,00000010,0000 ;                ;
-; Sprite0        ; 0001,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;                ;
+; Sprite0        ; 000,00000000,00001001,00000010,00000010,00010111,00010111,00000001,00000010,0000 ;                ;
+; Sprite0        ; 1001,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;                ;
 ; Sprite0        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
-; Sprite0        ; 000000,00000000,00000000,00000000,00000000,00000000,00000001,00000010,00000011,0 ;                ;
-; Sprite0        ; 0000101,00000010,00000010,00000101,00000011,00000010,00000001,00000000,00000000, ;                ;
+; Sprite0        ; 000000,00000000,00000000,00000000,00000000,00000000,00000110,00000010,00000010,0 ;                ;
+; Sprite0        ; 0010111,00011000,00011000,00010111,00000010,00000001,00000110,00000000,00000000, ;                ;
 ; Sprite0        ; 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000 ;                ;
 ; Sprite0        ; ,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000 ;                ;
-; Sprite0        ; 0,00000000,00000001,00000010,00000011,00000101,00000010,00000000,00000000,000000 ;                ;
-; Sprite0        ; 10,00000101,00000011,00000010,00000001,00000000,00000000,00000000,00000000,00000 ;                ;
+; Sprite0        ; 0,00000000,00000111,00000010,00000001,00010111,00011000,00011000,00011000,000110 ;                ;
+; Sprite0        ; 00,00010111,00000001,00000010,00000111,00000000,00000000,00000000,00000000,00000 ;                ;
 ; Sprite0        ; 000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
-; Sprite0        ; 0000,00000000,00000000,00000000,00000000,00000000,00000001,00000010,00000011,000 ;                ;
-; Sprite0        ; 00101,00000010,00000000,00000110,00000110,00000000,00000010,00000101,00000011,00 ;                ;
-; Sprite0        ; 000100,00000001,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;                ;
+; Sprite0        ; 0000,00000000,00000000,00000000,00000000,00000000,00000010,00000101,00000111,000 ;                ;
+; Sprite0        ; 01001,00011001,00011000,00011000,00011000,00011010,00011000,00010111,00011011,00 ;                ;
+; Sprite0        ; 000010,00000110,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;                ;
 ; Sprite0        ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000, ;                ;
-; Sprite0        ; 00000000,00000001,00000100,00000011,00000101,00000010,00000000,00000110,00000000 ;                ;
-; Sprite0        ; ,00000000,00000110,00000000,00000010,00000101,00000011,00000100,00000001,0000000 ;                ;
+; Sprite0        ; 00000000,00000000,00000000,00000111,00001010,00000110,00001010,00000101,00011000 ;                ;
+; Sprite0        ; ,00011010,00011010,00011010,00011010,00010111,00000001,00000001,00001001,0000000 ;                ;
 ; Sprite0        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
-; Sprite0        ; 00,00000000,00000000,00000000,00000000,00000000,00000001,00000100,00000011,00000 ;                ;
-; Sprite0        ; 101,00000010,00000000,00000110,00000000,00000000,00000000,00000000,00000110,0000 ;                ;
-; Sprite0        ; 0000,00000010,00000101,00000011,00000100,00000001,00000000,00000000,00000000,000 ;                ;
-; Sprite0        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
-; Sprite0        ; 000000,00000001,00000100,00000011,00000101,00000010,00000000,00000100,00000000,0 ;                ;
-; Sprite0        ; 0000000,00000000,00000000,00000000,00000000,00000110,00000000,00000001,00000101, ;                ;
-; Sprite0        ; 00000011,00000100,00000001,00000000,00000000,00000000,00000000,00000000,00000000 ;                ;
-; Sprite0        ; ,00000000,00000000,00000000,00000000,00000000,00000001,00000010,00000011,0000010 ;                ;
-; Sprite0        ; 1,00000010,00000001,00000100,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
-; Sprite0        ; 00,00000000,00000000,00000110,00000000,00000001,00000101,00000011,00000100,00000 ;                ;
-; Sprite0        ; 001,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
-; Sprite0        ; 0000,00000001,00000010,00000011,00000101,00000010,00000001,00000100,00000000,000 ;                ;
-; Sprite0        ; 00000,00000000,00000110,00000010,00000010,00000110,00000000,00000000,00000000,00 ;                ;
-; Sprite0        ; 000110,00000001,00000010,00000101,00000011,00000010,00000001,00000000,00000000,0 ;                ;
-; Sprite0        ; 0000000,00000000,00000000,00000000,00000000,00000001,00000010,00000011,00000101, ;                ;
-; Sprite0        ; 00000010,00000000,00000100,00000000,00000000,00000000,00000110,00000010,00000110 ;                ;
-; Sprite0        ; ,00000110,00000010,00000110,00000000,00000000,00000000,00000110,00000000,0000001 ;                ;
-; Sprite0        ; 0,00000101,00000011,00000010,00000001,00000000,00000000,00000000,00000000,000000 ;                ;
-; Sprite0        ; 00,00000001,00000010,00000011,00000101,00000010,00000000,00000110,00000000,00000 ;                ;
-; Sprite0        ; 000,00000111,00000010,00000001,00000110,00000000,00000000,00000110,00000001,0000 ;                ;
-; Sprite0        ; 0010,00000111,00000000,00000000,00000110,00000000,00000010,00000101,00000011,000 ;                ;
-; Sprite0        ; 00010,00000001,00000000,00000000,00000000,00000000,00000010,00000011,00000101,00 ;                ;
-; Sprite0        ; 000010,00000000,00000110,00000000,00000000,00000111,00000000,00000000,00000000,0 ;                ;
-; Sprite0        ; 0000100,00000000,00000000,00000110,00000000,00000000,00000000,00000110,00000000, ;                ;
-; Sprite0        ; 00000000,00000110,00000000,00000010,00000101,00000011,00000010,00000001,00000000 ;                ;
-; Sprite0        ; ,00000000,00000010,00000011,00000101,00000010,00000000,00000110,00000000,0000000 ;                ;
-; Sprite0        ; 0,00000110,00000000,00000000,00000000,00000000,00000100,00000000,00000000,000001 ;                ;
-; Sprite0        ; 10,00000000,00000000,00000000,00000000,00000110,00000000,00000000,00000110,00000 ;                ;
-; Sprite0        ; 000,00000010,00000101,00000011,00000010,00000000,00000000,00000010,00000011,0000 ;                ;
-; Sprite0        ; 0100,00000001,00000000,00000001,00000000,00000110,00000000,00000001,00000100,000 ;                ;
-; Sprite0        ; 00100,00000000,00000100,00000000,00000000,00000110,00000000,00000100,00000100,00 ;                ;
-; Sprite0        ; 000001,00000000,00000110,00000000,00000001,00000000,00000001,00000100,00000011,0 ;                ;
-; Sprite0        ; 0000100,00000000,00000000,00000100,00000011,00000100,00000000,00000000,00000110, ;                ;
-; Sprite0        ; 00000110,00000000,00000001,00000100,00000011,00000110,00000001,00000110,00000110 ;                ;
-; Sprite0        ; ,00000110,00000110,00000001,00000110,00000011,00000100,00000001,00000000,0000011 ;                ;
-; Sprite0        ; 0,00000110,00000000,00000000,00000100,00000011,00000100,00000000,00000000,000000 ;                ;
-; Sprite0        ; 10,00000011,00000110,00000001,00000000,00000000,00000000,00000001,00000100,00000 ;                ;
-; Sprite0        ; 011,00000011,00000110,00000001,00000100,00000110,00000110,00000100,00000000,0000 ;                ;
-; Sprite0        ; 0110,00000011,00000011,00000100,00000001,00000000,00000000,00000000,00000001,000 ;                ;
-; Sprite0        ; 00110,00000011,00000100,00000000,00000000,00000001,00000011,00000011,00000010,00 ;                ;
-; Sprite0        ; 000001,00000001,00000001,00000100,00000011,00000011,00000011,00000110,00000000,0 ;                ;
-; Sprite0        ; 0000111,00000000,00000000,00000110,00000000,00000110,00000011,00000011,00000011, ;                ;
-; Sprite0        ; 00000100,00000001,00000001,00000001,00000010,00000011,00000011,00000010,00000000 ;                ;
-; Sprite0        ; ,00000000,00000000,00000010,00000011,00000011,00000111,00000111,00000111,0000001 ;                ;
-; Sprite0        ; 1,00000011,00000110,00000011,00000110,00000001,00000100,00000000,00000000,000001 ;                ;
-; Sprite0        ; 10,00000000,00000110,00000011,00000110,00000101,00000011,00000111,00000111,00000 ;                ;
-; Sprite0        ; 111,00000011,00000011,00000010,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
-; Sprite0        ; 0010,00000011,00000011,00000011,00000011,00000011,00000100,00000100,00000011,000 ;                ;
-; Sprite0        ; 00110,00000001,00000100,00000000,00000000,00000100,00000001,00000110,00000011,00 ;                ;
-; Sprite0        ; 000100,00000010,00001000,00000011,00000011,00000011,00000011,00000010,00000000,0 ;                ;
-; Sprite0        ; 0000000,00000000,00000000,00000000,00000000,00000000,00000001,00000010,00000010, ;                ;
-; Sprite0        ; 00000010,00000001,00000001,00000010,00000011,00000110,00000001,00000100,00000000 ;                ;
-; Sprite0        ; ,00000000,00000100,00000001,00000110,00000011,00000010,00000000,00000001,0000001 ;                ;
-; Sprite0        ; 0,00000010,00000010,00000001,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
 ; Sprite0        ; 00,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000 ;                ;
-; Sprite0        ; 010,00000011,00000110,00000001,00000100,00000000,00000000,00000100,00000001,0000 ;                ;
-; Sprite0        ; 0110,00000011,00000010,00000000,00000000,00000000,00000000,00000000,00000000,000 ;                ;
+; Sprite0        ; 000,00000110,00001010,00000110,00011100,00011001,00011010,00011010,00011010,0001 ;                ;
+; Sprite0        ; 1101,00011010,00010111,00011011,00000010,00001001,00000000,00000000,00000000,000 ;                ;
 ; Sprite0        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
-; Sprite0        ; 000000,00000000,00000000,00000000,00000000,00000010,00000011,00000110,00000001,0 ;                ;
-; Sprite0        ; 0000110,00000000,00000000,00000110,00000001,00000110,00000011,00000010,00000000, ;                ;
-; Sprite0        ; 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000 ;                ;
+; Sprite0        ; 000000,00000000,00000000,00000000,00000000,00000000,00000000,00000111,00001010,0 ;                ;
+; Sprite0        ; 0000110,00000110,00011001,00011010,00011101,00011101,00011101,00011101,00011110, ;                ;
+; Sprite0        ; 00001011,00000001,00000110,00000000,00000000,00000000,00000000,00000000,00000000 ;                ;
+; Sprite0        ; ,00000010,00000010,00000010,00000010,00000010,00000010,00000010,00000010,0000001 ;                ;
+; Sprite0        ; 0,00000010,00000010,00000010,00000010,00000110,00000111,00000010,00000010,000010 ;                ;
+; Sprite0        ; 10,00011101,00011101,00011101,00011111,00011101,00011110,00000001,00000010,00000 ;                ;
+; Sprite0        ; 111,00000000,00000000,00000000,00000000,00000000,00001010,00000010,00000010,0000 ;                ;
+; Sprite0        ; 0010,00000010,00000010,00000010,00000010,00000010,00000010,00000010,00000010,000 ;                ;
+; Sprite0        ; 00010,00000010,00000011,00000000,00000000,00000001,00100000,00011101,00011101,00 ;                ;
+; Sprite0        ; 011111,00011111,00011111,00011110,00011011,00000010,00000110,00000000,00000000,0 ;                ;
+; Sprite0        ; 0000000,00000000,00001010,00000010,00000000,00000000,00000001,00000000,00000000, ;                ;
+; Sprite0        ; 00000000,00000001,00000000,00000000,00000000,00000000,00000001,00000001,00000001 ;                ;
+; Sprite0        ; ,00000001,00000000,00000001,00011001,00011111,00011111,00011111,00100001,0010000 ;                ;
+; Sprite0        ; 1,00011110,00000001,00100010,00001001,00000000,00000000,00000000,00001010,000000 ;                ;
+; Sprite0        ; 10,00000110,00100011,00100100,00100100,00000011,00000010,00100101,00100100,00100 ;                ;
+; Sprite0        ; 110,00000011,00000010,00010111,00100111,00100111,00010111,00000011,00000001,0000 ;                ;
+; Sprite0        ; 0010,00011110,00011111,00100001,00100001,00100001,00100001,00011110,00011011,000 ;                ;
+; Sprite0        ; 00010,00000110,00000000,00000000,00001010,00000010,00000110,00101000,00011000,00 ;                ;
+; Sprite0        ; 101000,00001010,00000110,00101001,00011000,00101010,00000110,00000111,00100111,0 ;                ;
+; Sprite0        ; 0011101,00011101,00011101,00100111,00001001,00000011,00000011,00011001,00100001, ;                ;
+; Sprite0        ; 00100001,00100001,00101011,00101011,00011110,00001011,00000001,00000110,00000000 ;                ;
+; Sprite0        ; ,00001010,00000010,00000110,00101000,00011000,00101000,00001010,00011100,0010100 ;                ;
+; Sprite0        ; 1,00011010,00101010,00000110,00001001,00100111,00011101,00011101,00011101,000111 ;                ;
+; Sprite0        ; 11,00011110,00000111,00000011,00000111,00011001,00100001,00100001,00100001,00100 ;                ;
+; Sprite0        ; 001,00100001,00011110,00000001,00000010,00000111,00001010,00000011,00000110,0010 ;                ;
+; Sprite0        ; 1000,00011000,00101000,00001010,00000110,00101001,00011010,00101010,00000110,000 ;                ;
+; Sprite0        ; 01001,00100111,00011101,00011101,00011111,00011111,00011110,00000110,00000111,00 ;                ;
+; Sprite0        ; 000111,00101100,00100001,00100001,00100001,00100001,00100001,00011110,00000011,0 ;                ;
+; Sprite0        ; 0000111,00000111,00001010,00000010,00000110,00101000,00011000,00101000,00001010, ;                ;
+; Sprite0        ; 00011100,00101001,00011000,00101010,00000110,00001001,00100111,00011101,00011101 ;                ;
+; Sprite0        ; ,00011101,00100111,00000110,00000111,00001001,00101100,00100001,00101011,0010000 ;                ;
+; Sprite0        ; 1,00101011,00101011,00011110,00000111,00000111,00000110,00000000,00001010,000000 ;                ;
+; Sprite0        ; 10,00000110,00100011,00100011,00100011,00001010,00001010,00100101,00100100,00100 ;                ;
+; Sprite0        ; 011,00000110,00001001,00011001,00100111,00100111,00011110,00000110,00000111,0000 ;                ;
+; Sprite0        ; 1001,00101100,00011101,00100001,00100001,00100001,00100001,00011110,00000111,000 ;                ;
+; Sprite0        ; 00110,00000110,00000000,00000000,00001010,00000111,00000110,00011100,00000110,00 ;                ;
+; Sprite0        ; 011100,00010110,00000110,00000110,00000110,00001001,00000111,00001001,00001001,0 ;                ;
+; Sprite0        ; 0001001,00001001,00000111,00000111,00001001,00101101,00011111,00011111,00011111, ;                ;
+; Sprite0        ; 00100001,00100001,00011110,00000111,00000111,00001001,00000000,00000000,00000000 ;                ;
+; Sprite0        ; ,00001010,00000110,00001010,00001010,00001010,00001010,00001010,00011100,0000101 ;                ;
+; Sprite0        ; 0,00000110,00000110,00000110,00000110,00000110,00000110,00000111,00000111,000010 ;                ;
+; Sprite0        ; 01,00011001,00011111,00011101,00011111,00011111,00011111,00011110,00000111,00000 ;                ;
+; Sprite0        ; 111,00000110,00000000,00000000,00000000,00000000,00000010,00000001,00000010,0000 ;                ;
+; Sprite0        ; 0001,00000001,00000001,00000001,00000010,00000001,00000010,00000001,00000010,000 ;                ;
+; Sprite0        ; 00010,00000110,00000011,00000010,00000011,00011001,00011010,00011101,00011101,00 ;                ;
+; Sprite0        ; 011101,00011111,00011110,00000111,00001001,00000111,00000000,00000000,00000000,0 ;                ;
+; Sprite0        ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000, ;                ;
+; Sprite0        ; 00000000,00000000,00000000,00000000,00000000,00000111,00000111,00000001,00000010 ;                ;
+; Sprite0        ; ,00011001,00011101,00011010,00011101,00011101,00011101,00010111,00000111,0000011 ;                ;
+; Sprite0        ; 1,00000110,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
+; Sprite0        ; 00,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000 ;                ;
+; Sprite0        ; 000,00001001,00000111,00000000,00011011,00010111,00011010,00011010,00011010,0001 ;                ;
+; Sprite0        ; 1101,00011010,00010111,00000111,00000110,00000110,00000000,00000000,00000000,000 ;                ;
+; Sprite0        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
+; Sprite0        ; 000000,00000000,00000000,00000000,00000000,00000111,00000011,00000001,00011011,0 ;                ;
+; Sprite0        ; 0011001,00011000,00011010,00011010,00011010,00011010,00010111,00000111,00000111, ;                ;
+; Sprite0        ; 00001001,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000 ;                ;
 ; Sprite0        ; ,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000 ;                ;
-; Sprite0        ; 0,00000000,00000010,00000011,00000111,00000001,00000000,00000110,00000110,000000 ;                ;
-; Sprite0        ; 00,00000001,00000111,00000011,00000010,00000000,00000000,00000000,00000000,00000 ;                ;
+; Sprite0        ; 0,00000010,00000101,00000011,00000111,00010111,00011000,00011000,00011000,000110 ;                ;
+; Sprite0        ; 00,00011000,00010111,00101110,00001001,00000110,00000000,00000000,00000000,00000 ;                ;
 ; Sprite0        ; 000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
-; Sprite0        ; 0000,00000000,00000000,00000000,00000000,00000000,00000000,00000001,00001001,000 ;                ;
-; Sprite0        ; 00011,00000110,00000001,00000000,00000000,00000001,00000110,00000011,00001000,00 ;                ;
-; Sprite0        ; 000001,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;                ;
+; Sprite0        ; 0000,00000000,00000000,00000000,00000000,00000000,00000000,00001001,00001010,000 ;                ;
+; Sprite0        ; 00110,00011001,00011000,00011000,00011000,00011000,00010111,00000111,00000111,00 ;                ;
+; Sprite0        ; 001001,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;                ;
 ; Sprite0        ; 0000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000, ;                ;
-; Sprite0        ; 00000000,00000000,00000000,00000000,00000001,00001001,00000011,00000110,00000001 ;                ;
-; Sprite0        ; ,00000001,00000110,00000011,00001000,00000010,00000000,00000000,00000000,0000000 ;                ;
+; Sprite0        ; 00000000,00000000,00000000,00000000,00000110,00000110,00011100,00100011,00011000 ;                ;
+; Sprite0        ; ,00011000,00100011,00000111,00000111,00000110,00000000,00000000,00000000,0000000 ;                ;
 ; Sprite0        ; 0,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000000 ;                ;
 ; Sprite0        ; 00,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000 ;                ;
-; Sprite0        ; 000,00000000,00000001,00001001,00000011,00000111,00000111,00000011,00001000,0000 ;                ;
-; Sprite0        ; 0010,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;                ;
+; Sprite0        ; 000,00000000,00000110,00001010,00011100,00100101,00010111,00000111,00000110,0000 ;                ;
+; Sprite0        ; 1001,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;                ;
 ; Sprite0        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
-; Sprite0        ; 000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001,0 ;                ;
-; Sprite0        ; 0001001,00000011,00000011,00001001,00000001,00000000,00000000,00000000,00000000, ;                ;
+; Sprite0        ; 000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000110,0 ;                ;
+; Sprite0        ; 0000110,00000110,00000111,00000111,00000110,00000000,00000000,00000000,00000000, ;                ;
 ; Sprite0        ; 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000 ;                ;
 ; Sprite0        ; ,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000 ;                ;
-; Sprite0        ; 0,00000000,00000000,00000000,00000000,00000000,00000001,00000100,00000100,000000 ;                ;
-; Sprite0        ; 01,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000 ;                ;
+; Sprite0        ; 0,00000000,00000000,00000000,00000000,00000000,00000110,00011100,00001001,000001 ;                ;
+; Sprite0        ; 10,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000 ;                ;
 ; Sprite0        ; 000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000 ;                ;
 ; Sprite0        ; 0000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,000 ;                ;
-; Sprite0        ; 00000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00 ;                ;
+; Sprite0        ; 00000,00000000,00000000,00000111,00000111,00000000,00000000,00000000,00000000,00 ;                ;
 ; Sprite0        ; 000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0 ;                ;
 ;                ; 0000000,00000000)                                                                ;                ;
 ; Sprite1        ; (00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000 ; Array/Record   ;
@@ -1882,15 +1800,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "GameModule:GameModule|getStripModule:getStripModule"                                       ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; stripArrows ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "GameModule:GameModule|GameTable:GameTable"                                                        ;
 +--------------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -1947,22 +1856,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------+
-; Port Connectivity Checks: "GameModule:GameModule|GameManager:GameManager" ;
-+-------------------+-------+----------+------------------------------------+
-; Port              ; Type  ; Severity ; Details                            ;
-+-------------------+-------+----------+------------------------------------+
-; stripArrows[3..2] ; Input ; Info     ; Stuck at VCC                       ;
-; stripArrows[1..0] ; Input ; Info     ; Stuck at GND                       ;
-+-------------------+-------+----------+------------------------------------+
-
-
 +-----------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "GraphicModule:GraphicModule|sprite_table:sprite_table|mux16:mux16" ;
 +-----------+-------+----------+----------------------------------------------------------------+
 ; Port      ; Type  ; Severity ; Details                                                        ;
 +-----------+-------+----------+----------------------------------------------------------------+
-; i1[7..4]  ; Input ; Info     ; Stuck at GND                                                   ;
+; i1[7..6]  ; Input ; Info     ; Stuck at GND                                                   ;
 ; i2[7..4]  ; Input ; Info     ; Stuck at GND                                                   ;
 ; i3[7..4]  ; Input ; Info     ; Stuck at GND                                                   ;
 ; i4[7..4]  ; Input ; Info     ; Stuck at GND                                                   ;
@@ -1992,26 +1891,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 194                         ;
-; cycloneiii_ff         ; 90                          ;
+; cycloneiii_ff         ; 150                         ;
 ;     CLR               ; 13                          ;
-;     ENA               ; 5                           ;
+;     ENA               ; 54                          ;
 ;     ENA CLR           ; 10                          ;
-;     SLD               ; 50                          ;
-;     plain             ; 12                          ;
+;     SCLR              ; 10                          ;
+;     SLD               ; 40                          ;
+;     plain             ; 23                          ;
 ; cycloneiii_io_obuf    ; 48                          ;
-; cycloneiii_lcell_comb ; 2908                        ;
-;     arith             ; 191                         ;
-;         2 data inputs ; 106                         ;
-;         3 data inputs ; 85                          ;
-;     normal            ; 2717                        ;
-;         0 data inputs ; 18                          ;
-;         1 data inputs ; 9                           ;
-;         2 data inputs ; 39                          ;
-;         3 data inputs ; 132                         ;
-;         4 data inputs ; 2519                        ;
+; cycloneiii_lcell_comb ; 3322                        ;
+;     arith             ; 225                         ;
+;         2 data inputs ; 126                         ;
+;         3 data inputs ; 99                          ;
+;     normal            ; 3097                        ;
+;         0 data inputs ; 23                          ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 70                          ;
+;         3 data inputs ; 154                         ;
+;         4 data inputs ; 2838                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 24.60                       ;
-; Average LUT depth     ; 19.96                       ;
+; Max LUT depth         ; 26.80                       ;
+; Average LUT depth     ; 20.96                       ;
 +-----------------------+-----------------------------+
 
 
@@ -2020,7 +1920,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:48     ;
+; Top            ; 00:01:10     ;
 +----------------+--------------+
 
 
@@ -2030,7 +1930,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Tue May 05 21:27:58 2015
+    Info: Processing started: Tue May 05 22:00:16 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off final385 -c final_project
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file usb_system/usb_system_bb.v
@@ -2789,16 +2689,16 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "OTG_INT"
-Info (21057): Implemented 3115 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3569 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 143 output pins
     Info (21060): Implemented 48 bidirectional pins
-    Info (21061): Implemented 2921 logic cells
+    Info (21061): Implemented 3375 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 592 warnings
-    Info: Peak virtual memory: 603 megabytes
-    Info: Processing ended: Tue May 05 21:28:51 2015
-    Info: Elapsed time: 00:00:53
-    Info: Total CPU time (on all processors): 00:00:53
+    Info: Peak virtual memory: 607 megabytes
+    Info: Processing ended: Tue May 05 22:01:32 2015
+    Info: Elapsed time: 00:01:16
+    Info: Total CPU time (on all processors): 00:01:14
 
 
 +------------------------------------------+

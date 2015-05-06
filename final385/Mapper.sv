@@ -12,7 +12,31 @@ output logic [4:0] sPosXOut,sPosYOut);
 
 always_comb
 begin
-if ((SpriteID1!=4'hf )&& ((DrawX-PosX1)<32) && ((DrawY-PosY1)<32) && ((DrawX-PosX1)>=0) && ((DrawY-PosY1)>=0))
+if ((SpriteID13!=4'hf )&& ((DrawX-PosX13)<32) && ((DrawY-PosY13)<32) && ((DrawX-PosX13)>=0) && ((DrawY-PosY13)>=0))
+	begin
+		spriteIDOut=SpriteID13;
+		sPosXOut=DrawX[4:0]-PosX13[4:0];
+		sPosYOut=DrawY[4:0]-PosY13[4:0];
+	end
+else if ((SpriteID14!=4'hf )&& ((DrawX-PosX14)<32) && ((DrawY-PosY14)<32) && ((DrawX-PosX14)>=0) && ((DrawY-PosY14)>=0))	
+begin
+			spriteIDOut=SpriteID14;
+		sPosXOut=DrawX[4:0]-PosX14[4:0];
+		sPosYOut=DrawY[4:0]-PosY14[4:0];
+	end
+else if ((SpriteID15!=4'hf )&& ((DrawX-PosX15)<32) && ((DrawY-PosY15)<32) && ((DrawX-PosX15)>=0) && ((DrawY-PosY15)>=0))
+	begin
+			spriteIDOut=SpriteID15;
+		sPosXOut=DrawX[4:0]-PosX15[4:0];
+		sPosYOut=DrawY[4:0]-PosY15[4:0];
+	end
+else if ((SpriteID16!=4'hf )&& ((DrawX-PosX16)<32) && ((DrawY-PosY16)<32) && ((DrawX-PosX16)>=0) && ((DrawY-PosY16)>=0))
+	begin
+			spriteIDOut=SpriteID16;
+		sPosXOut=DrawX[4:0]-PosX16[4:0];
+		sPosYOut=DrawY[4:0]-PosY16[4:0];
+	end
+else if ((SpriteID1!=4'hf )&& ((DrawX-PosX1)<32) && ((DrawY-PosY1)<32) && ((DrawX-PosX1)>=0) && ((DrawY-PosY1)>=0))
 	begin
 		spriteIDOut=SpriteID1;
 		sPosXOut=(DrawX[4:0]-PosX1[4:0]);
@@ -85,30 +109,7 @@ begin
 		sPosXOut=DrawX[4:0]-PosX12[4:0];
 		sPosYOut=DrawY[4:0]-PosY12[4:0];
 	end	
-else if ((SpriteID13!=4'hf )&& ((DrawX-PosX13)<32) && ((DrawY-PosY13)<32) && ((DrawX-PosX13)>=0) && ((DrawY-PosY13)>=0))
-	begin
-			spriteIDOut=SpriteID13;
-		sPosXOut=DrawX[4:0]-PosX13[4:0];
-		sPosYOut=DrawY[4:0]-PosY13[4:0];
-	end
-else if ((SpriteID14!=4'hf )&& ((DrawX-PosX14)<32) && ((DrawY-PosY14)<32) && ((DrawX-PosX14)>=0) && ((DrawY-PosY14)>=0))	
-begin
-			spriteIDOut=SpriteID14;
-		sPosXOut=DrawX[4:0]-PosX14[4:0];
-		sPosYOut=DrawY[4:0]-PosY14[4:0];
-	end
-else if ((SpriteID15!=4'hf )&& ((DrawX-PosX15)<32) && ((DrawY-PosY15)<32) && ((DrawX-PosX15)>=0) && ((DrawY-PosY15)>=0))
-	begin
-			spriteIDOut=SpriteID15;
-		sPosXOut=DrawX[4:0]-PosX15[4:0];
-		sPosYOut=DrawY[4:0]-PosY15[4:0];
-	end
-else if ((SpriteID16!=4'hf )&& ((DrawX-PosX16)<32) && ((DrawY-PosY16)<32) && ((DrawX-PosX16)>=0) && ((DrawY-PosY16)>=0))
-	begin
-			spriteIDOut=SpriteID16;
-		sPosXOut=DrawX[4:0]-PosX16[4:0];
-		sPosYOut=DrawY[4:0]-PosY16[4:0];
-	end
+
 else
     begin
         spriteIDOut = 4'hf;

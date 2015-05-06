@@ -48,7 +48,7 @@ begin
 	end
 	else if(stripArrows==4'b0001&& shiftUp)
 	begin
-		spriteID11out=4'h7;//right
+		spriteID11out=4'h4;//right
 		spriteID10out=4'hf;
 		posY10out=10'h1E0; //hexidecimal 480
 		posY11out=10'h1E0; //hexidecimal 480
@@ -57,7 +57,7 @@ begin
 	end
 	else if (stripArrows==4'b0010&& shiftUp)
 	begin
-		spriteID11out=4'h5;//down
+		spriteID11out=4'h6;//down
 		spriteID10out=4'hf;
 		posY10out=10'h1E0; //hexidecimal 480
 		posY11out=10'h1E0; //hexidecimal 480
@@ -66,7 +66,7 @@ begin
 	end
 	else if(stripArrows==4'b0100&& shiftUp)
 	begin
-		spriteID10out=4'h4;//up
+		spriteID10out=4'h5;//up
 		spriteID11out=4'hf;
 		posY10out=9'h1E0; //hexidecimal 480
 		posY11out=9'h1E0; //hexidecimal 480
@@ -75,7 +75,7 @@ begin
 	end
 	else if(stripArrows==4'b1000&& shiftUp)
 	begin
-		spriteID10out=4'h6;//left
+		spriteID10out=4'h7;//left
 		spriteID11out=4'hf;
 		posY10out=9'h1E0; //hexidecimal 480
 		posY11out=9'h1E0; //hexidecimal 480
@@ -84,17 +84,17 @@ begin
 	end
 	else if(stripArrows==4'b1100&& shiftUp)
 	begin
-		spriteID10out=4'h6;
-		spriteID11out=4'h4;
-		posY10out=9'h1a0;
-		posY11out=9'h1a0;
+		spriteID10out=4'h7;
+		spriteID11out=4'h5;
+		posY10out=9'h1E0;
+		posY11out=9'h1E0;
 		posX10out=10'h0;
 		posX11out=10'h20;
 	end
 	else if(stripArrows==4'b1010&& shiftUp)
 	begin
-		spriteID10out=4'h6;
-		spriteID11out=4'h4;
+		spriteID10out=4'h7;
+		spriteID11out=4'h6;
 		posY10out=10'h1E0;
 		posY11out=10'h1E0;
 		posX10out=10'h0;
@@ -102,8 +102,8 @@ begin
 	end
 	else if(stripArrows==4'b1001&& shiftUp)
 	begin
-		spriteID10out=4'h6;
-		spriteID11out=4'h7;
+		spriteID10out=4'h7;
+		spriteID11out=4'h4;
 		posY10out=10'h1E0;
 		posY11out=10'h1E0;
 		posX10out=10'h0;
@@ -111,8 +111,8 @@ begin
 	end
 	else if(stripArrows==4'b0110&& shiftUp)
 	begin
-		spriteID10out=4'h4;
-		spriteID11out=4'h5;
+		spriteID10out=4'h5;
+		spriteID11out=4'h6;
 		posY10out=10'h1E0;
 		posY11out=10'h1E0;
 		posX10out=10'h20;
@@ -120,8 +120,8 @@ begin
 	end
 	else if(stripArrows==4'b0101&& shiftUp)
 	begin
-		spriteID10out=4'h4;
-		spriteID11out=4'h7;
+		spriteID10out=4'h5;
+		spriteID11out=4'h4;
 		posY10out=10'h1E0;
 		posY11out=10'h1E0;
 		posX10out=10'h20;
@@ -129,8 +129,8 @@ begin
 	end
 	else if(stripArrows==4'b0011&& shiftUp)
 	begin
-		spriteID10out=4'h5;
-		spriteID11out=4'h7;
+		spriteID10out=4'h6;
+		spriteID11out=4'h4;
 		posY10out=10'h1E0;
 		posY11out=10'h1E0;
 		posX10out=10'h40;

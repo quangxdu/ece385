@@ -45,9 +45,9 @@ output logic [9:0] posX16, output logic [9:0] posY16, output logic [3:0] spriteI
 
 GameManager GameManager
 (
-	.arrowClk(vs),
+	.arrowClk(clk),
 	.shiftUp(shiftUp),
-	.stripArrows(4'b1100),
+	.stripArrows(stripArrows),
 	//input arrowClk, input shiftUp, input [3:0] stripArrows,
 .posX2in(posX2), .posY2in(posY2), .spriteID2in(spriteID2),
 .posX3in(posX3), .posY3in(posY3), .spriteID3in(spriteID3),
