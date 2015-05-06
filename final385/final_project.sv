@@ -48,11 +48,13 @@ module  final_project 		( input         Clk,
      logic Reset_h;
 	 logic [7:0] keycode;
 	 logic [7:0] buffer;
-    
+
     assign {Reset_h}=~ (Reset);  // The push buttons are active low
 	 assign OTG_FSPEED = 1'bz;
 	 assign OTG_LSPEED = 1'bz;
-	 
+	 logic [9:0]posX1,posX2,posX3,posX4,posX5,posX6,posX7, posX8, posX9, posX10, posX11,posX12,posX13,posX14,posX15,posX16;
+	 logic [9:0]posY1, posY2,posY3, posY4, posY5, posY6, posY7, posY8,posY9, posY10, posY11,posY12,posY13,posY14,posY15,posY16;
+	 logic [3:0] spriteID1, spriteID2, spriteID3, spriteID4, spriteID5, spriteID6, spriteID7, spriteID8, spriteID9, spriteID10, spriteID11,spriteID12,spriteID13,spriteID14,spriteID15, spriteID16;
 	    
 	 usb_system usbsys_instance(
 										 .clk_clk(Clk),         
@@ -79,23 +81,20 @@ module  final_project 		( input         Clk,
 	
 	 HexDriver hex_inst_0 (.In0(keycode[3:0]), .Out0(HEX0));
 	 HexDriver hex_inst_1 (.In0(keycode[7:4]), .Out0(HEX1));
-logic [9:0] nowhere;
-logic [3:0] empty;
-assign empty = 4'hf;
-assign nowhere = 10'b0000000000;
+
 
 GraphicModule GraphicModule
 ( 
 .Clk(Clk),
 .Reset(Reset_h),
-.PosX1(10'b0000000000), .PosY1(10'b0000000000), .PosX2(10'b0000000000), .PosY2(10'b0000000100), .PosX3(10'b0000000000), .PosY3(10'b0000001000), .PosX4(nowhere), .PosY4(nowhere),
-.PosX5(nowhere), .PosY5(nowhere), .PosX6(nowhere), .PosY6(nowhere), .PosX7(nowhere), .PosY7(nowhere), .PosX8(nowhere), .PosY8(nowhere),
-.PosX9(nowhere), .PosY9(nowhere), .PosX10(nowhere), .PosY10(nowhere), .PosX11(nowhere), .PosY11(nowhere), .PosX12(nowhere), .PosY12(nowhere),
-.PosX13(nowhere), .PosY13(nowhere), .PosX14(nowhere), .PosY14(nowhere), .PosX15(nowhere), .PosY15(nowhere), .PosX16(nowhere), .PosY16(nowhere), 
-.SpriteID1(4'b0110),.SpriteID2(4'b0101),.SpriteID3(4'b0010),.SpriteID4(empty),
-.SpriteID5(empty),.SpriteID6(empty),.SpriteID7(empty),.SpriteID8(empty),
-.SpriteID9(empty),.SpriteID10(empty),.SpriteID11(empty),.SpriteID12(empty),
-.SpriteID13(empty),.SpriteID14(empty),.SpriteID15(empty),.SpriteID16(empty),
+.PosX1(posX1), .PosY1(posY1), .PosX2(posX2), .PosY2(posY2), .PosX3(posX3), .PosY3(posY3), .PosX4(posX4), .PosY4(posY4),
+.PosX5(posX5), .PosY5(posY5), .PosX6(posX6), .PosY6(posY6), .PosX7(posX7), .PosY7(posY7), .PosX8(posX8), .PosY8(posY8),
+.PosX9(posX9), .PosY9(posY9), .PosX10(posX10), .PosY10(posY10), .PosX11(posX11), .PosY11(posY11), .PosX12(posX12), .PosY12(posY12),
+.PosX13(posX13), .PosY13(posY13), .PosX14(posX14), .PosY14(posY14), .PosX15(posX15), .PosY15(posY15), .PosX16(posX16), .PosY16(posY16), 
+.SpriteID1(spriteID1),.SpriteID2(spriteID2),.SpriteID3(spriteID3),.SpriteID4(spriteID4),
+.SpriteID5(spriteID5),.SpriteID6(spriteID6),.SpriteID7(spriteID7),.SpriteID8(spriteID8),
+.SpriteID9(spriteID9),.SpriteID10(spriteID10),.SpriteID11(spriteID11),.SpriteID12(spriteID12),
+.SpriteID13(spriteID13),.SpriteID14(spriteID14),.SpriteID15(spriteID15),.SpriteID16(spriteID16),
     
     
 		.hs(hs),        // Horizontal sync pulse.  Active low
@@ -105,10 +104,12 @@ GraphicModule GraphicModule
 					.sync(sync),
 	.red(Red),.green(Green),.blue(Blue)
 );
-/*
+
 GameModule GameModule
-(.*
+(
+	.clk(Clk),
+	.*
 );
-*/
+
 
 endmodule

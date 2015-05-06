@@ -1,5 +1,4 @@
-module GameManager(input arrowClk, input shiftUp, input [3:0] stripArrows,
-input logic [9:0] posX1in, input logic [9:0] posY1in, input logic [3:0] spriteID1in,
+module GameManager(input arrowClk, input logic shiftUp, input logic [3:0] stripArrows,
 input logic [9:0] posX2in, input logic [9:0] posY2in, input logic [3:0] spriteID2in,
 input logic [9:0] posX3in, input logic [9:0] posY3in, input logic [3:0] spriteID3in,
 input logic [9:0] posX4in, input logic [9:0] posY4in, input logic [3:0] spriteID4in,
@@ -12,17 +11,16 @@ input logic [9:0] posX10in, input logic [9:0] posY10in, input logic [3:0] sprite
 input logic [9:0] posX11in, input logic [9:0] posY11in, input logic [3:0] spriteID11in,
 
 
-output logic [9:0] posX1, output logic [9:0] posY1, output logic [3:0] spriteID1,
-output logic [9:0] posX2, output logic [9:0] posY2, output logic [3:0] spriteID2, 
-output logic [9:0] posX3, output logic [9:0] posY3, output logic [3:0] spriteID3,
-output logic [9:0] posX4, output logic [9:0] posY4, output logic [3:0] spriteID4,
-output logic [9:0] posX5, output logic [9:0] posY5, output logic [3:0] spriteID5,
-output logic [9:0] posX6, output logic [9:0] posY6, output logic [3:0] spriteID6,
-output logic [9:0] posX7, output logic [9:0] posY7, output logic [3:0] spriteID7,
-output logic [9:0] posX8, output logic [9:0] posY8, output logic [3:0] spriteID8,
-output logic [9:0] posX9, output logic [9:0] posY9, output logic [3:0] spriteID9,
-output logic [9:0] posX10, output logic[9:0] posY10, output logic [3:0] spriteID10,
-output logic [9:0] posX11, output logic [9:0] posY11, output logic [3:0] spriteID11
+output logic [9:0] posX2out, output logic [9:0] posY2out, output logic [3:0] spriteID2out, 
+output logic [9:0] posX3out, output logic [9:0] posY3out, output logic [3:0] spriteID3out,
+output logic [9:0] posX4out, output logic [9:0] posY4out, output logic [3:0] spriteID4out,
+output logic [9:0] posX5out, output logic [9:0] posY5out, output logic [3:0] spriteID5out,
+output logic [9:0] posX6out, output logic [9:0] posY6out, output logic [3:0] spriteID6out,
+output logic [9:0] posX7out, output logic [9:0] posY7out, output logic [3:0] spriteID7out,
+output logic [9:0] posX8out, output logic [9:0] posY8out, output logic [3:0] spriteID8out,
+output logic [9:0] posX9out, output logic [9:0] posY9out, output logic [3:0] spriteID9out,
+output logic [9:0] posX10out, output logic[9:0] posY10out, output logic [3:0] spriteID10out,
+output logic [9:0] posX11out, output logic [9:0] posY11out, output logic [3:0] spriteID11out
 
 );
 
@@ -39,113 +37,113 @@ output logic [9:0] posX11, output logic [9:0] posY11, output logic [3:0] spriteI
 
 always_comb//set sprite 10 and 11 to the new arrows from strip
 begin
-	if(stripArrows==4'b0000 && shiftUp)
+	if((stripArrows == 4'b0000) & (shiftUp))
 	begin
-		spriteID10=4'hf;
-		spriteID11=4'hf;
-		posY10=9'h1E0; //hexidecimal 480
-		posY11=9'h1E0; //hexidecimal 480
-		posX10=0;
-		posX11=0;
+		spriteID10out=4'hf;
+		spriteID11out=4'hf;
+		posY10out=9'h1E0; //hexidecimal 480
+		posY11out=9'h1E0; //hexidecimal 480
+		posX10out=1'b0;
+		posX11out=1'b0;
 	end
 	else if(stripArrows==4'b0001&& shiftUp)
 	begin
-		spriteID11=4'h7;//right
-		spriteID10=4'hf;
-		posY10=10'h1E0; //hexidecimal 480
-		posY11=10'h1E0; //hexidecimal 480
-		posX10=0;
-		posX11=10'h1E0;//480
+		spriteID11out=4'h7;//right
+		spriteID10out=4'hf;
+		posY10out=10'h1E0; //hexidecimal 480
+		posY11out=10'h1E0; //hexidecimal 480
+		posX10out=1'b0;
+		posX11out=10'h60;//480
 	end
 	else if (stripArrows==4'b0010&& shiftUp)
 	begin
-		spriteID11=4'h5;//down
-		spriteID10=4'hf;
-		posY10=10'h1E0; //hexidecimal 480
-		posY11=10'h1E0; //hexidecimal 480
-		posX10=10'h0;
-		posX11=10'h140;//320
+		spriteID11out=4'h5;//down
+		spriteID10out=4'hf;
+		posY10out=10'h1E0; //hexidecimal 480
+		posY11out=10'h1E0; //hexidecimal 480
+		posX10out=10'h40;
+		posX11out=10'h0;//320
 	end
 	else if(stripArrows==4'b0100&& shiftUp)
 	begin
-		spriteID10=4'h4;//up
-		spriteID11=4'hf;
-		posY10=9'h1E0; //hexidecimal 480
-		posY11=9'h1E0; //hexidecimal 480
-		posX10=10'hA0;//160
-		posX11=10'h0;
+		spriteID10out=4'h4;//up
+		spriteID11out=4'hf;
+		posY10out=9'h1E0; //hexidecimal 480
+		posY11out=9'h1E0; //hexidecimal 480
+		posX10out=10'h20;//160
+		posX11out=10'h0;
 	end
 	else if(stripArrows==4'b1000&& shiftUp)
 	begin
-		spriteID10=4'h6;//left
-		spriteID11=4'hf;
-		posY10=9'h1E0; //hexidecimal 480
-		posY11=9'h1E0; //hexidecimal 480
-		posX10=10'h0;
-		posX11=10'h0;
+		spriteID10out=4'h6;//left
+		spriteID11out=4'hf;
+		posY10out=9'h1E0; //hexidecimal 480
+		posY11out=9'h1E0; //hexidecimal 480
+		posX10out=10'h0;
+		posX11out=10'h0;
 	end
 	else if(stripArrows==4'b1100&& shiftUp)
 	begin
-		spriteID10=4'h6;
-		spriteID11=4'h4;
-		posY10=9'h1E0;
-		posY11=9'h1E0;
-		posX10=10'h0;
-		posY10=10'hA0;
+		spriteID10out=4'h6;
+		spriteID11out=4'h4;
+		posY10out=9'h1a0;
+		posY11out=9'h1a0;
+		posX10out=10'h0;
+		posX11out=10'h20;
 	end
 	else if(stripArrows==4'b1010&& shiftUp)
 	begin
-		spriteID10=4'h6;
-		spriteID11=4'h4;
-		posY10=10'h1E0;
-		posY11=10'h1E0;
-		posX10=10'h0;
-		posX11=10'h140;
+		spriteID10out=4'h6;
+		spriteID11out=4'h4;
+		posY10out=10'h1E0;
+		posY11out=10'h1E0;
+		posX10out=10'h0;
+		posX11out=10'h40;
 	end
 	else if(stripArrows==4'b1001&& shiftUp)
 	begin
-		spriteID10=4'h6;
-		spriteID11=4'h7;
-		posY10=10'h1E0;
-		posY11=10'h1E0;
-		posX10=10'h0;
-		posX11=10'h1E0;
+		spriteID10out=4'h6;
+		spriteID11out=4'h7;
+		posY10out=10'h1E0;
+		posY11out=10'h1E0;
+		posX10out=10'h0;
+		posX11out=10'h60;
 	end
 	else if(stripArrows==4'b0110&& shiftUp)
 	begin
-		spriteID10=4'h4;
-		spriteID11=4'h5;
-		posY10=10'h1E0;
-		posY11=10'h1E0;
-		posX10=10'hA0;
-		posX11=10'h140;
+		spriteID10out=4'h4;
+		spriteID11out=4'h5;
+		posY10out=10'h1E0;
+		posY11out=10'h1E0;
+		posX10out=10'h20;
+		posX11out=10'h40;
 	end
 	else if(stripArrows==4'b0101&& shiftUp)
 	begin
-		spriteID10=4'h4;
-		spriteID11=4'h7;
-		posY10=10'h1E0;
-		posY11=10'h1E0;
-		posX10=10'hA0;
-		posX11=10'h1E0;
+		spriteID10out=4'h4;
+		spriteID11out=4'h7;
+		posY10out=10'h1E0;
+		posY11out=10'h1E0;
+		posX10out=10'h20;
+		posX11out=10'h60;
 	end
 	else if(stripArrows==4'b0011&& shiftUp)
 	begin
-		spriteID10=4'h5;
-		spriteID11=4'h7;
-		posY10=10'h1E0;
-		posY11=10'h1E0;
-		posX10=10'h140;
-		posX11=10'h1E0;
+		spriteID10out=4'h5;
+		spriteID11out=4'h7;
+		posY10out=10'h1E0;
+		posY11out=10'h1E0;
+		posX10out=10'h40;
+		posX11out=10'h60;
 	end
 	else
 	begin
-		posX10=posX10in;
-		posX11=posX11in;
-		posY10=posY10in+1;
-		posY11=posY11in+1;
-		spriteID10=spriteID10in;
-		spriteID11=spriteID11in;
+		posX10out=posX10in;
+		posX11out=posX11in;
+		posY10out=posY10in-10'b1;
+		posY11out=posY11in-10'b1;
+		spriteID10out=spriteID10in;
+		spriteID11out=spriteID11in;
 	end
 end
 
@@ -153,62 +151,62 @@ always_comb//move all sprites up 1 pixel
 begin
 	if(shiftUp)
 	begin
-		posX2=posX4in;
-		posX3=posX5in;
-		posX4=posX6in;
-		posX5=posX7in;
-		posX6=posX8in;
-		posX7=posX9in;
-		posX8=posX10in;
-		posX9=posX11in;
+		posX2out=posX4in;
+		posX3out=posX5in;
+		posX4out=posX6in;
+		posX5out=posX7in;
+		posX6out=posX8in;
+		posX7out=posX9in;
+		posX8out=posX10in;
+		posX9out=posX11in;
 
-		posY2=posY4in;
-		posY3=posY5in;
-		posY4=posY6in;
-		posY5=posY7in;
-		posY6=posY8in;
-		posY7=posY9in;
-		posY8=posY10in;
-		posY9=posY11in;
+		posY2out=posY4in;
+		posY3out=posY5in;
+		posY4out=posY6in;
+		posY5out=posY7in;
+		posY6out=posY8in;
+		posY7out=posY9in;
+		posY8out=posY10in;
+		posY9out=posY11in;
 
-		spriteID2=spriteID4in;
-		spriteID3=spriteID5in;
-		spriteID4=spriteID6in;
-		spriteID5=spriteID7in;
-		spriteID6=spriteID8in;
-		spriteID7=spriteID9in;
-		spriteID8=spriteID10in;
-		spriteID9=spriteID11in;
+		spriteID2out=spriteID4in;
+		spriteID3out=spriteID5in;
+		spriteID4out=spriteID6in;
+		spriteID5out=spriteID7in;
+		spriteID6out=spriteID8in;
+		spriteID7out=spriteID9in;
+		spriteID8out=spriteID10in;
+		spriteID9out=spriteID11in;
 	end
 	else
 	begin
 
-	posX2=posX2in;
-	posX3=posX3in;
-	posX4=posX4in;
-	posX5=posX5in;
-	posX6=posX6in;
-	posX7=posX7in;
-	posX8=posX8in;
-	posX9=posX9in;
+	posX2out=posX2in;
+	posX3out=posX3in;
+	posX4out=posX4in;
+	posX5out=posX5in;
+	posX6out=posX6in;
+	posX7out=posX7in;
+	posX8out=posX8in;
+	posX9out=posX9in;
 
-	posY2=posY2in+1;
-	posY3=posY3in+1;
-	posY4=posY4in+1;
-	posY5=posY5in+1;
-	posY6=posY6in+1;
-	posY7=posY7in+1;
-	posY8=posY8in+1;
-	posY9=posY9in+1;
+	posY2out=posY2in-10'b1;
+	posY3out=posY3in-10'b1;
+	posY4out=posY4in-10'b1;
+	posY5out=posY5in-10'b1;
+	posY6out=posY6in-10'b1;
+	posY7out=posY7in-10'b1;
+	posY8out=posY8in-10'b1;
+	posY9out=posY9in-10'b1;
 
-	spriteID2=spriteID2in;
-	spriteID3=spriteID3in;
-	spriteID4=spriteID4in;
-	spriteID5=spriteID5in;
-	spriteID6=spriteID6in;
-	spriteID7=spriteID7in;
-	spriteID8=spriteID8in;
-	spriteID9=spriteID9in;
+	spriteID2out=spriteID2in;
+	spriteID3out=spriteID3in;
+	spriteID4out=spriteID4in;
+	spriteID5out=spriteID5in;
+	spriteID6out=spriteID6in;
+	spriteID7out=spriteID7in;
+	spriteID8out=spriteID8in;
+	spriteID9out=spriteID9in;
 	end
 
 

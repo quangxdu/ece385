@@ -1,13 +1,25 @@
-module GameTable(input Clk, input logic load, input logic reset,  
+module GameTable(input Clk, input logic shiftUp,
 input logic [3:0] spriteID1in, input logic [3:0] spriteID2in, input logic [3:0] spriteID3in, input logic [3:0] spriteID4in, 
 input logic [3:0] spriteID5in, input logic [3:0] spriteID6in, input logic [3:0] spriteID7in, input logic [3:0] spriteID8in, 
 input logic [3:0] spriteID9in, input logic [3:0] spriteID10in, input logic [3:0] spriteID11in, input logic [3:0] spriteID12in, 
 input logic [3:0] spriteID13in, input logic [3:0] spriteID14in, input logic [3:0] spriteID15in, input logic [3:0] spriteID16in, 
 input logic sprite3hit_in,sprite2hit_in,
-input logic [9:0] posX1in, posY1in, input logic [9:0] posX2in, posY2in, input logic [9:0] posX3in, posY3in, input logic [9:0] posX4in, posY4in,
-input logic [9:0] posX5in, posY5in, input logic [9:0] posX6in, posY6in, input logic [9:0] posX7in, posY7in, input logic [9:0] posX8in, posY8in,
-input logic [9:0] posX9in, posY9in, input logic [9:0] posX10in, posY10in, input logic [9:0] posX11in, posY11in, input logic [9:0] posX12in, posY12in,
-input logic [9:0] posX13in, posY13in, input logic [9:0] posX14in, posY14in, input logic [9:0] posX15in, posY15in, input logic [9:0] posX16in, posY16in, 
+input logic [9:0] posX1in, posY1in,
+ input logic [9:0] posX2in, posY2in,
+ input logic [9:0] posX3in, posY3in, 
+input logic [9:0] posX4in, posY4in,
+input logic [9:0] posX5in, posY5in,
+ input logic [9:0] posX6in, posY6in,
+ input logic [9:0] posX7in, posY7in,
+ input logic [9:0] posX8in, posY8in,
+input logic [9:0] posX9in, posY9in,
+ input logic [9:0] posX10in, posY10in,
+ input logic [9:0] posX11in, posY11in,
+ input logic [9:0] posX12in, posY12in,
+input logic [9:0] posX13in, posY13in,
+input logic [9:0] posX14in, posY14in,
+ input logic [9:0] posX15in, posY15in,
+ input logic [9:0] posX16in, posY16in, 
 output logic sprite3hit_out,sprite2hit_out,
 output logic [9:0] posX1, posY1, output logic [9:0] posX2, posY2, output logic [9:0] posX3, posY3, output logic [9:0] posX4, posY4,
 output logic [9:0] posX5, posY5, output logic [9:0] posX6, posY6, output logic [9:0] posX7, posY7, output logic [9:0] posX8, posY8,
@@ -16,8 +28,7 @@ output logic [9:0] posX13, posY13, output logic [9:0] posX14, posY14, output log
 output logic [3:0] spriteID1, output logic [3:0] spriteID2, output logic [3:0] spriteID3, output logic [3:0] spriteID4, 
 output logic [3:0] spriteID5, output logic [3:0] spriteID6, output logic [3:0] spriteID7, output logic [3:0] spriteID8, 
 output logic [3:0] spriteID9, output logic [3:0] spriteID10, output logic [3:0] spriteID11, output logic [3:0] spriteID12, 
-output logic [3:0] spriteID13, output logic [3:0] spriteID14, output logic [3:0] spriteID15, output logic [3:0] spriteID16, 
-
+output logic [3:0] spriteID13, output logic [3:0] spriteID14, output logic [3:0] spriteID15, output logic [3:0] spriteID16
 );
 
 logic [3:0] tSpriteID1;
@@ -28,7 +39,6 @@ logic [3:0] tSpriteID5;
 logic [3:0] tSpriteID6;
 logic [3:0] tSpriteID7;
 logic [3:0] tSpriteID8;
-logic [3:0] tSpriteID9;
 logic [3:0] tSpriteID9;
 logic [3:0] tSpriteID10;
 logic [3:0] tSpriteID11;
@@ -127,64 +137,63 @@ tPosX16 = 1'b0;
 tPosY16 = 1'b0;
 end
 always_ff @(posedge Clk)
+begin
 	sprite3hit = sprite3hit_in;
 	sprite2hit = sprite2hit_in;
-	tSpriteID1=SpriteID1in;
+	tSpriteID1= spriteID1in;
 	tPosX1=posX1in;
 	tPosY1=posY1in;
-	tSpriteID2=SpriteID2in;
+	tSpriteID2=spriteID2in;
 	tPosX2=posX2in;
 	tPosY2=posY2in;
-	tSpriteID3=SpriteID3in;
+	tSpriteID3=spriteID3in;
 	tPosX3=posX3in;
 	tPosY3=posY3in;
-	tSpriteID4=SpriteID4in;
+	tSpriteID4=spriteID4in;
 	tPosX4=posX4in;
 	tPosY4=posY4in;
-	tSpriteID5=SpriteID5in;
+	tSpriteID5=spriteID5in;
 	tPosX5=posX5in;
 	tPosY5=posY5in;
-	tSpriteID6=SpriteID6in;
+	tSpriteID6=spriteID6in;
 	tPosX6=posX6in;
 	tPosY6=posY6in;
-	tSpriteID7=SpriteID7in;
+	tSpriteID7=spriteID7in;
 	tPosX7=posX7in;
 	tPosY7=posY7in;
-	tSpriteID8=SpriteID8in;
+	tSpriteID8=spriteID8in;
 	tPosX8=posX8in;
 	tPosY8=posY8in;
-	tSpriteID9=SpriteID9in;
+	tSpriteID9=spriteID9in;
 	tPosX9=posX9in;
 	tPosY9=posY9in;	
-	tSpriteID10=SpriteID10in;
+	tSpriteID10=spriteID10in;
 	tPosX10=posX10in;
 	tPosY10=posY10in;
-	tSpriteID11=SpriteID11in;
+	tSpriteID11=spriteID11in;
 	tPosX11=posX11in;
 	tPosY11=posY11in;
-	tSpriteID12=SpriteID12in;
+	tSpriteID12=spriteID12in;
 	tPosX12=posX12in;
 	tPosY12=posY12in;
-	tSpriteID13=SpriteID13in;
+	tSpriteID13=spriteID13in;
 	tPosX13=posX13in;
 	tPosY13=posY13in;
-	tSpriteID14=SpriteID14in;
+	tSpriteID14=spriteID14in;
 	tPosX14=posX14in;
 	tPosY14=posY14in;
-	tSpriteID15=SpriteID15in;
+	tSpriteID15=spriteID15in;
 	tPosX15=posX15in;
 	tPosY15=posY15in;
-	tSpriteID16=SpriteID16in;
+	tSpriteID16=spriteID16in;
 	tPosX16=posX16in;
 	tPosY16=posY16in;
-	sprite3hit = sprite3hit_in;
-	sprite2hit = sprite3hit_in;
 end
 always_comb
 begin
 	posX1= tPosX1;
 	posY1= tPosY1;
-	spriteID1=tSpriteID1
+	spriteID1=tSpriteID1;
 	
 	posX2= tPosX2;
 	posY2= tPosY2;
@@ -247,16 +256,8 @@ begin
 	posX16= tPosX16;
 	posY16= tPosY16;
 	spriteID16=tSpriteID16;
-	if(shiftUp)
-		begin
-			sprite3hit_out = 0;
-			sprite2hit_out = 0;
-		end
-	else
-		begin
-			sprite3hit_out = sprite3hit;
-			sprite2hit_out = sprite2hit;
-		end
+
+
 end
 
 endmodule

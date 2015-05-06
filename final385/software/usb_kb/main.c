@@ -488,8 +488,9 @@ int main(void)
 		// packet starts from 0x051c, reading third byte
 		// TASK: Write the address to read from the memory for byte 3 of the report descriptor to HPI_ADDR.
 		IOWR(CY7C67200_BASE,HPI_ADDR,0x051E);
-		IOWR(CY7C67200_BASE,HPI_ADDR,0x051F); //read the 4th byte for the second keycode
+
 		keycode = IORD(CY7C67200_BASE,HPI_DATA);
+		IOWR(CY7C67200_BASE,HPI_ADDR,0x051F); //read the 4th byte for the second keycode
 		keycode_2 = IORD(CY7C67200_BASE,HPI_DATA);
 		printf("\nfirst two keycode values are %04x\n",keycode);
 		IOWR(KEYCODE_BASE, 0, keycode & 0xff);

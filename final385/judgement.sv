@@ -42,7 +42,7 @@ begin
 			posY1=10'hF0;
 		end
 		else;
-
+	end
 	else if ((posY2[7:0]<16 || posY2[7:0]>56) &&(posY3[7:0]<16 || posY3[7:0]>56))
 	begin
 		if (spriteID2==4'h4)//w 26 up //sprite2 covers left and up
@@ -150,7 +150,7 @@ else
 
 	end
 end	
-end
+
 
 
 endmodule
